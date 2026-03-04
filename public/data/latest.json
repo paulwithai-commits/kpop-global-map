@@ -1,0 +1,1371 @@
+{
+  "date": "2026-03-04",
+  "updatedAt": "2026-03-04T15:29:16.159252+09:00",
+  "totalCountries": 33,
+  "countries": [
+    {
+      "code": "SG",
+      "name": "Singapore",
+      "nameKo": "싱가포르",
+      "score": 70.0,
+      "trendsScore": 83.6,
+      "wikiScore": 44.2,
+      "youtubeScore": 81.8,
+      "change": 6.1,
+      "topArtists": [
+        {
+          "id": "blackpink",
+          "name": "BLACKPINK",
+          "nameKo": "블랙핑크",
+          "score": 1050.9,
+          "platform": "wiki"
+        },
+        {
+          "id": "bts",
+          "name": "BTS",
+          "nameKo": "방탄소년단",
+          "score": 1019.4,
+          "platform": "wiki"
+        },
+        {
+          "id": "stray-kids",
+          "name": "Stray Kids",
+          "nameKo": "스트레이 키즈",
+          "score": 485.3,
+          "platform": "wiki"
+        },
+        {
+          "id": "newjeans",
+          "name": "NewJeans",
+          "nameKo": "뉴진스",
+          "score": 320.9,
+          "platform": "wiki"
+        },
+        {
+          "id": "le-sserafim",
+          "name": "LE SSERAFIM",
+          "nameKo": "르세라핌",
+          "score": 271.1,
+          "platform": "wiki"
+        }
+      ],
+      "lat": 1.4,
+      "lng": 103.8
+    },
+    {
+      "code": "JP",
+      "name": "Japan",
+      "nameKo": "일본",
+      "score": 63.6,
+      "trendsScore": 36.5,
+      "wikiScore": 100.0,
+      "youtubeScore": 54.5,
+      "change": -4.6,
+      "topArtists": [
+        {
+          "id": "blackpink",
+          "name": "BLACKPINK",
+          "nameKo": "블랙핑크",
+          "score": 1892.0,
+          "platform": "wiki"
+        },
+        {
+          "id": "ive",
+          "name": "IVE",
+          "nameKo": "아이브",
+          "score": 1597.0,
+          "platform": "wiki"
+        },
+        {
+          "id": "aespa",
+          "name": "aespa",
+          "nameKo": "에스파",
+          "score": 1272.0,
+          "platform": "wiki"
+        },
+        {
+          "id": "le-sserafim",
+          "name": "LE SSERAFIM",
+          "nameKo": "르세라핌",
+          "score": 1234.0,
+          "platform": "wiki"
+        },
+        {
+          "id": "twice",
+          "name": "TWICE",
+          "nameKo": "트와이스",
+          "score": 1219.0,
+          "platform": "wiki"
+        }
+      ],
+      "lat": 36.2,
+      "lng": 138.2
+    },
+    {
+      "code": "TW",
+      "name": "Taiwan",
+      "nameKo": "대만",
+      "score": 59.0,
+      "trendsScore": 71.1,
+      "wikiScore": 14.2,
+      "youtubeScore": 90.9,
+      "change": 16.4,
+      "topArtists": [
+        {
+          "id": "blackpink",
+          "name": "BLACKPINK",
+          "nameKo": "블랙핑크",
+          "score": 1284.0,
+          "platform": "wiki"
+        },
+        {
+          "id": "bts",
+          "name": "BTS",
+          "nameKo": "방탄소년단",
+          "score": 15.0,
+          "platform": "wiki"
+        },
+        {
+          "id": "ive",
+          "name": "IVE",
+          "nameKo": "아이브",
+          "score": 4,
+          "platform": "youtube"
+        },
+        {
+          "id": "seventeen",
+          "name": "SEVENTEEN",
+          "nameKo": "세븐틴",
+          "score": 1,
+          "platform": "youtube"
+        }
+      ],
+      "lat": 23.7,
+      "lng": 121.0
+    },
+    {
+      "code": "AU",
+      "name": "Australia",
+      "nameKo": "호주",
+      "score": 55.3,
+      "trendsScore": 29.6,
+      "wikiScore": 44.2,
+      "youtubeScore": 90.9,
+      "change": 18.4,
+      "topArtists": [
+        {
+          "id": "blackpink",
+          "name": "BLACKPINK",
+          "nameKo": "블랙핑크",
+          "score": 1050.9,
+          "platform": "wiki"
+        },
+        {
+          "id": "bts",
+          "name": "BTS",
+          "nameKo": "방탄소년단",
+          "score": 1019.4,
+          "platform": "wiki"
+        },
+        {
+          "id": "stray-kids",
+          "name": "Stray Kids",
+          "nameKo": "스트레이 키즈",
+          "score": 485.3,
+          "platform": "wiki"
+        },
+        {
+          "id": "newjeans",
+          "name": "NewJeans",
+          "nameKo": "뉴진스",
+          "score": 320.9,
+          "platform": "wiki"
+        },
+        {
+          "id": "le-sserafim",
+          "name": "LE SSERAFIM",
+          "nameKo": "르세라핌",
+          "score": 271.1,
+          "platform": "wiki"
+        }
+      ],
+      "lat": -25.3,
+      "lng": 133.8
+    },
+    {
+      "code": "TH",
+      "name": "Thailand",
+      "nameKo": "태국",
+      "score": 52.9,
+      "trendsScore": 84.3,
+      "wikiScore": 1.2,
+      "youtubeScore": 72.7,
+      "change": 10.2,
+      "topArtists": [
+        {
+          "id": "blackpink",
+          "name": "BLACKPINK",
+          "nameKo": "블랙핑크",
+          "score": 110.0,
+          "platform": "wiki"
+        },
+        {
+          "id": "ive",
+          "name": "IVE",
+          "nameKo": "아이브",
+          "score": 4,
+          "platform": "youtube"
+        }
+      ],
+      "lat": 15.9,
+      "lng": 100.9
+    },
+    {
+      "code": "GB",
+      "name": "United Kingdom",
+      "nameKo": "영국",
+      "score": 52.8,
+      "trendsScore": 31.4,
+      "wikiScore": 44.2,
+      "youtubeScore": 81.8,
+      "change": 15.0,
+      "topArtists": [
+        {
+          "id": "blackpink",
+          "name": "BLACKPINK",
+          "nameKo": "블랙핑크",
+          "score": 1048.9,
+          "platform": "wiki"
+        },
+        {
+          "id": "bts",
+          "name": "BTS",
+          "nameKo": "방탄소년단",
+          "score": 1019.4,
+          "platform": "wiki"
+        },
+        {
+          "id": "stray-kids",
+          "name": "Stray Kids",
+          "nameKo": "스트레이 키즈",
+          "score": 485.3,
+          "platform": "wiki"
+        },
+        {
+          "id": "newjeans",
+          "name": "NewJeans",
+          "nameKo": "뉴진스",
+          "score": 320.9,
+          "platform": "wiki"
+        },
+        {
+          "id": "le-sserafim",
+          "name": "LE SSERAFIM",
+          "nameKo": "르세라핌",
+          "score": 271.1,
+          "platform": "wiki"
+        }
+      ],
+      "lat": 55.4,
+      "lng": -3.4
+    },
+    {
+      "code": "KR",
+      "name": "South Korea",
+      "nameKo": "한국",
+      "score": 48.8,
+      "trendsScore": 42.1,
+      "wikiScore": 2.7,
+      "youtubeScore": 100.0,
+      "change": 26.4,
+      "topArtists": [
+        {
+          "id": "seventeen",
+          "name": "SEVENTEEN",
+          "nameKo": "세븐틴",
+          "score": 76.0,
+          "platform": "wiki"
+        },
+        {
+          "id": "twice",
+          "name": "TWICE",
+          "nameKo": "트와이스",
+          "score": 75.0,
+          "platform": "wiki"
+        },
+        {
+          "id": "txt",
+          "name": "TXT",
+          "nameKo": "투모로우바이투게더",
+          "score": 70.0,
+          "platform": "wiki"
+        },
+        {
+          "id": "blackpink",
+          "name": "BLACKPINK",
+          "nameKo": "블랙핑크",
+          "score": 12.0,
+          "platform": "wiki"
+        },
+        {
+          "id": "stray-kids",
+          "name": "Stray Kids",
+          "nameKo": "스트레이 키즈",
+          "score": 8.0,
+          "platform": "wiki"
+        }
+      ],
+      "lat": 35.9,
+      "lng": 127.8
+    },
+    {
+      "code": "CA",
+      "name": "Canada",
+      "nameKo": "캐나다",
+      "score": 45.2,
+      "trendsScore": 36.5,
+      "wikiScore": 44.2,
+      "youtubeScore": 54.5,
+      "change": 4.9,
+      "topArtists": [
+        {
+          "id": "blackpink",
+          "name": "BLACKPINK",
+          "nameKo": "블랙핑크",
+          "score": 1049.9,
+          "platform": "wiki"
+        },
+        {
+          "id": "bts",
+          "name": "BTS",
+          "nameKo": "방탄소년단",
+          "score": 1019.4,
+          "platform": "wiki"
+        },
+        {
+          "id": "stray-kids",
+          "name": "Stray Kids",
+          "nameKo": "스트레이 키즈",
+          "score": 485.3,
+          "platform": "wiki"
+        },
+        {
+          "id": "newjeans",
+          "name": "NewJeans",
+          "nameKo": "뉴진스",
+          "score": 320.9,
+          "platform": "wiki"
+        },
+        {
+          "id": "le-sserafim",
+          "name": "LE SSERAFIM",
+          "nameKo": "르세라핌",
+          "score": 271.1,
+          "platform": "wiki"
+        }
+      ],
+      "lat": 56.1,
+      "lng": -106.3
+    },
+    {
+      "code": "FR",
+      "name": "France",
+      "nameKo": "프랑스",
+      "score": 42.3,
+      "trendsScore": 61.6,
+      "wikiScore": 10.3,
+      "youtubeScore": 54.5,
+      "change": 6.3,
+      "topArtists": [
+        {
+          "id": "blackpink",
+          "name": "BLACKPINK",
+          "nameKo": "블랙핑크",
+          "score": 527.0,
+          "platform": "wiki"
+        },
+        {
+          "id": "bts",
+          "name": "BTS",
+          "nameKo": "방탄소년단",
+          "score": 415.0,
+          "platform": "wiki"
+        },
+        {
+          "id": "ive",
+          "name": "IVE",
+          "nameKo": "아이브",
+          "score": 3,
+          "platform": "youtube"
+        }
+      ],
+      "lat": 46.2,
+      "lng": 2.2
+    },
+    {
+      "code": "PE",
+      "name": "Peru",
+      "nameKo": "페루",
+      "score": 42.3,
+      "trendsScore": 100.0,
+      "wikiScore": 0.1,
+      "youtubeScore": 27.3,
+      "change": -7.7,
+      "topArtists": [
+        {
+          "id": "bts",
+          "name": "BTS",
+          "nameKo": "방탄소년단",
+          "score": 4.8,
+          "platform": "wiki"
+        },
+        {
+          "id": "blackpink",
+          "name": "BLACKPINK",
+          "nameKo": "블랙핑크",
+          "score": 2.0,
+          "platform": "youtube"
+        },
+        {
+          "id": "ive",
+          "name": "IVE",
+          "nameKo": "아이브",
+          "score": 1,
+          "platform": "youtube"
+        }
+      ],
+      "lat": -9.2,
+      "lng": -75.0
+    },
+    {
+      "code": "US",
+      "name": "United States",
+      "nameKo": "미국",
+      "score": 41.9,
+      "trendsScore": 35.8,
+      "wikiScore": 44.2,
+      "youtubeScore": 45.5,
+      "change": 1.9,
+      "topArtists": [
+        {
+          "id": "blackpink",
+          "name": "BLACKPINK",
+          "nameKo": "블랙핑크",
+          "score": 1048.9,
+          "platform": "wiki"
+        },
+        {
+          "id": "bts",
+          "name": "BTS",
+          "nameKo": "방탄소년단",
+          "score": 1019.4,
+          "platform": "wiki"
+        },
+        {
+          "id": "stray-kids",
+          "name": "Stray Kids",
+          "nameKo": "스트레이 키즈",
+          "score": 485.3,
+          "platform": "wiki"
+        },
+        {
+          "id": "newjeans",
+          "name": "NewJeans",
+          "nameKo": "뉴진스",
+          "score": 320.9,
+          "platform": "wiki"
+        },
+        {
+          "id": "le-sserafim",
+          "name": "LE SSERAFIM",
+          "nameKo": "르세라핌",
+          "score": 271.1,
+          "platform": "wiki"
+        }
+      ],
+      "lat": 39.8,
+      "lng": -98.5
+    },
+    {
+      "code": "MY",
+      "name": "Malaysia",
+      "nameKo": "말레이시아",
+      "score": 41.4,
+      "trendsScore": 59.7,
+      "wikiScore": 0,
+      "youtubeScore": 63.6,
+      "change": 11.5,
+      "topArtists": [
+        {
+          "id": "blackpink",
+          "name": "BLACKPINK",
+          "nameKo": "블랙핑크",
+          "score": 3,
+          "platform": "youtube"
+        },
+        {
+          "id": "ive",
+          "name": "IVE",
+          "nameKo": "아이브",
+          "score": 2,
+          "platform": "youtube"
+        },
+        {
+          "id": "seventeen",
+          "name": "SEVENTEEN",
+          "nameKo": "세븐틴",
+          "score": 1,
+          "platform": "youtube"
+        }
+      ],
+      "lat": 4.2,
+      "lng": 101.9
+    },
+    {
+      "code": "ID",
+      "name": "Indonesia",
+      "nameKo": "인도네시아",
+      "score": 39.3,
+      "trendsScore": 49.1,
+      "wikiScore": 4.4,
+      "youtubeScore": 63.6,
+      "change": 12.6,
+      "topArtists": [
+        {
+          "id": "blackpink",
+          "name": "BLACKPINK",
+          "nameKo": "블랙핑크",
+          "score": 214.0,
+          "platform": "wiki"
+        },
+        {
+          "id": "bts",
+          "name": "BTS",
+          "nameKo": "방탄소년단",
+          "score": 191.0,
+          "platform": "wiki"
+        },
+        {
+          "id": "ive",
+          "name": "IVE",
+          "nameKo": "아이브",
+          "score": 2,
+          "platform": "youtube"
+        }
+      ],
+      "lat": -0.8,
+      "lng": 113.9
+    },
+    {
+      "code": "PH",
+      "name": "Philippines",
+      "nameKo": "필리핀",
+      "score": 39.1,
+      "trendsScore": 71.7,
+      "wikiScore": 0,
+      "youtubeScore": 45.5,
+      "change": 3.3,
+      "topArtists": [
+        {
+          "id": "blackpink",
+          "name": "BLACKPINK",
+          "nameKo": "블랙핑크",
+          "score": 3,
+          "platform": "youtube"
+        },
+        {
+          "id": "ive",
+          "name": "IVE",
+          "nameKo": "아이브",
+          "score": 2,
+          "platform": "youtube"
+        }
+      ],
+      "lat": 12.9,
+      "lng": 121.8
+    },
+    {
+      "code": "MX",
+      "name": "Mexico",
+      "nameKo": "멕시코",
+      "score": 34.6,
+      "trendsScore": 86.2,
+      "wikiScore": 0.1,
+      "youtubeScore": 18.2,
+      "change": -8.5,
+      "topArtists": [
+        {
+          "id": "bts",
+          "name": "BTS",
+          "nameKo": "방탄소년단",
+          "score": 4.8,
+          "platform": "wiki"
+        },
+        {
+          "id": "blackpink",
+          "name": "BLACKPINK",
+          "nameKo": "블랙핑크",
+          "score": 1.0,
+          "platform": "youtube"
+        },
+        {
+          "id": "ive",
+          "name": "IVE",
+          "nameKo": "아이브",
+          "score": 1,
+          "platform": "youtube"
+        }
+      ],
+      "lat": 23.6,
+      "lng": -102.6
+    },
+    {
+      "code": "NL",
+      "name": "Netherlands",
+      "nameKo": "네덜란드",
+      "score": 32.8,
+      "trendsScore": 23.9,
+      "wikiScore": 0.6,
+      "youtubeScore": 72.7,
+      "change": 20.5,
+      "topArtists": [
+        {
+          "id": "blackpink",
+          "name": "BLACKPINK",
+          "nameKo": "블랙핑크",
+          "score": 60.0,
+          "platform": "wiki"
+        },
+        {
+          "id": "ive",
+          "name": "IVE",
+          "nameKo": "아이브",
+          "score": 6,
+          "platform": "youtube"
+        }
+      ],
+      "lat": 52.1,
+      "lng": 5.3
+    },
+    {
+      "code": "SE",
+      "name": "Sweden",
+      "nameKo": "스웨덴",
+      "score": 31.5,
+      "trendsScore": 29.6,
+      "wikiScore": 0.4,
+      "youtubeScore": 63.6,
+      "change": 16.5,
+      "topArtists": [
+        {
+          "id": "blackpink",
+          "name": "BLACKPINK",
+          "nameKo": "블랙핑크",
+          "score": 39.0,
+          "platform": "wiki"
+        },
+        {
+          "id": "ive",
+          "name": "IVE",
+          "nameKo": "아이브",
+          "score": 6,
+          "platform": "youtube"
+        }
+      ],
+      "lat": 60.1,
+      "lng": 18.6
+    },
+    {
+      "code": "AR",
+      "name": "Argentina",
+      "nameKo": "아르헨티나",
+      "score": 31.1,
+      "trendsScore": 66.0,
+      "wikiScore": 0.1,
+      "youtubeScore": 27.3,
+      "change": -1.9,
+      "topArtists": [
+        {
+          "id": "bts",
+          "name": "BTS",
+          "nameKo": "방탄소년단",
+          "score": 4.8,
+          "platform": "wiki"
+        },
+        {
+          "id": "ive",
+          "name": "IVE",
+          "nameKo": "아이브",
+          "score": 2,
+          "platform": "youtube"
+        },
+        {
+          "id": "blackpink",
+          "name": "BLACKPINK",
+          "nameKo": "블랙핑크",
+          "score": 1.0,
+          "platform": "youtube"
+        }
+      ],
+      "lat": -38.4,
+      "lng": -63.6
+    },
+    {
+      "code": "DE",
+      "name": "Germany",
+      "nameKo": "독일",
+      "score": 30.9,
+      "trendsScore": 28.9,
+      "wikiScore": 8.4,
+      "youtubeScore": 54.5,
+      "change": 12.2,
+      "topArtists": [
+        {
+          "id": "bts",
+          "name": "BTS",
+          "nameKo": "방탄소년단",
+          "score": 399.0,
+          "platform": "wiki"
+        },
+        {
+          "id": "blackpink",
+          "name": "BLACKPINK",
+          "nameKo": "블랙핑크",
+          "score": 368.0,
+          "platform": "wiki"
+        },
+        {
+          "id": "ive",
+          "name": "IVE",
+          "nameKo": "아이브",
+          "score": 4,
+          "platform": "youtube"
+        }
+      ],
+      "lat": 51.2,
+      "lng": 10.5
+    },
+    {
+      "code": "NG",
+      "name": "Nigeria",
+      "nameKo": "나이지리아",
+      "score": 30.3,
+      "trendsScore": 28.9,
+      "wikiScore": 44.2,
+      "youtubeScore": 18.2,
+      "change": -6.3,
+      "topArtists": [
+        {
+          "id": "blackpink",
+          "name": "BLACKPINK",
+          "nameKo": "블랙핑크",
+          "score": 1048.9,
+          "platform": "wiki"
+        },
+        {
+          "id": "bts",
+          "name": "BTS",
+          "nameKo": "방탄소년단",
+          "score": 1019.4,
+          "platform": "wiki"
+        },
+        {
+          "id": "stray-kids",
+          "name": "Stray Kids",
+          "nameKo": "스트레이 키즈",
+          "score": 485.3,
+          "platform": "wiki"
+        },
+        {
+          "id": "newjeans",
+          "name": "NewJeans",
+          "nameKo": "뉴진스",
+          "score": 320.9,
+          "platform": "wiki"
+        },
+        {
+          "id": "le-sserafim",
+          "name": "LE SSERAFIM",
+          "nameKo": "르세라핌",
+          "score": 271.1,
+          "platform": "wiki"
+        }
+      ],
+      "lat": 9.1,
+      "lng": 8.7
+    },
+    {
+      "code": "CL",
+      "name": "Chile",
+      "nameKo": "칠레",
+      "score": 28.2,
+      "trendsScore": 66.7,
+      "wikiScore": 0.1,
+      "youtubeScore": 18.2,
+      "change": -5.2,
+      "topArtists": [
+        {
+          "id": "bts",
+          "name": "BTS",
+          "nameKo": "방탄소년단",
+          "score": 4.8,
+          "platform": "wiki"
+        },
+        {
+          "id": "blackpink",
+          "name": "BLACKPINK",
+          "nameKo": "블랙핑크",
+          "score": 1.0,
+          "platform": "youtube"
+        },
+        {
+          "id": "ive",
+          "name": "IVE",
+          "nameKo": "아이브",
+          "score": 1,
+          "platform": "youtube"
+        }
+      ],
+      "lat": -35.7,
+      "lng": -71.5
+    },
+    {
+      "code": "BR",
+      "name": "Brazil",
+      "nameKo": "브라질",
+      "score": 26.5,
+      "trendsScore": 58.5,
+      "wikiScore": 3.0,
+      "youtubeScore": 18.2,
+      "change": -4.2,
+      "topArtists": [
+        {
+          "id": "blackpink",
+          "name": "BLACKPINK",
+          "nameKo": "블랙핑크",
+          "score": 273.0,
+          "platform": "wiki"
+        },
+        {
+          "id": "ive",
+          "name": "IVE",
+          "nameKo": "아이브",
+          "score": 1,
+          "platform": "youtube"
+        }
+      ],
+      "lat": -14.2,
+      "lng": -51.9
+    },
+    {
+      "code": "VN",
+      "name": "Vietnam",
+      "nameKo": "베트남",
+      "score": 26.0,
+      "trendsScore": 38.4,
+      "wikiScore": 2.9,
+      "youtubeScore": 36.4,
+      "change": 5.4,
+      "topArtists": [
+        {
+          "id": "blackpink",
+          "name": "BLACKPINK",
+          "nameKo": "블랙핑크",
+          "score": 263.0,
+          "platform": "wiki"
+        },
+        {
+          "id": "ive",
+          "name": "IVE",
+          "nameKo": "아이브",
+          "score": 2,
+          "platform": "youtube"
+        },
+        {
+          "id": "bts",
+          "name": "BTS",
+          "nameKo": "방탄소년단",
+          "score": 1.0,
+          "platform": "wiki"
+        }
+      ],
+      "lat": 14.1,
+      "lng": 108.3
+    },
+    {
+      "code": "ES",
+      "name": "Spain",
+      "nameKo": "스페인",
+      "score": 24.9,
+      "trendsScore": 47.2,
+      "wikiScore": 0.1,
+      "youtubeScore": 27.3,
+      "change": 1.3,
+      "topArtists": [
+        {
+          "id": "bts",
+          "name": "BTS",
+          "nameKo": "방탄소년단",
+          "score": 4.8,
+          "platform": "wiki"
+        },
+        {
+          "id": "ive",
+          "name": "IVE",
+          "nameKo": "아이브",
+          "score": 2,
+          "platform": "youtube"
+        },
+        {
+          "id": "blackpink",
+          "name": "BLACKPINK",
+          "nameKo": "블랙핑크",
+          "score": 1.0,
+          "platform": "youtube"
+        }
+      ],
+      "lat": 40.5,
+      "lng": -3.7
+    },
+    {
+      "code": "IT",
+      "name": "Italy",
+      "nameKo": "이탈리아",
+      "score": 21.3,
+      "trendsScore": 25.2,
+      "wikiScore": 1.9,
+      "youtubeScore": 36.4,
+      "change": 7.8,
+      "topArtists": [
+        {
+          "id": "blackpink",
+          "name": "BLACKPINK",
+          "nameKo": "블랙핑크",
+          "score": 171.0,
+          "platform": "wiki"
+        },
+        {
+          "id": "ive",
+          "name": "IVE",
+          "nameKo": "아이브",
+          "score": 4,
+          "platform": "youtube"
+        }
+      ],
+      "lat": 41.9,
+      "lng": 12.6
+    },
+    {
+      "code": "ZA",
+      "name": "South Africa",
+      "nameKo": "남아프리카공화국",
+      "score": 21.2,
+      "trendsScore": 20.1,
+      "wikiScore": 44.2,
+      "youtubeScore": 0.0,
+      "change": -11.0,
+      "topArtists": [
+        {
+          "id": "blackpink",
+          "name": "BLACKPINK",
+          "nameKo": "블랙핑크",
+          "score": 1047.9,
+          "platform": "wiki"
+        },
+        {
+          "id": "bts",
+          "name": "BTS",
+          "nameKo": "방탄소년단",
+          "score": 1019.4,
+          "platform": "wiki"
+        },
+        {
+          "id": "stray-kids",
+          "name": "Stray Kids",
+          "nameKo": "스트레이 키즈",
+          "score": 485.3,
+          "platform": "wiki"
+        },
+        {
+          "id": "newjeans",
+          "name": "NewJeans",
+          "nameKo": "뉴진스",
+          "score": 320.9,
+          "platform": "wiki"
+        },
+        {
+          "id": "le-sserafim",
+          "name": "LE SSERAFIM",
+          "nameKo": "르세라핌",
+          "score": 271.1,
+          "platform": "wiki"
+        }
+      ],
+      "lat": -30.6,
+      "lng": 22.9
+    },
+    {
+      "code": "CO",
+      "name": "Colombia",
+      "nameKo": "콜롬비아",
+      "score": 20.7,
+      "trendsScore": 44.0,
+      "wikiScore": 0.1,
+      "youtubeScore": 18.2,
+      "change": -1.3,
+      "topArtists": [
+        {
+          "id": "bts",
+          "name": "BTS",
+          "nameKo": "방탄소년단",
+          "score": 4.8,
+          "platform": "wiki"
+        },
+        {
+          "id": "blackpink",
+          "name": "BLACKPINK",
+          "nameKo": "블랙핑크",
+          "score": 1.0,
+          "platform": "youtube"
+        },
+        {
+          "id": "ive",
+          "name": "IVE",
+          "nameKo": "아이브",
+          "score": 1,
+          "platform": "youtube"
+        }
+      ],
+      "lat": 4.6,
+      "lng": -74.3
+    },
+    {
+      "code": "RU",
+      "name": "Russia",
+      "nameKo": "러시아",
+      "score": 17.8,
+      "trendsScore": 19.5,
+      "wikiScore": 6.4,
+      "youtubeScore": 27.3,
+      "change": 4.8,
+      "topArtists": [
+        {
+          "id": "blackpink",
+          "name": "BLACKPINK",
+          "nameKo": "블랙핑크",
+          "score": 591.0,
+          "platform": "wiki"
+        }
+      ],
+      "lat": 61.5,
+      "lng": 105.3
+    },
+    {
+      "code": "TR",
+      "name": "Turkey",
+      "nameKo": "터키",
+      "score": 17.2,
+      "trendsScore": 21.4,
+      "wikiScore": 2.6,
+      "youtubeScore": 27.3,
+      "change": 5.2,
+      "topArtists": [
+        {
+          "id": "blackpink",
+          "name": "BLACKPINK",
+          "nameKo": "블랙핑크",
+          "score": 238.0,
+          "platform": "wiki"
+        },
+        {
+          "id": "bts",
+          "name": "BTS",
+          "nameKo": "방탄소년단",
+          "score": 2.0,
+          "platform": "wiki"
+        },
+        {
+          "id": "ive",
+          "name": "IVE",
+          "nameKo": "아이브",
+          "score": 2,
+          "platform": "youtube"
+        }
+      ],
+      "lat": 38.9,
+      "lng": 35.2
+    },
+    {
+      "code": "PL",
+      "name": "Poland",
+      "nameKo": "폴란드",
+      "score": 16.6,
+      "trendsScore": 30.2,
+      "wikiScore": 1.4,
+      "youtubeScore": 18.2,
+      "change": 0.8,
+      "topArtists": [
+        {
+          "id": "blackpink",
+          "name": "BLACKPINK",
+          "nameKo": "블랙핑크",
+          "score": 127.0,
+          "platform": "wiki"
+        },
+        {
+          "id": "bts",
+          "name": "BTS",
+          "nameKo": "방탄소년단",
+          "score": 2.0,
+          "platform": "wiki"
+        },
+        {
+          "id": "ive",
+          "name": "IVE",
+          "nameKo": "아이브",
+          "score": 1,
+          "platform": "youtube"
+        }
+      ],
+      "lat": 51.9,
+      "lng": 19.1
+    },
+    {
+      "code": "IN",
+      "name": "India",
+      "nameKo": "인도",
+      "score": 14.3,
+      "trendsScore": 34.0,
+      "wikiScore": 0,
+      "youtubeScore": 9.1,
+      "change": -2.7,
+      "topArtists": [
+        {
+          "id": "blackpink",
+          "name": "BLACKPINK",
+          "nameKo": "블랙핑크",
+          "score": 1,
+          "platform": "youtube"
+        }
+      ],
+      "lat": 20.6,
+      "lng": 79.0
+    },
+    {
+      "code": "SA",
+      "name": "Saudi Arabia",
+      "nameKo": "사우디아라비아",
+      "score": 13.0,
+      "trendsScore": 11.3,
+      "wikiScore": 0.0,
+      "youtubeScore": 27.3,
+      "change": 7.3,
+      "topArtists": [
+        {
+          "id": "blackpink",
+          "name": "BLACKPINK",
+          "nameKo": "블랙핑크",
+          "score": 4.5,
+          "platform": "youtube"
+        }
+      ],
+      "lat": 23.9,
+      "lng": 45.1
+    },
+    {
+      "code": "EG",
+      "name": "Egypt",
+      "nameKo": "이집트",
+      "score": 6.6,
+      "trendsScore": 10.7,
+      "wikiScore": 0.0,
+      "youtubeScore": 9.1,
+      "change": 1.2,
+      "topArtists": [
+        {
+          "id": "blackpink",
+          "name": "BLACKPINK",
+          "nameKo": "블랙핑크",
+          "score": 2.5,
+          "platform": "wiki"
+        }
+      ],
+      "lat": 26.8,
+      "lng": 30.8
+    }
+  ],
+  "topArtists": [
+    {
+      "id": "blackpink",
+      "name": "BLACKPINK",
+      "nameKo": "블랙핑크",
+      "score": 13536.0,
+      "color": "#F15BB5"
+    },
+    {
+      "id": "bts",
+      "name": "BTS",
+      "nameKo": "방탄소년단",
+      "score": 8248.0,
+      "color": "#9B5DE5"
+    },
+    {
+      "id": "stray-kids",
+      "name": "Stray Kids",
+      "nameKo": "스트레이 키즈",
+      "score": 3405.0,
+      "color": "#00BBF9"
+    },
+    {
+      "id": "ive",
+      "name": "IVE",
+      "nameKo": "아이브",
+      "score": 3341.0,
+      "color": "#D4A5FF"
+    },
+    {
+      "id": "newjeans",
+      "name": "NewJeans",
+      "nameKo": "뉴진스",
+      "score": 3323.0,
+      "color": "#00F5D4"
+    },
+    {
+      "id": "le-sserafim",
+      "name": "LE SSERAFIM",
+      "nameKo": "르세라핌",
+      "score": 3134.0,
+      "color": "#FFD6E0"
+    },
+    {
+      "id": "aespa",
+      "name": "aespa",
+      "nameKo": "에스파",
+      "score": 2801.0,
+      "color": "#FEE440"
+    },
+    {
+      "id": "seventeen",
+      "name": "SEVENTEEN",
+      "nameKo": "세븐틴",
+      "score": 2417.0,
+      "color": "#F4845F"
+    },
+    {
+      "id": "txt",
+      "name": "TXT",
+      "nameKo": "투모로우바이투게더",
+      "score": 1536.0,
+      "color": "#C3F73A"
+    },
+    {
+      "id": "twice",
+      "name": "TWICE",
+      "nameKo": "트와이스",
+      "score": 1318.0,
+      "color": "#FF6F91"
+    }
+  ],
+  "trendingInsights": [
+    {
+      "keyword": "BLACKPINK",
+      "score": 702,
+      "source": "google_trends",
+      "topCountries": [
+        "싱가포르",
+        "필리핀",
+        "대만"
+      ]
+    },
+    {
+      "keyword": "K-pop",
+      "score": 600,
+      "source": "google_trends",
+      "topCountries": [
+        "페루",
+        "멕시코",
+        "아르헨티나"
+      ]
+    },
+    {
+      "keyword": "BTS",
+      "score": 554,
+      "source": "google_trends",
+      "topCountries": [
+        "태국",
+        "프랑스",
+        "페루"
+      ]
+    },
+    {
+      "keyword": "NewJeans",
+      "score": 281,
+      "source": "google_trends",
+      "topCountries": [
+        "대만",
+        "싱가포르",
+        "필리핀"
+      ]
+    },
+    {
+      "keyword": "Stray Kids",
+      "score": 222,
+      "source": "google_trends",
+      "topCountries": [
+        "칠레",
+        "아르헨티나",
+        "브라질"
+      ]
+    },
+    {
+      "keyword": "블랙핑크 (Wiki #1)",
+      "score": 13478.0,
+      "source": "wikipedia",
+      "topCountries": [
+        "일본",
+        "대만",
+        "미국"
+      ]
+    },
+    {
+      "keyword": "방탄소년단 (Wiki #2)",
+      "score": 8248.0,
+      "source": "wikipedia",
+      "topCountries": [
+        "미국",
+        "영국",
+        "호주"
+      ]
+    },
+    {
+      "keyword": "스트레이 키즈 (Wiki #3)",
+      "score": 3405.0,
+      "source": "wikipedia",
+      "topCountries": [
+        "미국",
+        "영국",
+        "호주"
+      ]
+    },
+    {
+      "keyword": "뉴진스 (Wiki #4)",
+      "score": 3323.0,
+      "source": "wikipedia",
+      "topCountries": [
+        "일본",
+        "미국",
+        "영국"
+      ]
+    },
+    {
+      "keyword": "아이브 (Wiki #5)",
+      "score": 3253.0,
+      "source": "wikipedia",
+      "topCountries": [
+        "일본",
+        "미국",
+        "영국"
+      ]
+    }
+  ]
+}
