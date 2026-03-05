@@ -23,8 +23,17 @@ const sourceConfig = {
 };
 
 export function TrendingInsights() {
-  const { data } = useAppStore();
+  const { data, selectedKeyword, fetchNews, setSelectedKeyword } = useAppStore();
   const [isOpen, setIsOpen] = useState(false);
+
+  const handleKeywordClick = (keyword: string) => {
+    if (selectedKeyword === keyword) {
+      // 같은 키워드 재클릭 → 뉴스 패널 닫기
+      setSelectedKeyword(null);
+    } else {
+      fetchNews(keyword);
+    }
+  };
 
   const insights = data?.trendingInsights ?? [];
   if (insights.length === 0) return null;
@@ -88,7 +97,12 @@ export function TrendingInsights() {
                       initial={{ opacity: 0, x: -10 }}
                       animate={{ opacity: 1, x: 0 }}
                       transition={{ delay: idx * 0.05 }}
-                      className="flex items-center gap-2 px-2.5 py-1.5 rounded-lg bg-orange-500/5 border border-orange-500/10"
+                      onClick={() => handleKeywordClick(insight.keyword)}
+                      className={`flex items-center gap-2 px-2.5 py-1.5 rounded-lg cursor-pointer transition-colors ${
+                        selectedKeyword === insight.keyword
+                          ? "bg-orange-500/20 border border-orange-500/50 ring-1 ring-orange-500/30"
+                          : "bg-orange-500/5 border border-orange-500/10 hover:border-orange-500/30"
+                      }`}
                     >
                       <span className="text-xs font-bold text-orange-400 w-4">
                         {idx + 1}
@@ -102,6 +116,9 @@ export function TrendingInsights() {
                           {insight.topCountries.join(", ")}
                         </div>
                       </div>
+                      {selectedKeyword === insight.keyword && (
+                        <span className="w-1.5 h-1.5 rounded-full bg-orange-400 animate-pulse flex-shrink-0" />
+                      )}
                     </motion.div>
                   ))}
                 </div>
@@ -122,7 +139,12 @@ export function TrendingInsights() {
                       initial={{ opacity: 0, x: -10 }}
                       animate={{ opacity: 1, x: 0 }}
                       transition={{ delay: (idx + 5) * 0.05 }}
-                      className="flex items-center gap-2 px-2.5 py-1.5 rounded-lg bg-blue-500/5 border border-blue-500/10"
+                      onClick={() => handleKeywordClick(insight.keyword)}
+                      className={`flex items-center gap-2 px-2.5 py-1.5 rounded-lg cursor-pointer transition-colors ${
+                        selectedKeyword === insight.keyword
+                          ? "bg-blue-500/20 border border-blue-500/50 ring-1 ring-blue-500/30"
+                          : "bg-blue-500/5 border border-blue-500/10 hover:border-blue-500/30"
+                      }`}
                     >
                       <span className="text-xs font-bold text-blue-400 w-4">
                         {idx + 1}
@@ -136,9 +158,13 @@ export function TrendingInsights() {
                           {insight.topCountries.join(", ")}
                         </div>
                       </div>
-                      <span className="text-[10px] text-blue-400 font-medium">
-                        {insight.score.toLocaleString()}
-                      </span>
+                      {selectedKeyword === insight.keyword ? (
+                        <span className="w-1.5 h-1.5 rounded-full bg-blue-400 animate-pulse flex-shrink-0" />
+                      ) : (
+                        <span className="text-[10px] text-blue-400 font-medium">
+                          {insight.score.toLocaleString()}
+                        </span>
+                      )}
                     </motion.div>
                   ))}
                 </div>

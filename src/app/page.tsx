@@ -6,6 +6,7 @@ import { GlobalMap } from "@/components/map/GlobalMap";
 import { CountryDetail } from "@/components/panels/CountryDetail";
 import { MobileDetailSheet } from "@/components/panels/MobileDetailSheet";
 import { TrendingInsights } from "@/components/panels/TrendingInsights";
+import { NewsSlidePanel } from "@/components/panels/NewsSlidePanel";
 import { TimelineSlider } from "@/components/map/TimelineSlider";
 import { TopTicker } from "@/components/common/TopTicker";
 import { Loading } from "@/components/common/Loading";
@@ -38,6 +39,7 @@ export default function Home() {
       <div className="flex-1 flex overflow-hidden relative">
         <GlobalMap />
         <TrendingInsights />
+        <NewsSlidePanel />
         <TimelineSlider />
         {/* 데스크톱: 사이드 패널 */}
         <div className="hidden md:block">

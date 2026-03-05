@@ -36,6 +36,12 @@ export interface TrendingInsight {
   topCountries: string[];
 }
 
+export interface NewsArticle {
+  title: string;
+  url: string; // https://v.daum.net/v/ 패턴
+  timeAgo: string; // "3시간 전" 등
+}
+
 export interface GlobalData {
   date: string; // YYYY-MM-DD
   updatedAt: string; // ISO 8601
