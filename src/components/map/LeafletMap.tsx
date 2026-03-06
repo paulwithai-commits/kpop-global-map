@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useMemo, useState, useRef, useEffect } from "react";
 import { MapContainer, TileLayer, CircleMarker, Tooltip, useMap } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 import { useAppStore } from "@/store/useAppStore";
@@ -25,17 +25,28 @@ function getTimelineScore(
   return { score: Math.round(score * 10) / 10, trendsActive, wikiActive, youtubeActive };
 }
 
-// 인기도 점수를 색상으로 변환
+// 인기도 점수를 색상으로 변환 (부드러운 HSL 보간)
 function scoreToColor(score: number): string {
-  if (score >= 80) return "#FF6AC1";
-  if (score >= 60) return "#E91E8C";
-  if (score >= 40) return "#7B2FBE";
-  if (score >= 20) return "#3B2667";
-  return "#2D1B69";
+  if (score <= 0) return "#1A1432";
+  // 보라(270°) → 마젠타(320°) → 핑크(340°) 그라데이션
+  const t = Math.min(score / 100, 1);
+  const hue = 270 + t * 70; // 270° → 340°
+  const sat = 40 + t * 50; // 40% → 90%
+  const lit = 20 + t * 45; // 20% → 65%
+  return `hsl(${hue}, ${sat}%, ${lit}%)`;
 }
 
 function scoreToRadius(score: number): number {
-  return Math.max(4, (score / 100) * 22);
+  // 이징 적용: 높은 점수일수록 더 큰 차이
+  const t = Math.min(score / 100, 1);
+  const eased = t * t * (3 - 2 * t); // smoothstep
+  return Math.max(4, eased * 26);
+}
+
+// 발광 강도 (점수 높을수록 강하게)
+function scoreToGlow(score: number): number {
+  if (score < 30) return 0;
+  return Math.min(1, (score - 30) / 70);
 }
 
 // 선택된 국가로 지도 이동
@@ -47,11 +58,51 @@ function FlyToCountry({ country }: { country: CountryScore | null }) {
   return null;
 }
 
+// SVG 글로우 필터를 Leaflet SVG pane에 주입
+function GlowFilter() {
+  const map = useMap();
+  const injected = useRef(false);
+
+  useEffect(() => {
+    if (injected.current) return;
+    const svgEl = map.getPane("overlayPane")?.querySelector("svg");
+    if (!svgEl) return;
+
+    // defs가 없으면 생성
+    let defs = svgEl.querySelector("defs");
+    if (!defs) {
+      defs = document.createElementNS("http://www.w3.org/2000/svg", "defs");
+      svgEl.prepend(defs);
+    }
+
+    // 글로우 필터 추가
+    const filter = document.createElementNS("http://www.w3.org/2000/svg", "filter");
+    filter.setAttribute("id", "glow-filter");
+    filter.setAttribute("x", "-50%");
+    filter.setAttribute("y", "-50%");
+    filter.setAttribute("width", "200%");
+    filter.setAttribute("height", "200%");
+
+    filter.innerHTML = `
+      <feGaussianBlur in="SourceGraphic" stdDeviation="2" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    `;
+    defs.appendChild(filter);
+    injected.current = true;
+  }, [map]);
+
+  return null;
+}
+
 export default function LeafletMap() {
   const { filteredCountries, setSelectedCountry, selectedCountry, timelineHour } =
     useAppStore();
   const countries = filteredCountries();
   const [hoveredCode, setHoveredCode] = useState<string | null>(null);
+  const prevScoresRef = useRef<Record<string, number>>({});
 
   const sortedCountries = useMemo(
     () => [...countries].sort((a, b) => a.score - b.score),
@@ -59,6 +110,20 @@ export default function LeafletMap() {
   );
 
   const isTimeline = timelineHour < 24;
+
+  // 이전 점수 대비 변화 추적 (펄스 트리거용)
+  const scoreChanges = useMemo(() => {
+    const changes: Record<string, number> = {};
+    sortedCountries.forEach((c) => {
+      const tl = isTimeline
+        ? getTimelineScore(c, timelineHour)
+        : { score: c.score };
+      const prev = prevScoresRef.current[c.code] ?? tl.score;
+      changes[c.code] = Math.abs(tl.score - prev);
+      prevScoresRef.current[c.code] = tl.score;
+    });
+    return changes;
+  }, [sortedCountries, timelineHour, isTimeline]);
 
   return (
     <div className="flex-1 relative">
@@ -78,6 +143,35 @@ export default function LeafletMap() {
           maxZoom={19}
         />
         <FlyToCountry country={selectedCountry} />
+        <GlowFilter />
+
+        {/* 고점수 국가 펄스 링 (배경 레이어) */}
+        {sortedCountries.map((country) => {
+          const tl = isTimeline
+            ? getTimelineScore(country, timelineHour)
+            : { score: country.score };
+          const displayScore = isTimeline ? tl.score : country.score;
+          const glowIntensity = scoreToGlow(displayScore);
+          if (glowIntensity <= 0) return null;
+          const radius = scoreToRadius(displayScore);
+
+          return (
+            <CircleMarker
+              key={`pulse-${country.code}`}
+              center={[country.lat, country.lng]}
+              radius={radius * 1.8}
+              pathOptions={{
+                fillColor: scoreToColor(displayScore),
+                fillOpacity: glowIntensity * 0.25,
+                color: scoreToColor(displayScore),
+                weight: 0,
+                opacity: 0,
+              }}
+              className="pulse-marker"
+              interactive={false}
+            />
+          );
+        })}
 
         {sortedCountries.map((country) => {
           const isSelected = selectedCountry?.code === country.code;
@@ -96,10 +190,10 @@ export default function LeafletMap() {
               radius={isHovered ? radius * 1.3 : radius}
               pathOptions={{
                 fillColor: color,
-                fillOpacity: displayScore > 0 ? (isSelected ? 1 : 0.8) : 0,
-                color: isSelected ? "#00D4FF" : "#FF6AC1",
-                weight: isSelected ? 3 : isHovered ? 2 : 1,
-                opacity: displayScore > 0 ? (isSelected ? 1 : country.change >= 5 ? 0.8 : 0.3) : 0,
+                fillOpacity: displayScore > 0 ? (isSelected ? 1 : 0.6 + (displayScore / 100) * 0.35) : 0,
+                color: isSelected ? "#00D4FF" : color,
+                weight: isSelected ? 3 : isHovered ? 2.5 : displayScore >= 60 ? 1.5 : 0.5,
+                opacity: displayScore > 0 ? (isSelected ? 1 : 0.4 + (displayScore / 100) * 0.5) : 0,
               }}
               eventHandlers={{
                 click: () => {

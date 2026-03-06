@@ -154,3 +154,34 @@
   background: #0F0B1A !important;
   font-family: var(--font-geist-sans), system-ui, sans-serif;
 }
+
+/* 타임라인 슬라이딩 시 원형 마커 부드러운 전환 */
+.leaflet-interactive {
+  transition: r 0.4s cubic-bezier(0.25, 0.8, 0.25, 1),
+              fill 0.4s ease,
+              fill-opacity 0.4s ease,
+              stroke-opacity 0.4s ease,
+              stroke-width 0.3s ease;
+}
+
+/* 고점수 펄스 마커 */
+.pulse-marker {
+  transition: r 0.4s cubic-bezier(0.25, 0.8, 0.25, 1),
+              fill 0.4s ease,
+              fill-opacity 0.4s ease;
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+    fill-opacity: 0.15;
+  }
+  50% {
+    fill-opacity: 0.35;
+  }
+}
+
+/* 타임라인 활성 시 원형 마커에 glow 필터 */
+.leaflet-pane.leaflet-overlay-pane svg {
+  filter: url(#glow-filter);
+}
