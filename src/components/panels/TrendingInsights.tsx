@@ -3,7 +3,7 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { useAppStore } from "@/store/useAppStore";
 import { TrendingUp, Globe, BookOpen, X } from "lucide-react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const sourceConfig = {
   google_trends: {
@@ -23,8 +23,17 @@ const sourceConfig = {
 };
 
 export function TrendingInsights() {
-  const { data, selectedKeyword, fetchNews, setSelectedKeyword } = useAppStore();
-  const [isOpen, setIsOpen] = useState(false);
+  const { data, selectedKeyword, selectedCountry, fetchNews, setSelectedKeyword } = useAppStore();
+  const [isOpen, setIsOpen] = useState(true); // 디폴트 펼침
+
+  // 국가 클릭 시 트렌딩 패널 접기
+  useEffect(() => {
+    if (selectedCountry) {
+      setIsOpen(false);
+    } else {
+      setIsOpen(true);
+    }
+  }, [selectedCountry]);
 
   const handleKeywordClick = (keyword: string) => {
     if (selectedKeyword === keyword) {
@@ -39,8 +48,8 @@ export function TrendingInsights() {
   if (insights.length === 0) return null;
 
   // Google Trends TOP 5와 Wikipedia TOP 5 분리
-  const trendsInsights = insights.filter((i) => i.source === "google_trends").slice(0, 5);
-  const wikiInsights = insights.filter((i) => i.source === "wikipedia").slice(0, 5);
+  const trendsInsights = insights.filter((i) => i.source === "google_trends").slice(0, 10);
+  const wikiInsights = insights.filter((i) => i.source === "wikipedia").slice(0, 10);
 
   return (
     <>
@@ -51,7 +60,7 @@ export function TrendingInsights() {
       >
         <TrendingUp className="w-4 h-4 text-[#FF6AC1]" />
         <span className="text-xs font-medium text-[#E8E0F0]">
-          트렌딩 TOP 5
+          트렌딩 TOP 10
         </span>
       </button>
 
@@ -81,7 +90,7 @@ export function TrendingInsights() {
               </button>
             </div>
 
-            <div className="max-h-[400px] overflow-y-auto">
+            <div className="max-h-[60vh] overflow-y-auto">
               {/* Google Trends 섹션 */}
               <div className="px-4 pt-3 pb-1">
                 <div className="flex items-center gap-1.5 mb-2">

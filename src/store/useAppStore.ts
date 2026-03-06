@@ -58,14 +58,22 @@ export const useAppStore = create<AppState>((set, get) => ({
   setSelectedKeyword: (keyword) =>
     set({ selectedKeyword: keyword, newsArticles: [], newsError: null }),
   fetchNews: async (keyword) => {
+    const { data } = get();
+    // 사전 데이터가 있으면 즉시 사용 (로딩 없음)
+    const preloaded = data?.newsData?.[keyword];
+    if (preloaded && preloaded.length > 0) {
+      set({ selectedKeyword: keyword, newsArticles: preloaded, isNewsLoading: false, newsError: null });
+      return;
+    }
+    // 사전 데이터 없으면 API 호출 (fallback)
     set({ isNewsLoading: true, newsError: null, selectedKeyword: keyword });
     try {
       const res = await fetch(
         `/api/news?keyword=${encodeURIComponent(keyword)}`
       );
       if (!res.ok) throw new Error("뉴스를 불러올 수 없습니다");
-      const data = await res.json();
-      set({ newsArticles: data.articles, isNewsLoading: false });
+      const result = await res.json();
+      set({ newsArticles: result.articles, isNewsLoading: false });
     } catch (err) {
       set({
         newsError: err instanceof Error ? err.message : "오류 발생",

@@ -49,4 +49,5 @@ export interface GlobalData {
   countries: CountryScore[];
   topArtists: Artist[];
   trendingInsights: TrendingInsight[];
+  newsData?: Record<string, NewsArticle[]>; // 키워드별 사전 뉴스 데이터
 }

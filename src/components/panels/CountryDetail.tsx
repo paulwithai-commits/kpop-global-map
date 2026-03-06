@@ -16,7 +16,7 @@ const platformColors: Record<string, { bg: string; text: string; label: string }
 };
 
 export function CountryDetail() {
-  const { selectedCountry, setSelectedCountry } = useAppStore();
+  const { selectedCountry, setSelectedCountry, selectedKeyword, fetchNews, setSelectedKeyword } = useAppStore();
 
   return (
     <AnimatePresence>
@@ -125,7 +125,18 @@ export function CountryDetail() {
                     initial={{ opacity: 0, y: 10 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: index * 0.1 }}
-                    className="flex items-center gap-3 p-3 rounded-xl bg-[#1A1432]/80 border border-[#3B2667]/30"
+                    onClick={() => {
+                      if (selectedKeyword === artist.nameKo) {
+                        setSelectedKeyword(null);
+                      } else {
+                        fetchNews(artist.nameKo);
+                      }
+                    }}
+                    className={`flex items-center gap-3 p-3 rounded-xl cursor-pointer transition-colors ${
+                      selectedKeyword === artist.nameKo
+                        ? "bg-[#9B5DE5]/20 border border-[#9B5DE5]/50 ring-1 ring-[#9B5DE5]/30"
+                        : "bg-[#1A1432]/80 border border-[#3B2667]/30 hover:border-[#9B5DE5]/40"
+                    }`}
                   >
                     <div className="flex-shrink-0 w-8 h-8 rounded-full bg-gradient-to-br from-[#9B5DE5] to-[#FF6AC1] flex items-center justify-center text-white font-bold text-sm">
                       {index + 1}
@@ -137,6 +148,9 @@ export function CountryDetail() {
                       <div className="text-xs text-[#9B8DB8]">
                         {artist.name}
                       </div>
+                      {selectedKeyword === artist.nameKo && (
+                        <div className="text-[9px] text-[#9B5DE5] mt-0.5">📰 뉴스 보는 중</div>
+                      )}
                     </div>
                     <div className="flex flex-col items-end gap-1">
                       <span className="text-lg font-bold text-[#E8E0F0]">
