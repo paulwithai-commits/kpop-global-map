@@ -5,11 +5,11 @@ import { useCallback, useRef, useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Play, Pause, RotateCcw } from "lucide-react";
 
-// 소스별 구간 정의
+// 소스별 구간 정의 (3시간부터 적극적으로 표현되도록 앞당김)
 const SOURCE_ZONES = [
-  { start: 0, end: 8, label: "Google Trends", color: "#F97316" },
-  { start: 8, end: 16, label: "Wikipedia", color: "#6366F1" },
-  { start: 16, end: 24, label: "YouTube", color: "#FF0000" },
+  { start: 0, end: 6, label: "Google Trends", color: "#F97316" },
+  { start: 6, end: 14, label: "Wikipedia", color: "#6366F1" },
+  { start: 14, end: 24, label: "YouTube", color: "#FF0000" },
 ];
 
 // 재생 속도: 6초에 0→24 완주 (초당 4시간)
@@ -241,7 +241,7 @@ export function TimelineSlider() {
 
         {/* 하단: 시간 눈금 + 소스 라벨 */}
         <div className="flex justify-between mt-0.5 px-0.5">
-          {["00:00", "08:00", "16:00", "24:00"].map((t) => (
+          {["00:00", "06:00", "14:00", "24:00"].map((t) => (
             <span key={t} className="text-[8px] text-[#9B8DB8]/60 tabular-nums">
               {t}
             </span>

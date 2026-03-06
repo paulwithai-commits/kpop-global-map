@@ -26,14 +26,15 @@ export function TrendingInsights() {
   const { data, selectedKeyword, selectedCountry, fetchNews, setSelectedKeyword } = useAppStore();
   const [isOpen, setIsOpen] = useState(true); // 디폴트 펼침
 
-  // 국가 클릭 시 트렌딩 패널 접기
+  // 국가 클릭 시 트렌딩 패널 + 뉴스 패널 함께 접기
   useEffect(() => {
     if (selectedCountry) {
       setIsOpen(false);
+      setSelectedKeyword(null); // 뉴스 패널도 닫기
     } else {
       setIsOpen(true);
     }
-  }, [selectedCountry]);
+  }, [selectedCountry, setSelectedKeyword]);
 
   const handleKeywordClick = (keyword: string) => {
     if (selectedKeyword === keyword) {

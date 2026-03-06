@@ -11,10 +11,11 @@ function getTimelineScore(
   country: CountryScore,
   hour: number
 ): { score: number; trendsActive: number; wikiActive: number; youtubeActive: number } {
-  // 각 소스의 활성화 비율 (0~1)
-  const trendsActive = Math.min(1, Math.max(0, hour / 8));
-  const wikiActive = Math.min(1, Math.max(0, (hour - 8) / 8));
-  const youtubeActive = Math.min(1, Math.max(0, (hour - 16) / 8));
+  // 3시간부터 적극적으로 표현 — 소스별 구간을 앞당김
+  // Trends: 0~6시 (3시에 이미 50%), Wiki: 6~14시, YouTube: 14~24시
+  const trendsActive = Math.min(1, Math.max(0, hour / 6));
+  const wikiActive = Math.min(1, Math.max(0, (hour - 6) / 8));
+  const youtubeActive = Math.min(1, Math.max(0, (hour - 14) / 10));
 
   // 가중 합산 (최종 score는 0.33*trends + 0.33*wiki + 0.34*youtube)
   const score =
