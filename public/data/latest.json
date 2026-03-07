@@ -1,6 +1,6 @@
 {
   "date": "2026-03-07",
-  "updatedAt": "2026-03-07T05:24:55.602Z",
+  "updatedAt": "2026-03-07T05:39:20.853Z",
   "totalCountries": 33,
   "countries": [
     {
@@ -1902,6 +1902,41 @@
         "url": "http://v.daum.net/v/20260303153849499",
         "timeAgo": "최근 1주일",
         "provider": "다음 뉴스"
+      },
+      {
+        "type": "search",
+        "title": "\"BLACKPINK\" 다음 검색 결과",
+        "url": "https://search.daum.net/search?q=BLACKPINK",
+        "timeAgo": "",
+        "provider": "다음 검색"
+      },
+      {
+        "type": "search",
+        "title": "\"BLACKPINK\" 나무위키",
+        "url": "https://namu.wiki/w/BLACKPINK",
+        "timeAgo": "",
+        "provider": "나무위키"
+      },
+      {
+        "type": "search",
+        "title": "\"BLACKPINK\" 멜론 검색",
+        "url": "https://www.melon.com/search/total/index.htm?q=BLACKPINK",
+        "timeAgo": "",
+        "provider": "멜론"
+      },
+      {
+        "type": "search",
+        "title": "\"BLACKPINK\" 네이버 검색 결과",
+        "url": "https://search.naver.com/search.naver?query=BLACKPINK",
+        "timeAgo": "",
+        "provider": "네이버 검색"
+      },
+      {
+        "type": "search",
+        "title": "\"BLACKPINK\" 위키백과",
+        "url": "https://ko.wikipedia.org/wiki/BLACKPINK",
+        "timeAgo": "",
+        "provider": "위키백과"
       }
     ],
     "K-pop": [
@@ -1939,6 +1974,41 @@
         "url": "http://v.daum.net/v/20260303173300488",
         "timeAgo": "최근 1주일",
         "provider": "다음 뉴스"
+      },
+      {
+        "type": "search",
+        "title": "\"K-pop\" 다음 검색 결과",
+        "url": "https://search.daum.net/search?q=K-pop",
+        "timeAgo": "",
+        "provider": "다음 검색"
+      },
+      {
+        "type": "search",
+        "title": "\"K-pop\" 나무위키",
+        "url": "https://namu.wiki/w/K-pop",
+        "timeAgo": "",
+        "provider": "나무위키"
+      },
+      {
+        "type": "search",
+        "title": "\"K-pop\" 멜론 검색",
+        "url": "https://www.melon.com/search/total/index.htm?q=K-pop",
+        "timeAgo": "",
+        "provider": "멜론"
+      },
+      {
+        "type": "search",
+        "title": "\"K-pop\" 네이버 검색 결과",
+        "url": "https://search.naver.com/search.naver?query=K-pop",
+        "timeAgo": "",
+        "provider": "네이버 검색"
+      },
+      {
+        "type": "search",
+        "title": "\"K-pop\" 위키백과",
+        "url": "https://ko.wikipedia.org/wiki/K-pop",
+        "timeAgo": "",
+        "provider": "위키백과"
       }
     ],
     "BTS": [
@@ -1976,6 +2046,41 @@
         "url": "http://v.daum.net/v/20260307085240982",
         "timeAgo": "최근 1주일",
         "provider": "다음 뉴스"
+      },
+      {
+        "type": "search",
+        "title": "\"BTS\" 다음 검색 결과",
+        "url": "https://search.daum.net/search?q=BTS",
+        "timeAgo": "",
+        "provider": "다음 검색"
+      },
+      {
+        "type": "search",
+        "title": "\"BTS\" 나무위키",
+        "url": "https://namu.wiki/w/BTS",
+        "timeAgo": "",
+        "provider": "나무위키"
+      },
+      {
+        "type": "search",
+        "title": "\"BTS\" 멜론 검색",
+        "url": "https://www.melon.com/search/total/index.htm?q=BTS",
+        "timeAgo": "",
+        "provider": "멜론"
+      },
+      {
+        "type": "search",
+        "title": "\"BTS\" 네이버 검색 결과",
+        "url": "https://search.naver.com/search.naver?query=BTS",
+        "timeAgo": "",
+        "provider": "네이버 검색"
+      },
+      {
+        "type": "search",
+        "title": "\"BTS\" 위키백과",
+        "url": "https://ko.wikipedia.org/wiki/BTS",
+        "timeAgo": "",
+        "provider": "위키백과"
       }
     ],
     "NewJeans": [
@@ -2013,6 +2118,41 @@
         "url": "http://v.daum.net/v/20260306074505008",
         "timeAgo": "최근 1주일",
         "provider": "다음 뉴스"
+      },
+      {
+        "type": "search",
+        "title": "\"NewJeans\" 다음 검색 결과",
+        "url": "https://search.daum.net/search?q=NewJeans",
+        "timeAgo": "",
+        "provider": "다음 검색"
+      },
+      {
+        "type": "search",
+        "title": "\"NewJeans\" 나무위키",
+        "url": "https://namu.wiki/w/NewJeans",
+        "timeAgo": "",
+        "provider": "나무위키"
+      },
+      {
+        "type": "search",
+        "title": "\"NewJeans\" 멜론 검색",
+        "url": "https://www.melon.com/search/total/index.htm?q=NewJeans",
+        "timeAgo": "",
+        "provider": "멜론"
+      },
+      {
+        "type": "search",
+        "title": "\"NewJeans\" 네이버 검색 결과",
+        "url": "https://search.naver.com/search.naver?query=NewJeans",
+        "timeAgo": "",
+        "provider": "네이버 검색"
+      },
+      {
+        "type": "search",
+        "title": "\"NewJeans\" 위키백과",
+        "url": "https://ko.wikipedia.org/wiki/NewJeans",
+        "timeAgo": "",
+        "provider": "위키백과"
       }
     ],
     "Stray Kids": [
@@ -2050,6 +2190,41 @@
         "url": "http://v.daum.net/v/20260307121837557",
         "timeAgo": "최근 1주일",
         "provider": "다음 뉴스"
+      },
+      {
+        "type": "search",
+        "title": "\"Stray Kids\" 다음 검색 결과",
+        "url": "https://search.daum.net/search?q=Stray%20Kids",
+        "timeAgo": "",
+        "provider": "다음 검색"
+      },
+      {
+        "type": "search",
+        "title": "\"Stray Kids\" 나무위키",
+        "url": "https://namu.wiki/w/Stray%20Kids",
+        "timeAgo": "",
+        "provider": "나무위키"
+      },
+      {
+        "type": "search",
+        "title": "\"Stray Kids\" 멜론 검색",
+        "url": "https://www.melon.com/search/total/index.htm?q=Stray%20Kids",
+        "timeAgo": "",
+        "provider": "멜론"
+      },
+      {
+        "type": "search",
+        "title": "\"Stray Kids\" 네이버 검색 결과",
+        "url": "https://search.naver.com/search.naver?query=Stray%20Kids",
+        "timeAgo": "",
+        "provider": "네이버 검색"
+      },
+      {
+        "type": "search",
+        "title": "\"Stray Kids\" 위키백과",
+        "url": "https://ko.wikipedia.org/wiki/Stray%20Kids",
+        "timeAgo": "",
+        "provider": "위키백과"
       }
     ],
     "LE SSERAFIM": [
@@ -2083,10 +2258,45 @@
       },
       {
         "type": "news",
-        "title": "르세라핌, ‘CRAZY’ 뮤비 조회 수 2억 회 돌파…팀 통산 세 번째 기록",
-        "url": "http://v.daum.net/v/20260228143200714",
+        "title": "[단독] ‘글로벌 활약’ 르세라핌, 4월 말 신곡 발표",
+        "url": "http://v.daum.net/v/20260305083123606",
         "timeAgo": "최근 1주일",
         "provider": "다음 뉴스"
+      },
+      {
+        "type": "search",
+        "title": "\"LE SSERAFIM\" 다음 검색 결과",
+        "url": "https://search.daum.net/search?q=LE%20SSERAFIM",
+        "timeAgo": "",
+        "provider": "다음 검색"
+      },
+      {
+        "type": "search",
+        "title": "\"LE SSERAFIM\" 나무위키",
+        "url": "https://namu.wiki/w/LE%20SSERAFIM",
+        "timeAgo": "",
+        "provider": "나무위키"
+      },
+      {
+        "type": "search",
+        "title": "\"LE SSERAFIM\" 멜론 검색",
+        "url": "https://www.melon.com/search/total/index.htm?q=LE%20SSERAFIM",
+        "timeAgo": "",
+        "provider": "멜론"
+      },
+      {
+        "type": "search",
+        "title": "\"LE SSERAFIM\" 네이버 검색 결과",
+        "url": "https://search.naver.com/search.naver?query=LE%20SSERAFIM",
+        "timeAgo": "",
+        "provider": "네이버 검색"
+      },
+      {
+        "type": "search",
+        "title": "\"LE SSERAFIM\" 위키백과",
+        "url": "https://ko.wikipedia.org/wiki/LE%20SSERAFIM",
+        "timeAgo": "",
+        "provider": "위키백과"
       }
     ],
     "IVE": [
@@ -2124,6 +2334,41 @@
         "url": "http://v.daum.net/v/20260306111250627",
         "timeAgo": "최근 1주일",
         "provider": "다음 뉴스"
+      },
+      {
+        "type": "search",
+        "title": "\"IVE\" 다음 검색 결과",
+        "url": "https://search.daum.net/search?q=IVE",
+        "timeAgo": "",
+        "provider": "다음 검색"
+      },
+      {
+        "type": "search",
+        "title": "\"IVE\" 나무위키",
+        "url": "https://namu.wiki/w/IVE",
+        "timeAgo": "",
+        "provider": "나무위키"
+      },
+      {
+        "type": "search",
+        "title": "\"IVE\" 멜론 검색",
+        "url": "https://www.melon.com/search/total/index.htm?q=IVE",
+        "timeAgo": "",
+        "provider": "멜론"
+      },
+      {
+        "type": "search",
+        "title": "\"IVE\" 네이버 검색 결과",
+        "url": "https://search.naver.com/search.naver?query=IVE",
+        "timeAgo": "",
+        "provider": "네이버 검색"
+      },
+      {
+        "type": "search",
+        "title": "\"IVE\" 위키백과",
+        "url": "https://ko.wikipedia.org/wiki/IVE",
+        "timeAgo": "",
+        "provider": "위키백과"
       }
     ],
     "aespa": [
@@ -2161,6 +2406,41 @@
         "url": "http://v.daum.net/v/20260306100136057",
         "timeAgo": "최근 1주일",
         "provider": "다음 뉴스"
+      },
+      {
+        "type": "search",
+        "title": "\"aespa\" 다음 검색 결과",
+        "url": "https://search.daum.net/search?q=aespa",
+        "timeAgo": "",
+        "provider": "다음 검색"
+      },
+      {
+        "type": "search",
+        "title": "\"aespa\" 나무위키",
+        "url": "https://namu.wiki/w/aespa",
+        "timeAgo": "",
+        "provider": "나무위키"
+      },
+      {
+        "type": "search",
+        "title": "\"aespa\" 멜론 검색",
+        "url": "https://www.melon.com/search/total/index.htm?q=aespa",
+        "timeAgo": "",
+        "provider": "멜론"
+      },
+      {
+        "type": "search",
+        "title": "\"aespa\" 네이버 검색 결과",
+        "url": "https://search.naver.com/search.naver?query=aespa",
+        "timeAgo": "",
+        "provider": "네이버 검색"
+      },
+      {
+        "type": "search",
+        "title": "\"aespa\" 위키백과",
+        "url": "https://ko.wikipedia.org/wiki/aespa",
+        "timeAgo": "",
+        "provider": "위키백과"
       }
     ],
     "SEVENTEEN": [
@@ -2198,6 +2478,41 @@
         "url": "http://v.daum.net/v/20260304175131314",
         "timeAgo": "최근 1주일",
         "provider": "다음 뉴스"
+      },
+      {
+        "type": "search",
+        "title": "\"SEVENTEEN\" 다음 검색 결과",
+        "url": "https://search.daum.net/search?q=SEVENTEEN",
+        "timeAgo": "",
+        "provider": "다음 검색"
+      },
+      {
+        "type": "search",
+        "title": "\"SEVENTEEN\" 나무위키",
+        "url": "https://namu.wiki/w/SEVENTEEN",
+        "timeAgo": "",
+        "provider": "나무위키"
+      },
+      {
+        "type": "search",
+        "title": "\"SEVENTEEN\" 멜론 검색",
+        "url": "https://www.melon.com/search/total/index.htm?q=SEVENTEEN",
+        "timeAgo": "",
+        "provider": "멜론"
+      },
+      {
+        "type": "search",
+        "title": "\"SEVENTEEN\" 네이버 검색 결과",
+        "url": "https://search.naver.com/search.naver?query=SEVENTEEN",
+        "timeAgo": "",
+        "provider": "네이버 검색"
+      },
+      {
+        "type": "search",
+        "title": "\"SEVENTEEN\" 위키백과",
+        "url": "https://ko.wikipedia.org/wiki/SEVENTEEN",
+        "timeAgo": "",
+        "provider": "위키백과"
       }
     ],
     "TWICE": [
@@ -2235,6 +2550,41 @@
         "url": "http://v.daum.net/v/20260306111521752",
         "timeAgo": "최근 1주일",
         "provider": "다음 뉴스"
+      },
+      {
+        "type": "search",
+        "title": "\"TWICE\" 다음 검색 결과",
+        "url": "https://search.daum.net/search?q=TWICE",
+        "timeAgo": "",
+        "provider": "다음 검색"
+      },
+      {
+        "type": "search",
+        "title": "\"TWICE\" 나무위키",
+        "url": "https://namu.wiki/w/TWICE",
+        "timeAgo": "",
+        "provider": "나무위키"
+      },
+      {
+        "type": "search",
+        "title": "\"TWICE\" 멜론 검색",
+        "url": "https://www.melon.com/search/total/index.htm?q=TWICE",
+        "timeAgo": "",
+        "provider": "멜론"
+      },
+      {
+        "type": "search",
+        "title": "\"TWICE\" 네이버 검색 결과",
+        "url": "https://search.naver.com/search.naver?query=TWICE",
+        "timeAgo": "",
+        "provider": "네이버 검색"
+      },
+      {
+        "type": "search",
+        "title": "\"TWICE\" 위키백과",
+        "url": "https://ko.wikipedia.org/wiki/TWICE",
+        "timeAgo": "",
+        "provider": "위키백과"
       }
     ],
     "블랙핑크 (Wiki #1)": [
@@ -2272,6 +2622,41 @@
         "url": "http://v.daum.net/v/20260306175326599",
         "timeAgo": "최근 1주일",
         "provider": "다음 뉴스"
+      },
+      {
+        "type": "search",
+        "title": "\"블랙핑크\" 다음 검색 결과",
+        "url": "https://search.daum.net/search?q=%EB%B8%94%EB%9E%99%ED%95%91%ED%81%AC",
+        "timeAgo": "",
+        "provider": "다음 검색"
+      },
+      {
+        "type": "search",
+        "title": "\"블랙핑크\" 나무위키",
+        "url": "https://namu.wiki/w/%EB%B8%94%EB%9E%99%ED%95%91%ED%81%AC",
+        "timeAgo": "",
+        "provider": "나무위키"
+      },
+      {
+        "type": "search",
+        "title": "\"블랙핑크\" 멜론 검색",
+        "url": "https://www.melon.com/search/total/index.htm?q=%EB%B8%94%EB%9E%99%ED%95%91%ED%81%AC",
+        "timeAgo": "",
+        "provider": "멜론"
+      },
+      {
+        "type": "search",
+        "title": "\"블랙핑크\" 네이버 검색 결과",
+        "url": "https://search.naver.com/search.naver?query=%EB%B8%94%EB%9E%99%ED%95%91%ED%81%AC",
+        "timeAgo": "",
+        "provider": "네이버 검색"
+      },
+      {
+        "type": "search",
+        "title": "\"블랙핑크\" 위키백과",
+        "url": "https://ko.wikipedia.org/wiki/%EB%B8%94%EB%9E%99%ED%95%91%ED%81%AC",
+        "timeAgo": "",
+        "provider": "위키백과"
       }
     ],
     "방탄소년단 (Wiki #2)": [
@@ -2309,6 +2694,41 @@
         "url": "http://v.daum.net/v/20260307082702705",
         "timeAgo": "최근 1주일",
         "provider": "다음 뉴스"
+      },
+      {
+        "type": "search",
+        "title": "\"방탄소년단\" 다음 검색 결과",
+        "url": "https://search.daum.net/search?q=%EB%B0%A9%ED%83%84%EC%86%8C%EB%85%84%EB%8B%A8",
+        "timeAgo": "",
+        "provider": "다음 검색"
+      },
+      {
+        "type": "search",
+        "title": "\"방탄소년단\" 나무위키",
+        "url": "https://namu.wiki/w/%EB%B0%A9%ED%83%84%EC%86%8C%EB%85%84%EB%8B%A8",
+        "timeAgo": "",
+        "provider": "나무위키"
+      },
+      {
+        "type": "search",
+        "title": "\"방탄소년단\" 멜론 검색",
+        "url": "https://www.melon.com/search/total/index.htm?q=%EB%B0%A9%ED%83%84%EC%86%8C%EB%85%84%EB%8B%A8",
+        "timeAgo": "",
+        "provider": "멜론"
+      },
+      {
+        "type": "search",
+        "title": "\"방탄소년단\" 네이버 검색 결과",
+        "url": "https://search.naver.com/search.naver?query=%EB%B0%A9%ED%83%84%EC%86%8C%EB%85%84%EB%8B%A8",
+        "timeAgo": "",
+        "provider": "네이버 검색"
+      },
+      {
+        "type": "search",
+        "title": "\"방탄소년단\" 위키백과",
+        "url": "https://ko.wikipedia.org/wiki/%EB%B0%A9%ED%83%84%EC%86%8C%EB%85%84%EB%8B%A8",
+        "timeAgo": "",
+        "provider": "위키백과"
       }
     ],
     "스트레이 키즈 (Wiki #3)": [
@@ -2346,6 +2766,41 @@
         "url": "http://v.daum.net/v/20260306162639633",
         "timeAgo": "최근 1주일",
         "provider": "다음 뉴스"
+      },
+      {
+        "type": "search",
+        "title": "\"스트레이 키즈\" 다음 검색 결과",
+        "url": "https://search.daum.net/search?q=%EC%8A%A4%ED%8A%B8%EB%A0%88%EC%9D%B4%20%ED%82%A4%EC%A6%88",
+        "timeAgo": "",
+        "provider": "다음 검색"
+      },
+      {
+        "type": "search",
+        "title": "\"스트레이 키즈\" 나무위키",
+        "url": "https://namu.wiki/w/%EC%8A%A4%ED%8A%B8%EB%A0%88%EC%9D%B4%20%ED%82%A4%EC%A6%88",
+        "timeAgo": "",
+        "provider": "나무위키"
+      },
+      {
+        "type": "search",
+        "title": "\"스트레이 키즈\" 멜론 검색",
+        "url": "https://www.melon.com/search/total/index.htm?q=%EC%8A%A4%ED%8A%B8%EB%A0%88%EC%9D%B4%20%ED%82%A4%EC%A6%88",
+        "timeAgo": "",
+        "provider": "멜론"
+      },
+      {
+        "type": "search",
+        "title": "\"스트레이 키즈\" 네이버 검색 결과",
+        "url": "https://search.naver.com/search.naver?query=%EC%8A%A4%ED%8A%B8%EB%A0%88%EC%9D%B4%20%ED%82%A4%EC%A6%88",
+        "timeAgo": "",
+        "provider": "네이버 검색"
+      },
+      {
+        "type": "search",
+        "title": "\"스트레이 키즈\" 위키백과",
+        "url": "https://ko.wikipedia.org/wiki/%EC%8A%A4%ED%8A%B8%EB%A0%88%EC%9D%B4%20%ED%82%A4%EC%A6%88",
+        "timeAgo": "",
+        "provider": "위키백과"
       }
     ],
     "뉴진스 (Wiki #4)": [
@@ -2383,6 +2838,41 @@
         "url": "http://v.daum.net/v/20260303140202704",
         "timeAgo": "최근 1주일",
         "provider": "다음 뉴스"
+      },
+      {
+        "type": "search",
+        "title": "\"뉴진스\" 다음 검색 결과",
+        "url": "https://search.daum.net/search?q=%EB%89%B4%EC%A7%84%EC%8A%A4",
+        "timeAgo": "",
+        "provider": "다음 검색"
+      },
+      {
+        "type": "search",
+        "title": "\"뉴진스\" 나무위키",
+        "url": "https://namu.wiki/w/%EB%89%B4%EC%A7%84%EC%8A%A4",
+        "timeAgo": "",
+        "provider": "나무위키"
+      },
+      {
+        "type": "search",
+        "title": "\"뉴진스\" 멜론 검색",
+        "url": "https://www.melon.com/search/total/index.htm?q=%EB%89%B4%EC%A7%84%EC%8A%A4",
+        "timeAgo": "",
+        "provider": "멜론"
+      },
+      {
+        "type": "search",
+        "title": "\"뉴진스\" 네이버 검색 결과",
+        "url": "https://search.naver.com/search.naver?query=%EB%89%B4%EC%A7%84%EC%8A%A4",
+        "timeAgo": "",
+        "provider": "네이버 검색"
+      },
+      {
+        "type": "search",
+        "title": "\"뉴진스\" 위키백과",
+        "url": "https://ko.wikipedia.org/wiki/%EB%89%B4%EC%A7%84%EC%8A%A4",
+        "timeAgo": "",
+        "provider": "위키백과"
       }
     ],
     "아이브 (Wiki #5)": [
@@ -2420,6 +2910,41 @@
         "url": "http://v.daum.net/v/20260306212104350",
         "timeAgo": "최근 1주일",
         "provider": "다음 뉴스"
+      },
+      {
+        "type": "search",
+        "title": "\"아이브\" 다음 검색 결과",
+        "url": "https://search.daum.net/search?q=%EC%95%84%EC%9D%B4%EB%B8%8C",
+        "timeAgo": "",
+        "provider": "다음 검색"
+      },
+      {
+        "type": "search",
+        "title": "\"아이브\" 나무위키",
+        "url": "https://namu.wiki/w/%EC%95%84%EC%9D%B4%EB%B8%8C",
+        "timeAgo": "",
+        "provider": "나무위키"
+      },
+      {
+        "type": "search",
+        "title": "\"아이브\" 멜론 검색",
+        "url": "https://www.melon.com/search/total/index.htm?q=%EC%95%84%EC%9D%B4%EB%B8%8C",
+        "timeAgo": "",
+        "provider": "멜론"
+      },
+      {
+        "type": "search",
+        "title": "\"아이브\" 네이버 검색 결과",
+        "url": "https://search.naver.com/search.naver?query=%EC%95%84%EC%9D%B4%EB%B8%8C",
+        "timeAgo": "",
+        "provider": "네이버 검색"
+      },
+      {
+        "type": "search",
+        "title": "\"아이브\" 위키백과",
+        "url": "https://ko.wikipedia.org/wiki/%EC%95%84%EC%9D%B4%EB%B8%8C",
+        "timeAgo": "",
+        "provider": "위키백과"
       }
     ],
     "르세라핌 (Wiki #6)": [
@@ -2457,6 +2982,41 @@
         "url": "http://v.daum.net/v/20260303142207927",
         "timeAgo": "최근 1주일",
         "provider": "다음 뉴스"
+      },
+      {
+        "type": "search",
+        "title": "\"르세라핌\" 다음 검색 결과",
+        "url": "https://search.daum.net/search?q=%EB%A5%B4%EC%84%B8%EB%9D%BC%ED%95%8C",
+        "timeAgo": "",
+        "provider": "다음 검색"
+      },
+      {
+        "type": "search",
+        "title": "\"르세라핌\" 나무위키",
+        "url": "https://namu.wiki/w/%EB%A5%B4%EC%84%B8%EB%9D%BC%ED%95%8C",
+        "timeAgo": "",
+        "provider": "나무위키"
+      },
+      {
+        "type": "search",
+        "title": "\"르세라핌\" 멜론 검색",
+        "url": "https://www.melon.com/search/total/index.htm?q=%EB%A5%B4%EC%84%B8%EB%9D%BC%ED%95%8C",
+        "timeAgo": "",
+        "provider": "멜론"
+      },
+      {
+        "type": "search",
+        "title": "\"르세라핌\" 네이버 검색 결과",
+        "url": "https://search.naver.com/search.naver?query=%EB%A5%B4%EC%84%B8%EB%9D%BC%ED%95%8C",
+        "timeAgo": "",
+        "provider": "네이버 검색"
+      },
+      {
+        "type": "search",
+        "title": "\"르세라핌\" 위키백과",
+        "url": "https://ko.wikipedia.org/wiki/%EB%A5%B4%EC%84%B8%EB%9D%BC%ED%95%8C",
+        "timeAgo": "",
+        "provider": "위키백과"
       }
     ],
     "에스파 (Wiki #7)": [
@@ -2494,6 +3054,41 @@
         "url": "http://v.daum.net/v/20260306130003020",
         "timeAgo": "최근 1주일",
         "provider": "다음 뉴스"
+      },
+      {
+        "type": "search",
+        "title": "\"에스파\" 다음 검색 결과",
+        "url": "https://search.daum.net/search?q=%EC%97%90%EC%8A%A4%ED%8C%8C",
+        "timeAgo": "",
+        "provider": "다음 검색"
+      },
+      {
+        "type": "search",
+        "title": "\"에스파\" 나무위키",
+        "url": "https://namu.wiki/w/%EC%97%90%EC%8A%A4%ED%8C%8C",
+        "timeAgo": "",
+        "provider": "나무위키"
+      },
+      {
+        "type": "search",
+        "title": "\"에스파\" 멜론 검색",
+        "url": "https://www.melon.com/search/total/index.htm?q=%EC%97%90%EC%8A%A4%ED%8C%8C",
+        "timeAgo": "",
+        "provider": "멜론"
+      },
+      {
+        "type": "search",
+        "title": "\"에스파\" 네이버 검색 결과",
+        "url": "https://search.naver.com/search.naver?query=%EC%97%90%EC%8A%A4%ED%8C%8C",
+        "timeAgo": "",
+        "provider": "네이버 검색"
+      },
+      {
+        "type": "search",
+        "title": "\"에스파\" 위키백과",
+        "url": "https://ko.wikipedia.org/wiki/%EC%97%90%EC%8A%A4%ED%8C%8C",
+        "timeAgo": "",
+        "provider": "위키백과"
       }
     ],
     "세븐틴 (Wiki #8)": [
@@ -2531,6 +3126,41 @@
         "url": "http://v.daum.net/v/20260304081437714",
         "timeAgo": "최근 1주일",
         "provider": "다음 뉴스"
+      },
+      {
+        "type": "search",
+        "title": "\"세븐틴\" 다음 검색 결과",
+        "url": "https://search.daum.net/search?q=%EC%84%B8%EB%B8%90%ED%8B%B4",
+        "timeAgo": "",
+        "provider": "다음 검색"
+      },
+      {
+        "type": "search",
+        "title": "\"세븐틴\" 나무위키",
+        "url": "https://namu.wiki/w/%EC%84%B8%EB%B8%90%ED%8B%B4",
+        "timeAgo": "",
+        "provider": "나무위키"
+      },
+      {
+        "type": "search",
+        "title": "\"세븐틴\" 멜론 검색",
+        "url": "https://www.melon.com/search/total/index.htm?q=%EC%84%B8%EB%B8%90%ED%8B%B4",
+        "timeAgo": "",
+        "provider": "멜론"
+      },
+      {
+        "type": "search",
+        "title": "\"세븐틴\" 네이버 검색 결과",
+        "url": "https://search.naver.com/search.naver?query=%EC%84%B8%EB%B8%90%ED%8B%B4",
+        "timeAgo": "",
+        "provider": "네이버 검색"
+      },
+      {
+        "type": "search",
+        "title": "\"세븐틴\" 위키백과",
+        "url": "https://ko.wikipedia.org/wiki/%EC%84%B8%EB%B8%90%ED%8B%B4",
+        "timeAgo": "",
+        "provider": "위키백과"
       }
     ],
     "트와이스 (Wiki #9)": [
@@ -2568,6 +3198,41 @@
         "url": "http://v.daum.net/v/20260305180804214",
         "timeAgo": "최근 1주일",
         "provider": "다음 뉴스"
+      },
+      {
+        "type": "search",
+        "title": "\"트와이스\" 다음 검색 결과",
+        "url": "https://search.daum.net/search?q=%ED%8A%B8%EC%99%80%EC%9D%B4%EC%8A%A4",
+        "timeAgo": "",
+        "provider": "다음 검색"
+      },
+      {
+        "type": "search",
+        "title": "\"트와이스\" 나무위키",
+        "url": "https://namu.wiki/w/%ED%8A%B8%EC%99%80%EC%9D%B4%EC%8A%A4",
+        "timeAgo": "",
+        "provider": "나무위키"
+      },
+      {
+        "type": "search",
+        "title": "\"트와이스\" 멜론 검색",
+        "url": "https://www.melon.com/search/total/index.htm?q=%ED%8A%B8%EC%99%80%EC%9D%B4%EC%8A%A4",
+        "timeAgo": "",
+        "provider": "멜론"
+      },
+      {
+        "type": "search",
+        "title": "\"트와이스\" 네이버 검색 결과",
+        "url": "https://search.naver.com/search.naver?query=%ED%8A%B8%EC%99%80%EC%9D%B4%EC%8A%A4",
+        "timeAgo": "",
+        "provider": "네이버 검색"
+      },
+      {
+        "type": "search",
+        "title": "\"트와이스\" 위키백과",
+        "url": "https://ko.wikipedia.org/wiki/%ED%8A%B8%EC%99%80%EC%9D%B4%EC%8A%A4",
+        "timeAgo": "",
+        "provider": "위키백과"
       }
     ],
     "엔하이픈 (Wiki #10)": [
@@ -2605,6 +3270,41 @@
         "url": "http://v.daum.net/v/20260304133125880",
         "timeAgo": "최근 1주일",
         "provider": "다음 뉴스"
+      },
+      {
+        "type": "search",
+        "title": "\"엔하이픈\" 다음 검색 결과",
+        "url": "https://search.daum.net/search?q=%EC%97%94%ED%95%98%EC%9D%B4%ED%94%88",
+        "timeAgo": "",
+        "provider": "다음 검색"
+      },
+      {
+        "type": "search",
+        "title": "\"엔하이픈\" 나무위키",
+        "url": "https://namu.wiki/w/%EC%97%94%ED%95%98%EC%9D%B4%ED%94%88",
+        "timeAgo": "",
+        "provider": "나무위키"
+      },
+      {
+        "type": "search",
+        "title": "\"엔하이픈\" 멜론 검색",
+        "url": "https://www.melon.com/search/total/index.htm?q=%EC%97%94%ED%95%98%EC%9D%B4%ED%94%88",
+        "timeAgo": "",
+        "provider": "멜론"
+      },
+      {
+        "type": "search",
+        "title": "\"엔하이픈\" 네이버 검색 결과",
+        "url": "https://search.naver.com/search.naver?query=%EC%97%94%ED%95%98%EC%9D%B4%ED%94%88",
+        "timeAgo": "",
+        "provider": "네이버 검색"
+      },
+      {
+        "type": "search",
+        "title": "\"엔하이픈\" 위키백과",
+        "url": "https://ko.wikipedia.org/wiki/%EC%97%94%ED%95%98%EC%9D%B4%ED%94%88",
+        "timeAgo": "",
+        "provider": "위키백과"
       }
     ]
   }

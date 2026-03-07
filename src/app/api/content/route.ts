@@ -91,38 +91,54 @@ async function fetchDaumNews(keyword: string): Promise<ContentItem[]> {
 }
 
 /**
- * 다음 통합검색 — 키워드 그대로 (K-pop 등 접미어 붙이지 않음), 5개
+ * 통합검색 — 키워드별 유용한 검색 목적지 링크 5개 생성
+ * (다음 웹검색이 서버사이드에서 차단되므로, 직접 검색 URL을 제공)
  */
-async function fetchDaumSearch(keyword: string): Promise<ContentItem[]> {
-  const controller = new AbortController();
-  const timeout = setTimeout(() => controller.abort(), 5000);
-
-  try {
-    // 키워드 그대로 검색 — 접미어 없음
-    const url = `https://search.daum.net/search?w=web&q=${encodeURIComponent(keyword)}`;
-    const response = await fetch(url, {
-      headers: {
-        "User-Agent":
-          "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-        "Accept-Language": "ko-KR,ko;q=0.9",
-        Accept: "text/html,application/xhtml+xml",
-      },
-      signal: controller.signal,
-    });
-    clearTimeout(timeout);
-
-    if (!response.ok) return [];
-    const html = await response.text();
-    return parseDaumSearchResults(html, 5);
-  } catch {
-    clearTimeout(timeout);
-    return [];
-  }
+function fetchDaumSearch(keyword: string): Promise<ContentItem[]> {
+  const q = encodeURIComponent(keyword);
+  const items: ContentItem[] = [
+    {
+      type: "search",
+      title: `"${keyword}" 다음 검색 결과`,
+      url: `https://search.daum.net/search?q=${q}`,
+      timeAgo: "",
+      provider: "다음 검색",
+    },
+    {
+      type: "search",
+      title: `"${keyword}" 나무위키`,
+      url: `https://namu.wiki/w/${q}`,
+      timeAgo: "",
+      provider: "나무위키",
+    },
+    {
+      type: "search",
+      title: `"${keyword}" 멜론 검색`,
+      url: `https://www.melon.com/search/total/index.htm?q=${q}`,
+      timeAgo: "",
+      provider: "멜론",
+    },
+    {
+      type: "search",
+      title: `"${keyword}" 네이버 검색 결과`,
+      url: `https://search.naver.com/search.naver?query=${q}`,
+      timeAgo: "",
+      provider: "네이버 검색",
+    },
+    {
+      type: "search",
+      title: `"${keyword}" 위키백과`,
+      url: `https://ko.wikipedia.org/wiki/${q}`,
+      timeAgo: "",
+      provider: "위키백과",
+    },
+  ];
+  return Promise.resolve(items);
 }
 
 /**
- * YouTube 검색 — 키워드 그대로, 인기순+최신순 조합, 10개
- * sp 파라미터: EgIQAQ== (조회수 정렬) 또는 CAISAhAB (인기+최신 조합)
+ * YouTube 검색 — 키워드 그대로, 인기순+최신순 조합, 5개
+ * sp=CAMSAhAB → 동영상만 + 조회수순
  */
 async function fetchYouTube(keyword: string): Promise<ContentItem[]> {
   const controller = new AbortController();
@@ -144,7 +160,7 @@ async function fetchYouTube(keyword: string): Promise<ContentItem[]> {
 
     if (!response.ok) return [];
     const html = await response.text();
-    return parseYouTubeResults(html, 10);
+    return parseYouTubeResults(html, 5);
   } catch {
     clearTimeout(timeout);
     return [];
@@ -179,42 +195,6 @@ function parseDaumNewsResults(html: string, maxCount: number): ContentItem[] {
         timeAgo: "최근 1주일",
         provider: "다음 뉴스",
       });
-    }
-  }
-
-  return items;
-}
-
-function parseDaumSearchResults(html: string, maxCount: number): ContentItem[] {
-  const items: ContentItem[] = [];
-  const seen = new Set<string>();
-
-  // 패턴 1: 다음 통합검색 tit 클래스
-  const regex1 = /class="[^"]*tit[^"]*"[^>]*>\s*<a[^>]*href="([^"]+)"[^>]*>([\s\S]*?)<\/a>/gi;
-  let match;
-  while ((match = regex1.exec(html)) !== null && items.length < maxCount) {
-    const url = match[1];
-    const title = match[2].replace(/<[^>]+>/g, "").trim();
-    if (!title || seen.has(url) || title.length < 5) continue;
-    seen.add(url);
-    items.push({
-      type: "search",
-      title,
-      url,
-      timeAgo: "",
-      provider: "다음 검색",
-    });
-  }
-
-  // 패턴 2: 범용 링크 패턴
-  if (items.length < maxCount) {
-    const regex2 = /<a[^>]*href="(https?:\/\/[^"]+)"[^>]*class="[^"]*f_link_b[^"]*"[^>]*>([\s\S]*?)<\/a>/gi;
-    while ((match = regex2.exec(html)) !== null && items.length < maxCount) {
-      const url = match[1];
-      const title = match[2].replace(/<[^>]+>/g, "").trim();
-      if (!title || seen.has(url) || title.length < 5) continue;
-      seen.add(url);
-      items.push({ type: "search", title, url, timeAgo: "", provider: "다음 검색" });
     }
   }
 
