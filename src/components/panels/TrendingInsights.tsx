@@ -24,7 +24,9 @@ const sourceConfig = {
 
 export function TrendingInsights() {
   const { data, selectedKeyword, selectedCountry, fetchNews, setSelectedKeyword } = useAppStore();
-  const [isOpen, setIsOpen] = useState(false); // 첫 진입 시 지도만 보이게
+  const [isOpen, setIsOpen] = useState(
+    typeof window !== 'undefined' && window.innerWidth >= 768 // PC: 열림, 모바일: 닫힘
+  );
 
   // 국가 클릭 시 트렌딩 패널 + 뉴스 패널 함께 접기
   useEffect(() => {
