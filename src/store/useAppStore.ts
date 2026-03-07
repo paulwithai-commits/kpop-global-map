@@ -1,5 +1,5 @@
 import { create } from "zustand";
-import type { CountryScore, GlobalData, NewsArticle } from "@/types/data";
+import type { CountryScore, GlobalData, NewsArticle, ContentItem } from "@/types/data";
 
 interface AppState {
   data: GlobalData | null;
@@ -9,9 +9,10 @@ interface AppState {
   error: string | null;
   timelineHour: number; // 0~24 타임라인 슬라이더 값
 
-  // 뉴스 관련 상태
+  // 콘텐츠 관련 상태
   selectedKeyword: string | null;
   newsArticles: NewsArticle[];
+  contentItems: ContentItem[];
   isNewsLoading: boolean;
   newsError: string | null;
 
@@ -22,7 +23,7 @@ interface AppState {
   setError: (error: string | null) => void;
   setTimelineHour: (hour: number | ((prev: number) => number)) => void;
 
-  // 뉴스 액션
+  // 콘텐츠 액션
   setSelectedKeyword: (keyword: string | null) => void;
   fetchNews: (keyword: string) => Promise<void>;
 
@@ -38,9 +39,10 @@ export const useAppStore = create<AppState>((set, get) => ({
   error: null,
   timelineHour: 24,
 
-  // 뉴스 상태 초기값
+  // 콘텐츠 상태 초기값
   selectedKeyword: null,
   newsArticles: [],
+  contentItems: [],
   isNewsLoading: false,
   newsError: null,
 
@@ -54,26 +56,58 @@ export const useAppStore = create<AppState>((set, get) => ({
       timelineHour: typeof hour === "function" ? hour(state.timelineHour) : hour,
     })),
 
-  // 뉴스 액션
+  // 콘텐츠 액션
   setSelectedKeyword: (keyword) =>
-    set({ selectedKeyword: keyword, newsArticles: [], newsError: null }),
+    set({ selectedKeyword: keyword, newsArticles: [], contentItems: [], newsError: null }),
   fetchNews: async (keyword) => {
     const { data } = get();
-    // 사전 데이터가 있으면 즉시 사용 (로딩 없음)
-    const preloaded = data?.newsData?.[keyword];
-    if (preloaded && preloaded.length > 0) {
-      set({ selectedKeyword: keyword, newsArticles: preloaded, isNewsLoading: false, newsError: null });
+
+    // 1) 사전 콘텐츠 데이터 확인 (contentData 우선)
+    const preloadedContent = data?.contentData?.[keyword];
+    if (preloadedContent && preloadedContent.length > 0) {
+      set({
+        selectedKeyword: keyword,
+        contentItems: preloadedContent,
+        newsArticles: preloadedContent.filter((c) => c.type === "news"),
+        isNewsLoading: false,
+        newsError: null,
+      });
       return;
     }
-    // 사전 데이터 없으면 API 호출 (fallback)
+
+    // 2) 레거시 뉴스 데이터 확인
+    const preloadedNews = data?.newsData?.[keyword];
+    if (preloadedNews && preloadedNews.length > 0) {
+      const asContent = preloadedNews.map((n) => ({
+        ...n,
+        type: "news" as const,
+        provider: "다음 뉴스",
+      }));
+      set({
+        selectedKeyword: keyword,
+        newsArticles: preloadedNews,
+        contentItems: asContent,
+        isNewsLoading: false,
+        newsError: null,
+      });
+      // 백그라운드에서 추가 콘텐츠 로딩
+      fetchAdditionalContent(keyword, asContent);
+      return;
+    }
+
+    // 3) API 호출
     set({ isNewsLoading: true, newsError: null, selectedKeyword: keyword });
     try {
       const res = await fetch(
-        `/api/news?keyword=${encodeURIComponent(keyword)}`
+        `/api/content?keyword=${encodeURIComponent(keyword)}`
       );
-      if (!res.ok) throw new Error("뉴스를 불러올 수 없습니다");
+      if (!res.ok) throw new Error("콘텐츠를 불러올 수 없습니다");
       const result = await res.json();
-      set({ newsArticles: result.articles, isNewsLoading: false });
+      set({
+        contentItems: result.contents ?? [],
+        newsArticles: (result.contents ?? []).filter((c: { type: string }) => c.type === "news"),
+        isNewsLoading: false,
+      });
     } catch (err) {
       set({
         newsError: err instanceof Error ? err.message : "오류 발생",
@@ -98,3 +132,22 @@ export const useAppStore = create<AppState>((set, get) => ({
       .filter((c) => c.score > 0);
   },
 }));
+
+/** 백그라운드에서 추가 콘텐츠(YouTube, 통합검색) 로딩 */
+async function fetchAdditionalContent(keyword: string, existing: import("@/types/data").ContentItem[]) {
+  try {
+    const res = await fetch(`/api/content?keyword=${encodeURIComponent(keyword)}`);
+    if (!res.ok) return;
+    const result = await res.json();
+    const additional = (result.contents ?? []) as import("@/types/data").ContentItem[];
+    // 기존 뉴스 + 새로운 검색/YouTube 합치기 (중복 URL 제거)
+    const existingUrls = new Set(existing.map((e) => e.url));
+    const merged = [...existing, ...additional.filter((a) => !existingUrls.has(a.url))];
+    const currentKeyword = useAppStore.getState().selectedKeyword;
+    if (currentKeyword === keyword) {
+      useAppStore.setState({ contentItems: merged });
+    }
+  } catch {
+    // 조용히 실패
+  }
+}

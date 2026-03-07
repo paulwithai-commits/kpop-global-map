@@ -38,8 +38,18 @@ export interface TrendingInsight {
 
 export interface NewsArticle {
   title: string;
-  url: string; // https://v.daum.net/v/ 패턴
-  timeAgo: string; // "3시간 전" 등
+  url: string;
+  timeAgo: string;
+}
+
+/** 콘텐츠 아이템 — 뉴스, 통합검색, YouTube Shorts 통합 */
+export interface ContentItem {
+  type: "news" | "search" | "youtube";
+  title: string;
+  url: string;
+  timeAgo: string;
+  thumbnail?: string; // YouTube Shorts 썸네일
+  provider?: string;  // 출처 (언론사, 채널명 등)
 }
 
 export interface GlobalData {
@@ -49,5 +59,6 @@ export interface GlobalData {
   countries: CountryScore[];
   topArtists: Artist[];
   trendingInsights: TrendingInsight[];
-  newsData?: Record<string, NewsArticle[]>; // 키워드별 사전 뉴스 데이터
+  newsData?: Record<string, NewsArticle[]>; // 레거시 호환
+  contentData?: Record<string, ContentItem[]>; // 키워드별 통합 콘텐츠
 }

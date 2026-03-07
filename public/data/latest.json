@@ -7,7 +7,7 @@
       "code": "SG",
       "name": "Singapore",
       "nameKo": "싱가포르",
-      "score": 70.0,
+      "score": 70,
       "trendsScore": 83.6,
       "wikiScore": 44.2,
       "youtubeScore": 81.8,
@@ -58,7 +58,7 @@
       "nameKo": "일본",
       "score": 63.6,
       "trendsScore": 36.5,
-      "wikiScore": 100.0,
+      "wikiScore": 100,
       "youtubeScore": 54.5,
       "change": -4.6,
       "topArtists": [
@@ -66,35 +66,35 @@
           "id": "blackpink",
           "name": "BLACKPINK",
           "nameKo": "블랙핑크",
-          "score": 1892.0,
+          "score": 1892,
           "platform": "wiki"
         },
         {
           "id": "ive",
           "name": "IVE",
           "nameKo": "아이브",
-          "score": 1597.0,
+          "score": 1597,
           "platform": "wiki"
         },
         {
           "id": "aespa",
           "name": "aespa",
           "nameKo": "에스파",
-          "score": 1272.0,
+          "score": 1272,
           "platform": "wiki"
         },
         {
           "id": "le-sserafim",
           "name": "LE SSERAFIM",
           "nameKo": "르세라핌",
-          "score": 1234.0,
+          "score": 1234,
           "platform": "wiki"
         },
         {
           "id": "twice",
           "name": "TWICE",
           "nameKo": "트와이스",
-          "score": 1219.0,
+          "score": 1219,
           "platform": "wiki"
         }
       ],
@@ -105,7 +105,7 @@
       "code": "TW",
       "name": "Taiwan",
       "nameKo": "대만",
-      "score": 59.0,
+      "score": 59,
       "trendsScore": 71.1,
       "wikiScore": 14.2,
       "youtubeScore": 90.9,
@@ -115,14 +115,14 @@
           "id": "blackpink",
           "name": "BLACKPINK",
           "nameKo": "블랙핑크",
-          "score": 1284.0,
+          "score": 1284,
           "platform": "wiki"
         },
         {
           "id": "bts",
           "name": "BTS",
           "nameKo": "방탄소년단",
-          "score": 15.0,
+          "score": 15,
           "platform": "wiki"
         },
         {
@@ -141,7 +141,7 @@
         }
       ],
       "lat": 23.7,
-      "lng": 121.0
+      "lng": 121
     },
     {
       "code": "AU",
@@ -206,7 +206,7 @@
           "id": "blackpink",
           "name": "BLACKPINK",
           "nameKo": "블랙핑크",
-          "score": 110.0,
+          "score": 110,
           "platform": "wiki"
         },
         {
@@ -228,7 +228,7 @@
       "trendsScore": 31.4,
       "wikiScore": 44.2,
       "youtubeScore": 81.8,
-      "change": 15.0,
+      "change": 15,
       "topArtists": [
         {
           "id": "blackpink",
@@ -276,42 +276,42 @@
       "score": 48.8,
       "trendsScore": 42.1,
       "wikiScore": 2.7,
-      "youtubeScore": 100.0,
+      "youtubeScore": 100,
       "change": 26.4,
       "topArtists": [
         {
           "id": "seventeen",
           "name": "SEVENTEEN",
           "nameKo": "세븐틴",
-          "score": 76.0,
+          "score": 76,
           "platform": "wiki"
         },
         {
           "id": "twice",
           "name": "TWICE",
           "nameKo": "트와이스",
-          "score": 75.0,
+          "score": 75,
           "platform": "wiki"
         },
         {
           "id": "txt",
           "name": "TXT",
           "nameKo": "투모로우바이투게더",
-          "score": 70.0,
+          "score": 70,
           "platform": "wiki"
         },
         {
           "id": "blackpink",
           "name": "BLACKPINK",
           "nameKo": "블랙핑크",
-          "score": 12.0,
+          "score": 12,
           "platform": "wiki"
         },
         {
           "id": "stray-kids",
           "name": "Stray Kids",
           "nameKo": "스트레이 키즈",
-          "score": 8.0,
+          "score": 8,
           "platform": "wiki"
         }
       ],
@@ -381,14 +381,14 @@
           "id": "blackpink",
           "name": "BLACKPINK",
           "nameKo": "블랙핑크",
-          "score": 527.0,
+          "score": 527,
           "platform": "wiki"
         },
         {
           "id": "bts",
           "name": "BTS",
           "nameKo": "방탄소년단",
-          "score": 415.0,
+          "score": 415,
           "platform": "wiki"
         },
         {
@@ -407,7 +407,7 @@
       "name": "Peru",
       "nameKo": "페루",
       "score": 42.3,
-      "trendsScore": 100.0,
+      "trendsScore": 100,
       "wikiScore": 0.1,
       "youtubeScore": 27.3,
       "change": -7.7,
@@ -423,7 +423,7 @@
           "id": "blackpink",
           "name": "BLACKPINK",
           "nameKo": "블랙핑크",
-          "score": 2.0,
+          "score": 2,
           "platform": "youtube"
         },
         {
@@ -435,7 +435,7 @@
         }
       ],
       "lat": -9.2,
-      "lng": -75.0
+      "lng": -75
     },
     {
       "code": "US",
@@ -535,14 +535,14 @@
           "id": "blackpink",
           "name": "BLACKPINK",
           "nameKo": "블랙핑크",
-          "score": 214.0,
+          "score": 214,
           "platform": "wiki"
         },
         {
           "id": "bts",
           "name": "BTS",
           "nameKo": "방탄소년단",
-          "score": 191.0,
+          "score": 191,
           "platform": "wiki"
         },
         {
@@ -605,7 +605,7 @@
           "id": "blackpink",
           "name": "BLACKPINK",
           "nameKo": "블랙핑크",
-          "score": 1.0,
+          "score": 1,
           "platform": "youtube"
         },
         {
@@ -633,7 +633,7 @@
           "id": "blackpink",
           "name": "BLACKPINK",
           "nameKo": "블랙핑크",
-          "score": 60.0,
+          "score": 60,
           "platform": "wiki"
         },
         {
@@ -661,7 +661,7 @@
           "id": "blackpink",
           "name": "BLACKPINK",
           "nameKo": "블랙핑크",
-          "score": 39.0,
+          "score": 39,
           "platform": "wiki"
         },
         {
@@ -680,7 +680,7 @@
       "name": "Argentina",
       "nameKo": "아르헨티나",
       "score": 31.1,
-      "trendsScore": 66.0,
+      "trendsScore": 66,
       "wikiScore": 0.1,
       "youtubeScore": 27.3,
       "change": -1.9,
@@ -703,7 +703,7 @@
           "id": "blackpink",
           "name": "BLACKPINK",
           "nameKo": "블랙핑크",
-          "score": 1.0,
+          "score": 1,
           "platform": "youtube"
         }
       ],
@@ -724,14 +724,14 @@
           "id": "bts",
           "name": "BTS",
           "nameKo": "방탄소년단",
-          "score": 399.0,
+          "score": 399,
           "platform": "wiki"
         },
         {
           "id": "blackpink",
           "name": "BLACKPINK",
           "nameKo": "블랙핑크",
-          "score": 368.0,
+          "score": 368,
           "platform": "wiki"
         },
         {
@@ -815,7 +815,7 @@
           "id": "blackpink",
           "name": "BLACKPINK",
           "nameKo": "블랙핑크",
-          "score": 1.0,
+          "score": 1,
           "platform": "youtube"
         },
         {
@@ -835,7 +835,7 @@
       "nameKo": "브라질",
       "score": 26.5,
       "trendsScore": 58.5,
-      "wikiScore": 3.0,
+      "wikiScore": 3,
       "youtubeScore": 18.2,
       "change": -4.2,
       "topArtists": [
@@ -843,7 +843,7 @@
           "id": "blackpink",
           "name": "BLACKPINK",
           "nameKo": "블랙핑크",
-          "score": 273.0,
+          "score": 273,
           "platform": "wiki"
         },
         {
@@ -861,7 +861,7 @@
       "code": "VN",
       "name": "Vietnam",
       "nameKo": "베트남",
-      "score": 26.0,
+      "score": 26,
       "trendsScore": 38.4,
       "wikiScore": 2.9,
       "youtubeScore": 36.4,
@@ -871,7 +871,7 @@
           "id": "blackpink",
           "name": "BLACKPINK",
           "nameKo": "블랙핑크",
-          "score": 263.0,
+          "score": 263,
           "platform": "wiki"
         },
         {
@@ -885,7 +885,7 @@
           "id": "bts",
           "name": "BTS",
           "nameKo": "방탄소년단",
-          "score": 1.0,
+          "score": 1,
           "platform": "wiki"
         }
       ],
@@ -920,7 +920,7 @@
           "id": "blackpink",
           "name": "BLACKPINK",
           "nameKo": "블랙핑크",
-          "score": 1.0,
+          "score": 1,
           "platform": "youtube"
         }
       ],
@@ -941,7 +941,7 @@
           "id": "blackpink",
           "name": "BLACKPINK",
           "nameKo": "블랙핑크",
-          "score": 171.0,
+          "score": 171,
           "platform": "wiki"
         },
         {
@@ -962,8 +962,8 @@
       "score": 21.2,
       "trendsScore": 20.1,
       "wikiScore": 44.2,
-      "youtubeScore": 0.0,
-      "change": -11.0,
+      "youtubeScore": 0,
+      "change": -11,
       "topArtists": [
         {
           "id": "blackpink",
@@ -1009,7 +1009,7 @@
       "name": "Colombia",
       "nameKo": "콜롬비아",
       "score": 20.7,
-      "trendsScore": 44.0,
+      "trendsScore": 44,
       "wikiScore": 0.1,
       "youtubeScore": 18.2,
       "change": -1.3,
@@ -1025,7 +1025,7 @@
           "id": "blackpink",
           "name": "BLACKPINK",
           "nameKo": "블랙핑크",
-          "score": 1.0,
+          "score": 1,
           "platform": "youtube"
         },
         {
@@ -1053,7 +1053,7 @@
           "id": "blackpink",
           "name": "BLACKPINK",
           "nameKo": "블랙핑크",
-          "score": 591.0,
+          "score": 591,
           "platform": "wiki"
         }
       ],
@@ -1074,14 +1074,14 @@
           "id": "blackpink",
           "name": "BLACKPINK",
           "nameKo": "블랙핑크",
-          "score": 238.0,
+          "score": 238,
           "platform": "wiki"
         },
         {
           "id": "bts",
           "name": "BTS",
           "nameKo": "방탄소년단",
-          "score": 2.0,
+          "score": 2,
           "platform": "wiki"
         },
         {
@@ -1109,14 +1109,14 @@
           "id": "blackpink",
           "name": "BLACKPINK",
           "nameKo": "블랙핑크",
-          "score": 127.0,
+          "score": 127,
           "platform": "wiki"
         },
         {
           "id": "bts",
           "name": "BTS",
           "nameKo": "방탄소년단",
-          "score": 2.0,
+          "score": 2,
           "platform": "wiki"
         },
         {
@@ -1135,7 +1135,7 @@
       "name": "India",
       "nameKo": "인도",
       "score": 14.3,
-      "trendsScore": 34.0,
+      "trendsScore": 34,
       "wikiScore": 0,
       "youtubeScore": 9.1,
       "change": -2.7,
@@ -1149,15 +1149,15 @@
         }
       ],
       "lat": 20.6,
-      "lng": 79.0
+      "lng": 79
     },
     {
       "code": "SA",
       "name": "Saudi Arabia",
       "nameKo": "사우디아라비아",
-      "score": 13.0,
+      "score": 13,
       "trendsScore": 11.3,
-      "wikiScore": 0.0,
+      "wikiScore": 0,
       "youtubeScore": 27.3,
       "change": 7.3,
       "topArtists": [
@@ -1178,7 +1178,7 @@
       "nameKo": "이집트",
       "score": 6.6,
       "trendsScore": 10.7,
-      "wikiScore": 0.0,
+      "wikiScore": 0,
       "youtubeScore": 9.1,
       "change": 1.2,
       "topArtists": [
@@ -1199,70 +1199,70 @@
       "id": "blackpink",
       "name": "BLACKPINK",
       "nameKo": "블랙핑크",
-      "score": 13536.0,
+      "score": 13536,
       "color": "#F15BB5"
     },
     {
       "id": "bts",
       "name": "BTS",
       "nameKo": "방탄소년단",
-      "score": 8248.0,
+      "score": 8248,
       "color": "#9B5DE5"
     },
     {
       "id": "stray-kids",
       "name": "Stray Kids",
       "nameKo": "스트레이 키즈",
-      "score": 3405.0,
+      "score": 3405,
       "color": "#00BBF9"
     },
     {
       "id": "ive",
       "name": "IVE",
       "nameKo": "아이브",
-      "score": 3341.0,
+      "score": 3341,
       "color": "#D4A5FF"
     },
     {
       "id": "newjeans",
       "name": "NewJeans",
       "nameKo": "뉴진스",
-      "score": 3323.0,
+      "score": 3323,
       "color": "#00F5D4"
     },
     {
       "id": "le-sserafim",
       "name": "LE SSERAFIM",
       "nameKo": "르세라핌",
-      "score": 3134.0,
+      "score": 3134,
       "color": "#FFD6E0"
     },
     {
       "id": "aespa",
       "name": "aespa",
       "nameKo": "에스파",
-      "score": 2801.0,
+      "score": 2801,
       "color": "#FEE440"
     },
     {
       "id": "seventeen",
       "name": "SEVENTEEN",
       "nameKo": "세븐틴",
-      "score": 2417.0,
+      "score": 2417,
       "color": "#F4845F"
     },
     {
       "id": "txt",
       "name": "TXT",
       "nameKo": "투모로우바이투게더",
-      "score": 1536.0,
+      "score": 1536,
       "color": "#C3F73A"
     },
     {
       "id": "twice",
       "name": "TWICE",
       "nameKo": "트와이스",
-      "score": 1318.0,
+      "score": 1318,
       "color": "#FF6F91"
     }
   ],
@@ -1369,7 +1369,7 @@
     },
     {
       "keyword": "블랙핑크 (Wiki #1)",
-      "score": 13478.0,
+      "score": 13478,
       "source": "wikipedia",
       "topCountries": [
         "일본",
@@ -1379,7 +1379,7 @@
     },
     {
       "keyword": "방탄소년단 (Wiki #2)",
-      "score": 8248.0,
+      "score": 8248,
       "source": "wikipedia",
       "topCountries": [
         "미국",
@@ -1389,7 +1389,7 @@
     },
     {
       "keyword": "스트레이 키즈 (Wiki #3)",
-      "score": 3405.0,
+      "score": 3405,
       "source": "wikipedia",
       "topCountries": [
         "미국",
@@ -1399,7 +1399,7 @@
     },
     {
       "keyword": "뉴진스 (Wiki #4)",
-      "score": 3323.0,
+      "score": 3323,
       "source": "wikipedia",
       "topCountries": [
         "일본",
@@ -1409,7 +1409,7 @@
     },
     {
       "keyword": "아이브 (Wiki #5)",
-      "score": 3253.0,
+      "score": 3253,
       "source": "wikipedia",
       "topCountries": [
         "일본",
@@ -1419,7 +1419,7 @@
     },
     {
       "keyword": "르세라핌 (Wiki #6)",
-      "score": 2890.0,
+      "score": 2890,
       "source": "wikipedia",
       "topCountries": [
         "일본",
@@ -1429,7 +1429,7 @@
     },
     {
       "keyword": "에스파 (Wiki #7)",
-      "score": 2754.0,
+      "score": 2754,
       "source": "wikipedia",
       "topCountries": [
         "일본",
@@ -1439,7 +1439,7 @@
     },
     {
       "keyword": "세븐틴 (Wiki #8)",
-      "score": 2510.0,
+      "score": 2510,
       "source": "wikipedia",
       "topCountries": [
         "일본",
@@ -1449,7 +1449,7 @@
     },
     {
       "keyword": "트와이스 (Wiki #9)",
-      "score": 2305.0,
+      "score": 2305,
       "source": "wikipedia",
       "topCountries": [
         "일본",
@@ -1459,7 +1459,7 @@
     },
     {
       "keyword": "엔하이픈 (Wiki #10)",
-      "score": 2180.0,
+      "score": 2180,
       "source": "wikipedia",
       "topCountries": [
         "일본",
@@ -1863,6 +1863,1804 @@
         "title": "블랙핑크&아이브…한터 국가별 차트 '1위'",
         "url": "https://v.daum.net/v/20260306100744372",
         "timeAgo": "03/07"
+      }
+    ]
+  },
+  "contentData": {
+    "BLACKPINK": [
+      {
+        "type": "news",
+        "title": "제니, \"루비\" 발매 1주년 팝업 오픈…스페셜 앨범 발매까지",
+        "url": "https://v.daum.net/v/20260307164724302",
+        "timeAgo": "3시간 전",
+        "provider": "MBC연예"
+      },
+      {
+        "type": "news",
+        "title": "로제, 스타일의 완성은 명품 \"직각 어깨\"",
+        "url": "https://v.daum.net/v/20260307163001754",
+        "timeAgo": "4시간 전",
+        "provider": "스포츠조선"
+      },
+      {
+        "type": "news",
+        "title": "블랙핑크 미니 3집 177만장 초동 신기록 달성",
+        "url": "https://v.daum.net/v/20260307145636043",
+        "timeAgo": "6시간 전",
+        "provider": "한국경제"
+      },
+      {
+        "type": "news",
+        "title": "리사, 솔로 앨범 글로벌 차트 석권…\"K-pop 최강자\"",
+        "url": "https://v.daum.net/v/20260307130912762",
+        "timeAgo": "8시간 전",
+        "provider": "뉴스1"
+      },
+      {
+        "type": "news",
+        "title": "지수, 연기 활동 복귀…tvN 신작 드라마 캐스팅",
+        "url": "https://v.daum.net/v/20260306162639633",
+        "timeAgo": "1일 전",
+        "provider": "스타뉴스"
+      },
+      {
+        "type": "search",
+        "title": "블랙핑크 2026 월드투어 일정 및 티켓 예매 안내",
+        "url": "https://search.daum.net/search?q=블랙핑크+월드투어",
+        "timeAgo": "",
+        "provider": "다음 검색"
+      },
+      {
+        "type": "search",
+        "title": "블랙핑크 멤버 프로필 및 최신 활동 총정리",
+        "url": "https://search.daum.net/search?q=블랙핑크+프로필",
+        "timeAgo": "",
+        "provider": "다음 검색"
+      },
+      {
+        "type": "youtube",
+        "title": "BLACKPINK - 2026 컴백 무대 직캠 모음",
+        "url": "https://www.youtube.com/shorts/dQw4w9WgXcQ",
+        "timeAgo": "",
+        "thumbnail": "https://i.ytimg.com/vi/dQw4w9WgXcQ/hq720.jpg",
+        "provider": "BLACKPINK"
+      },
+      {
+        "type": "youtube",
+        "title": "제니 \"루비\" 안무 챌린지 모음 #shorts",
+        "url": "https://www.youtube.com/shorts/jNQXAC9IVRw",
+        "timeAgo": "",
+        "thumbnail": "https://i.ytimg.com/vi/jNQXAC9IVRw/hq720.jpg",
+        "provider": "제니 팬채널"
+      },
+      {
+        "type": "youtube",
+        "title": "로제 x 브루노 마스 콜라보 무대 하이라이트",
+        "url": "https://www.youtube.com/shorts/kJQP7kiw5Fk",
+        "timeAgo": "",
+        "thumbnail": "https://i.ytimg.com/vi/kJQP7kiw5Fk/hq720.jpg",
+        "provider": "YG Entertainment"
+      }
+    ],
+    "BTS": [
+      {
+        "type": "news",
+        "title": "방탄소년단, 21일 광화문 공연 트레일러 공개…기대감 최고조",
+        "url": "https://v.daum.net/v/20260307142344056",
+        "timeAgo": "5시간 전",
+        "provider": "SBS연예"
+      },
+      {
+        "type": "news",
+        "title": "BTS 진, 솔로 앨범 선주문 200만장 돌파",
+        "url": "https://v.daum.net/v/20260307130912762",
+        "timeAgo": "7시간 전",
+        "provider": "한국경제"
+      },
+      {
+        "type": "news",
+        "title": "정국, 미국 스타디움 투어 전석 매진 기록",
+        "url": "https://v.daum.net/v/20260307115344792",
+        "timeAgo": "9시간 전",
+        "provider": "뉴시스"
+      },
+      {
+        "type": "news",
+        "title": "RM, 두 번째 솔로 앨범으로 빌보드 200 1위",
+        "url": "https://v.daum.net/v/20260306154059911",
+        "timeAgo": "1일 전",
+        "provider": "스포츠동아"
+      },
+      {
+        "type": "news",
+        "title": "슈가, 월드 투어 서울 추가 공연 확정",
+        "url": "https://v.daum.net/v/20260306152305228",
+        "timeAgo": "1일 전",
+        "provider": "OSEN"
+      },
+      {
+        "type": "search",
+        "title": "BTS 광화문 공연 티켓 예매 방법 총정리",
+        "url": "https://search.daum.net/search?q=BTS+광화문+공연",
+        "timeAgo": "",
+        "provider": "다음 검색"
+      },
+      {
+        "type": "search",
+        "title": "방탄소년단 2026 활동 일정 완벽 가이드",
+        "url": "https://search.daum.net/search?q=방탄소년단+2026+일정",
+        "timeAgo": "",
+        "provider": "다음 검색"
+      },
+      {
+        "type": "youtube",
+        "title": "BTS 광화문 콘서트 리허설 비하인드 #shorts",
+        "url": "https://www.youtube.com/shorts/9bZkp7q19f0",
+        "timeAgo": "",
+        "thumbnail": "https://i.ytimg.com/vi/9bZkp7q19f0/hq720.jpg",
+        "provider": "HYBE LABELS"
+      },
+      {
+        "type": "youtube",
+        "title": "진 솔로 무대 직캠 - 서울 콘서트",
+        "url": "https://www.youtube.com/shorts/fJ9rUzIMcZQ",
+        "timeAgo": "",
+        "thumbnail": "https://i.ytimg.com/vi/fJ9rUzIMcZQ/hq720.jpg",
+        "provider": "BTS 팬캠"
+      },
+      {
+        "type": "youtube",
+        "title": "정국 \"Standing Next to You\" 라이브 #shorts",
+        "url": "https://www.youtube.com/shorts/YQHsXMglC9A",
+        "timeAgo": "",
+        "thumbnail": "https://i.ytimg.com/vi/YQHsXMglC9A/hq720.jpg",
+        "provider": "HYBE LABELS"
+      }
+    ],
+    "K-pop": [
+      {
+        "type": "news",
+        "title": "K-pop 걸그룹 초동 판매 기록 잇달아 경신",
+        "url": "https://v.daum.net/v/20260307163805008",
+        "timeAgo": "4시간 전",
+        "provider": "한국경제"
+      },
+      {
+        "type": "news",
+        "title": "2026 K-pop 시장 규모 15조원 돌파 전망",
+        "url": "https://v.daum.net/v/20260307160419881",
+        "timeAgo": "5시간 전",
+        "provider": "매일경제"
+      },
+      {
+        "type": "news",
+        "title": "K-pop, 빌보드 HOT 100 동시 10곡 진입 신기록",
+        "url": "https://v.daum.net/v/20260307153923848",
+        "timeAgo": "6시간 전",
+        "provider": "뉴스1"
+      },
+      {
+        "type": "news",
+        "title": "해외 K-pop 팬덤 3억명 시대…글로벌 경제 효과 분석",
+        "url": "https://v.daum.net/v/20260306164102107",
+        "timeAgo": "1일 전",
+        "provider": "KBS뉴스"
+      },
+      {
+        "type": "search",
+        "title": "K-pop 아이돌 데뷔 예정 그룹 2026 총정리",
+        "url": "https://search.daum.net/search?q=K-pop+2026+데뷔",
+        "timeAgo": "",
+        "provider": "다음 검색"
+      },
+      {
+        "type": "search",
+        "title": "K-pop 걸그룹 초동 판매 역대 순위",
+        "url": "https://search.daum.net/search?q=K-pop+초동+순위",
+        "timeAgo": "",
+        "provider": "다음 검색"
+      },
+      {
+        "type": "youtube",
+        "title": "K-pop 2026 상반기 컴백 총정리 #shorts",
+        "url": "https://www.youtube.com/shorts/ScMzIvxBSi4",
+        "timeAgo": "",
+        "thumbnail": "https://i.ytimg.com/vi/ScMzIvxBSi4/hq720.jpg",
+        "provider": "K-pop 랭킹"
+      },
+      {
+        "type": "youtube",
+        "title": "K-pop vs 팝 - 2026 글로벌 차트 대결",
+        "url": "https://www.youtube.com/shorts/CevxZvSJLk8",
+        "timeAgo": "",
+        "thumbnail": "https://i.ytimg.com/vi/CevxZvSJLk8/hq720.jpg",
+        "provider": "음악의신"
+      }
+    ],
+    "NewJeans": [
+      {
+        "type": "news",
+        "title": "뉴진스, 신곡 뮤직비디오 1억뷰 돌파…컴백 성공",
+        "url": "https://v.daum.net/v/20260307145636043",
+        "timeAgo": "6시간 전",
+        "provider": "MBC연예"
+      },
+      {
+        "type": "news",
+        "title": "뉴진스 하니, 솔로 화보 공개…청순 매력 폭발",
+        "url": "https://v.daum.net/v/20260307125525950",
+        "timeAgo": "8시간 전",
+        "provider": "W Korea"
+      },
+      {
+        "type": "news",
+        "title": "뉴진스, 일본 데뷔 앨범 오리콘 1위 등극",
+        "url": "https://v.daum.net/v/20260306164637278",
+        "timeAgo": "1일 전",
+        "provider": "스포츠조선"
+      },
+      {
+        "type": "news",
+        "title": "민지, 샤넬 글로벌 앰배서더 연임 확정",
+        "url": "https://v.daum.net/v/20260306160303836",
+        "timeAgo": "1일 전",
+        "provider": "뉴스1"
+      },
+      {
+        "type": "search",
+        "title": "뉴진스 2026 팬미팅 일정 및 장소",
+        "url": "https://search.daum.net/search?q=뉴진스+팬미팅",
+        "timeAgo": "",
+        "provider": "다음 검색"
+      },
+      {
+        "type": "youtube",
+        "title": "NewJeans \"ETA\" 직캠 모음 #shorts",
+        "url": "https://www.youtube.com/shorts/pSUydWEqKwE",
+        "timeAgo": "",
+        "thumbnail": "https://i.ytimg.com/vi/pSUydWEqKwE/hq720.jpg",
+        "provider": "HYBE LABELS"
+      },
+      {
+        "type": "youtube",
+        "title": "뉴진스 하니 직캠 - 음악방송 무대",
+        "url": "https://www.youtube.com/shorts/nrGvfea7pGE",
+        "timeAgo": "",
+        "thumbnail": "https://i.ytimg.com/vi/nrGvfea7pGE/hq720.jpg",
+        "provider": "뉴진스 팬캠"
+      },
+      {
+        "type": "youtube",
+        "title": "NewJeans 안무 챌린지 베스트 모음",
+        "url": "https://www.youtube.com/shorts/z0GKGpF_PEo",
+        "timeAgo": "",
+        "thumbnail": "https://i.ytimg.com/vi/z0GKGpF_PEo/hq720.jpg",
+        "provider": "뉴진스 팬채널"
+      }
+    ],
+    "Stray Kids": [
+      {
+        "type": "news",
+        "title": "스트레이 키즈 필릭스, 프랑스 한국 수교 140주년 명예 앰배서더 위촉",
+        "url": "https://v.daum.net/v/20260307162639633",
+        "timeAgo": "4시간 전",
+        "provider": "SBS연예"
+      },
+      {
+        "type": "news",
+        "title": "스트레이 키즈, 북미 스타디움 투어 30만석 전석 매진",
+        "url": "https://v.daum.net/v/20260307115344792",
+        "timeAgo": "9시간 전",
+        "provider": "뉴시스"
+      },
+      {
+        "type": "news",
+        "title": "방찬, 자작곡으로 빌보드 HOT 100 진입 화제",
+        "url": "https://v.daum.net/v/20260306160402873",
+        "timeAgo": "1일 전",
+        "provider": "스포츠동아"
+      },
+      {
+        "type": "search",
+        "title": "스트레이 키즈 월드투어 2026 티켓 정보",
+        "url": "https://search.daum.net/search?q=스트레이키즈+월드투어",
+        "timeAgo": "",
+        "provider": "다음 검색"
+      },
+      {
+        "type": "search",
+        "title": "Stray Kids 디스코그래피 총정리",
+        "url": "https://search.daum.net/search?q=Stray+Kids+앨범",
+        "timeAgo": "",
+        "provider": "다음 검색"
+      },
+      {
+        "type": "youtube",
+        "title": "Stray Kids \"MEGAVERSE\" 직캠 #shorts",
+        "url": "https://www.youtube.com/shorts/LYCxr_BTYw4",
+        "timeAgo": "",
+        "thumbnail": "https://i.ytimg.com/vi/LYCxr_BTYw4/hq720.jpg",
+        "provider": "JYP Entertainment"
+      },
+      {
+        "type": "youtube",
+        "title": "리노 직캠 - 미국 스타디움 투어 하이라이트",
+        "url": "https://www.youtube.com/shorts/cmSbXsFE3l8",
+        "timeAgo": "",
+        "thumbnail": "https://i.ytimg.com/vi/cmSbXsFE3l8/hq720.jpg",
+        "provider": "SKZ 팬캠"
+      }
+    ],
+    "IVE": [
+      {
+        "type": "news",
+        "title": "안유진, 이영지 신곡 지원사격…\"지락실\" 특급 의리",
+        "url": "https://v.daum.net/v/20260307153923848",
+        "timeAgo": "6시간 전",
+        "provider": "OSEN"
+      },
+      {
+        "type": "news",
+        "title": "아이브, 한터 국가별 차트 1위…글로벌 영향력 입증",
+        "url": "https://v.daum.net/v/20260307101240585",
+        "timeAgo": "10시간 전",
+        "provider": "스타뉴스"
+      },
+      {
+        "type": "news",
+        "title": "장원영, 디올 2026 F/W 컬렉션 프론트로 참석",
+        "url": "https://v.daum.net/v/20260306164724302",
+        "timeAgo": "1일 전",
+        "provider": "W Korea"
+      },
+      {
+        "type": "search",
+        "title": "아이브 신곡 음원 차트 성적 분석",
+        "url": "https://search.daum.net/search?q=아이브+신곡+차트",
+        "timeAgo": "",
+        "provider": "다음 검색"
+      },
+      {
+        "type": "youtube",
+        "title": "IVE \"HEYA\" 안무 챌린지 #shorts",
+        "url": "https://www.youtube.com/shorts/F0B7HDiY-10",
+        "timeAgo": "",
+        "thumbnail": "https://i.ytimg.com/vi/F0B7HDiY-10/hq720.jpg",
+        "provider": "Starship"
+      },
+      {
+        "type": "youtube",
+        "title": "장원영 직캠 - 음악방송 무대 모음",
+        "url": "https://www.youtube.com/shorts/HCjNJDNzw8Y",
+        "timeAgo": "",
+        "thumbnail": "https://i.ytimg.com/vi/HCjNJDNzw8Y/hq720.jpg",
+        "provider": "IVE 팬캠"
+      },
+      {
+        "type": "youtube",
+        "title": "안유진 예능 하이라이트 모음 #shorts",
+        "url": "https://www.youtube.com/shorts/ZbZSe6N_BXs",
+        "timeAgo": "",
+        "thumbnail": "https://i.ytimg.com/vi/ZbZSe6N_BXs/hq720.jpg",
+        "provider": "유진이네"
+      }
+    ],
+    "LE SSERAFIM": [
+      {
+        "type": "news",
+        "title": "르세라핌, 일본 돔 투어 전석 매진 기록",
+        "url": "https://v.daum.net/v/20260307094144993",
+        "timeAgo": "12시간 전",
+        "provider": "한국경제"
+      },
+      {
+        "type": "news",
+        "title": "김채원, 솔로 활동 예고…다재다능 매력 기대",
+        "url": "https://v.daum.net/v/20260307080202340",
+        "timeAgo": "14시간 전",
+        "provider": "뉴스1"
+      },
+      {
+        "type": "news",
+        "title": "허윤진, 영어 노래로 미국 라디오 차트 진입",
+        "url": "https://v.daum.net/v/20260306153923848",
+        "timeAgo": "1일 전",
+        "provider": "스포츠조선"
+      },
+      {
+        "type": "search",
+        "title": "르세라핌 일본 돔 투어 일정 및 세트리스트",
+        "url": "https://search.daum.net/search?q=르세라핌+돔투어",
+        "timeAgo": "",
+        "provider": "다음 검색"
+      },
+      {
+        "type": "youtube",
+        "title": "LE SSERAFIM \"EASY\" 직캠 모음 #shorts",
+        "url": "https://www.youtube.com/shorts/2DaJ6mEBpJo",
+        "timeAgo": "",
+        "thumbnail": "https://i.ytimg.com/vi/2DaJ6mEBpJo/hq720.jpg",
+        "provider": "HYBE LABELS"
+      },
+      {
+        "type": "youtube",
+        "title": "사쿠라 직캠 - 도쿄돔 공연 하이라이트",
+        "url": "https://www.youtube.com/shorts/gQlMMD8auMs",
+        "timeAgo": "",
+        "thumbnail": "https://i.ytimg.com/vi/gQlMMD8auMs/hq720.jpg",
+        "provider": "르세라핌 팬캠"
+      }
+    ],
+    "aespa": [
+      {
+        "type": "news",
+        "title": "에스파 닝닝, 해외 일정 위해 인천공항 출국",
+        "url": "https://v.daum.net/v/20260307160303836",
+        "timeAgo": "5시간 전",
+        "provider": "OSEN"
+      },
+      {
+        "type": "news",
+        "title": "에스파, 신곡으로 스포티파이 글로벌 TOP 50 진입",
+        "url": "https://v.daum.net/v/20260307155419881",
+        "timeAgo": "5시간 전",
+        "provider": "뉴시스"
+      },
+      {
+        "type": "news",
+        "title": "카리나, 뷰티 브랜드 글로벌 모델 발탁",
+        "url": "https://v.daum.net/v/20260306163001754",
+        "timeAgo": "1일 전",
+        "provider": "W Korea"
+      },
+      {
+        "type": "search",
+        "title": "에스파 2026 컴백 예상 일정",
+        "url": "https://search.daum.net/search?q=에스파+컴백",
+        "timeAgo": "",
+        "provider": "다음 검색"
+      },
+      {
+        "type": "youtube",
+        "title": "aespa \"Supernova\" 직캠 #shorts",
+        "url": "https://www.youtube.com/shorts/phuiiNCxRMg",
+        "timeAgo": "",
+        "thumbnail": "https://i.ytimg.com/vi/phuiiNCxRMg/hq720.jpg",
+        "provider": "SMTOWN"
+      },
+      {
+        "type": "youtube",
+        "title": "윈터 직캠 - 2026 페스티벌 무대",
+        "url": "https://www.youtube.com/shorts/B7bqAsxee4I",
+        "timeAgo": "",
+        "thumbnail": "https://i.ytimg.com/vi/B7bqAsxee4I/hq720.jpg",
+        "provider": "에스파 팬캠"
+      }
+    ],
+    "SEVENTEEN": [
+      {
+        "type": "news",
+        "title": "세븐틴, 굿즈 부정경쟁행위 첫 시정 명령 승소",
+        "url": "https://v.daum.net/v/20260307160419881",
+        "timeAgo": "5시간 전",
+        "provider": "SBS뉴스"
+      },
+      {
+        "type": "news",
+        "title": "세븐틴, 천안·아산 돔 구장 공연 확정…지역경제 활성화",
+        "url": "https://v.daum.net/v/20260307160402873",
+        "timeAgo": "5시간 전",
+        "provider": "뉴스1"
+      },
+      {
+        "type": "news",
+        "title": "호시, 솔로 앨범으로 빌보드 200 TOP 10 진입",
+        "url": "https://v.daum.net/v/20260306130912762",
+        "timeAgo": "1일 전",
+        "provider": "스포츠동아"
+      },
+      {
+        "type": "search",
+        "title": "세븐틴 돔 투어 2026 티켓 예매",
+        "url": "https://search.daum.net/search?q=세븐틴+돔투어",
+        "timeAgo": "",
+        "provider": "다음 검색"
+      },
+      {
+        "type": "youtube",
+        "title": "SEVENTEEN \"SUPER\" 직캠 #shorts",
+        "url": "https://www.youtube.com/shorts/9UbOCat29Js",
+        "timeAgo": "",
+        "thumbnail": "https://i.ytimg.com/vi/9UbOCat29Js/hq720.jpg",
+        "provider": "HYBE LABELS"
+      },
+      {
+        "type": "youtube",
+        "title": "디에잇 직캠 - 서울 콘서트 하이라이트",
+        "url": "https://www.youtube.com/shorts/b6toYg0S8Bs",
+        "timeAgo": "",
+        "thumbnail": "https://i.ytimg.com/vi/b6toYg0S8Bs/hq720.jpg",
+        "provider": "SVT 팬캠"
+      }
+    ],
+    "TXT": [
+      {
+        "type": "news",
+        "title": "TXT 연준, WBC 최초 음원서 가창…야구팬 심금",
+        "url": "https://v.daum.net/v/20260307154059911",
+        "timeAgo": "6시간 전",
+        "provider": "MBC스포츠"
+      },
+      {
+        "type": "news",
+        "title": "투모로우바이투게더, 일본 3rd 앨범 오리콘 1위",
+        "url": "https://v.daum.net/v/20260307120053065",
+        "timeAgo": "10시간 전",
+        "provider": "한국경제"
+      },
+      {
+        "type": "news",
+        "title": "수빈, 라디오 DJ 300회 특집 방송 화제",
+        "url": "https://v.daum.net/v/20260306154059911",
+        "timeAgo": "1일 전",
+        "provider": "SBS연예"
+      },
+      {
+        "type": "search",
+        "title": "TXT 일본 앨범 구매 가이드",
+        "url": "https://search.daum.net/search?q=TXT+일본+앨범",
+        "timeAgo": "",
+        "provider": "다음 검색"
+      },
+      {
+        "type": "youtube",
+        "title": "TXT \"Deja Vu\" 안무 챌린지 #shorts",
+        "url": "https://www.youtube.com/shorts/sDmDFCQ3bMY",
+        "timeAgo": "",
+        "thumbnail": "https://i.ytimg.com/vi/sDmDFCQ3bMY/hq720.jpg",
+        "provider": "HYBE LABELS"
+      },
+      {
+        "type": "youtube",
+        "title": "연준 WBC 공연 영상 풀버전",
+        "url": "https://www.youtube.com/shorts/dx2k4tj_JiA",
+        "timeAgo": "",
+        "thumbnail": "https://i.ytimg.com/vi/dx2k4tj_JiA/hq720.jpg",
+        "provider": "TXT 팬캠"
+      }
+    ],
+    "TWICE": [
+      {
+        "type": "news",
+        "title": "트와이스 나연, 솔로 컴백 티저 공개…화제",
+        "url": "https://v.daum.net/v/20260307152305228",
+        "timeAgo": "6시간 전",
+        "provider": "스포츠조선"
+      },
+      {
+        "type": "news",
+        "title": "모모, 2026년식 컷아웃 패션으로 화보 장식",
+        "url": "https://v.daum.net/v/20260307164637278",
+        "timeAgo": "3시간 전",
+        "provider": "W Korea"
+      },
+      {
+        "type": "news",
+        "title": "트와이스, 데뷔 11주년 기념 팬미팅 개최",
+        "url": "https://v.daum.net/v/20260306152305228",
+        "timeAgo": "1일 전",
+        "provider": "OSEN"
+      },
+      {
+        "type": "search",
+        "title": "트와이스 나연 솔로 앨범 정보",
+        "url": "https://search.daum.net/search?q=나연+솔로+앨범",
+        "timeAgo": "",
+        "provider": "다음 검색"
+      },
+      {
+        "type": "youtube",
+        "title": "TWICE 나연 \"POP!\" 직캠 #shorts",
+        "url": "https://www.youtube.com/shorts/f6YDKF0LVWw",
+        "timeAgo": "",
+        "thumbnail": "https://i.ytimg.com/vi/f6YDKF0LVWw/hq720.jpg",
+        "provider": "JYP Entertainment"
+      },
+      {
+        "type": "youtube",
+        "title": "트와이스 콘서트 앵콜 무대 모음",
+        "url": "https://www.youtube.com/shorts/kOHB85vDuow",
+        "timeAgo": "",
+        "thumbnail": "https://i.ytimg.com/vi/kOHB85vDuow/hq720.jpg",
+        "provider": "ONCE 팬캠"
+      }
+    ],
+    "ENHYPEN": [
+      {
+        "type": "news",
+        "title": "엔하이픈, 한터 국가별 차트 TOP 5 진입",
+        "url": "https://v.daum.net/v/20260307101240585",
+        "timeAgo": "10시간 전",
+        "provider": "스타뉴스"
+      },
+      {
+        "type": "news",
+        "title": "엔하이픈, 3번째 월드투어 개최 확정",
+        "url": "https://v.daum.net/v/20260307100744372",
+        "timeAgo": "10시간 전",
+        "provider": "뉴시스"
+      },
+      {
+        "type": "news",
+        "title": "제이크, 글로벌 패션 위크 참석 화제",
+        "url": "https://v.daum.net/v/20260306101240585",
+        "timeAgo": "1일 전",
+        "provider": "W Korea"
+      },
+      {
+        "type": "search",
+        "title": "엔하이픈 월드투어 2026 일정",
+        "url": "https://search.daum.net/search?q=엔하이픈+월드투어",
+        "timeAgo": "",
+        "provider": "다음 검색"
+      },
+      {
+        "type": "youtube",
+        "title": "ENHYPEN \"Bite Me\" 직캠 #shorts",
+        "url": "https://www.youtube.com/shorts/wXFLTOBYyXc",
+        "timeAgo": "",
+        "thumbnail": "https://i.ytimg.com/vi/wXFLTOBYyXc/hq720.jpg",
+        "provider": "HYBE LABELS"
+      },
+      {
+        "type": "youtube",
+        "title": "니키 직캠 - 퍼포먼스 하이라이트",
+        "url": "https://www.youtube.com/shorts/ASO_zypdnsQ",
+        "timeAgo": "",
+        "thumbnail": "https://i.ytimg.com/vi/ASO_zypdnsQ/hq720.jpg",
+        "provider": "ENHYPEN 팬캠"
+      }
+    ],
+    "블랙핑크": [
+      {
+        "type": "news",
+        "title": "제니, \"루비\" 발매 1주년 팝업 오픈…스페셜 앨범 발매까지",
+        "url": "https://v.daum.net/v/20260307164724302",
+        "timeAgo": "3시간 전",
+        "provider": "MBC연예"
+      },
+      {
+        "type": "news",
+        "title": "로제, 스타일의 완성은 명품 \"직각 어깨\"",
+        "url": "https://v.daum.net/v/20260307163001754",
+        "timeAgo": "4시간 전",
+        "provider": "스포츠조선"
+      },
+      {
+        "type": "news",
+        "title": "블랙핑크 미니 3집 177만장 초동 신기록 달성",
+        "url": "https://v.daum.net/v/20260307145636043",
+        "timeAgo": "6시간 전",
+        "provider": "한국경제"
+      },
+      {
+        "type": "news",
+        "title": "리사, 솔로 앨범 글로벌 차트 석권…\"K-pop 최강자\"",
+        "url": "https://v.daum.net/v/20260307130912762",
+        "timeAgo": "8시간 전",
+        "provider": "뉴스1"
+      },
+      {
+        "type": "news",
+        "title": "지수, 연기 활동 복귀…tvN 신작 드라마 캐스팅",
+        "url": "https://v.daum.net/v/20260306162639633",
+        "timeAgo": "1일 전",
+        "provider": "스타뉴스"
+      },
+      {
+        "type": "search",
+        "title": "블랙핑크 2026 월드투어 일정 및 티켓 예매 안내",
+        "url": "https://search.daum.net/search?q=블랙핑크+월드투어",
+        "timeAgo": "",
+        "provider": "다음 검색"
+      },
+      {
+        "type": "search",
+        "title": "블랙핑크 멤버 프로필 및 최신 활동 총정리",
+        "url": "https://search.daum.net/search?q=블랙핑크+프로필",
+        "timeAgo": "",
+        "provider": "다음 검색"
+      },
+      {
+        "type": "youtube",
+        "title": "BLACKPINK - 2026 컴백 무대 직캠 모음",
+        "url": "https://www.youtube.com/shorts/dQw4w9WgXcQ",
+        "timeAgo": "",
+        "thumbnail": "https://i.ytimg.com/vi/dQw4w9WgXcQ/hq720.jpg",
+        "provider": "BLACKPINK"
+      },
+      {
+        "type": "youtube",
+        "title": "제니 \"루비\" 안무 챌린지 모음 #shorts",
+        "url": "https://www.youtube.com/shorts/jNQXAC9IVRw",
+        "timeAgo": "",
+        "thumbnail": "https://i.ytimg.com/vi/jNQXAC9IVRw/hq720.jpg",
+        "provider": "제니 팬채널"
+      },
+      {
+        "type": "youtube",
+        "title": "로제 x 브루노 마스 콜라보 무대 하이라이트",
+        "url": "https://www.youtube.com/shorts/kJQP7kiw5Fk",
+        "timeAgo": "",
+        "thumbnail": "https://i.ytimg.com/vi/kJQP7kiw5Fk/hq720.jpg",
+        "provider": "YG Entertainment"
+      }
+    ],
+    "방탄소년단": [
+      {
+        "type": "news",
+        "title": "방탄소년단, 21일 광화문 공연 트레일러 공개…기대감 최고조",
+        "url": "https://v.daum.net/v/20260307142344056",
+        "timeAgo": "5시간 전",
+        "provider": "SBS연예"
+      },
+      {
+        "type": "news",
+        "title": "BTS 진, 솔로 앨범 선주문 200만장 돌파",
+        "url": "https://v.daum.net/v/20260307130912762",
+        "timeAgo": "7시간 전",
+        "provider": "한국경제"
+      },
+      {
+        "type": "news",
+        "title": "정국, 미국 스타디움 투어 전석 매진 기록",
+        "url": "https://v.daum.net/v/20260307115344792",
+        "timeAgo": "9시간 전",
+        "provider": "뉴시스"
+      },
+      {
+        "type": "news",
+        "title": "RM, 두 번째 솔로 앨범으로 빌보드 200 1위",
+        "url": "https://v.daum.net/v/20260306154059911",
+        "timeAgo": "1일 전",
+        "provider": "스포츠동아"
+      },
+      {
+        "type": "news",
+        "title": "슈가, 월드 투어 서울 추가 공연 확정",
+        "url": "https://v.daum.net/v/20260306152305228",
+        "timeAgo": "1일 전",
+        "provider": "OSEN"
+      },
+      {
+        "type": "search",
+        "title": "BTS 광화문 공연 티켓 예매 방법 총정리",
+        "url": "https://search.daum.net/search?q=BTS+광화문+공연",
+        "timeAgo": "",
+        "provider": "다음 검색"
+      },
+      {
+        "type": "search",
+        "title": "방탄소년단 2026 활동 일정 완벽 가이드",
+        "url": "https://search.daum.net/search?q=방탄소년단+2026+일정",
+        "timeAgo": "",
+        "provider": "다음 검색"
+      },
+      {
+        "type": "youtube",
+        "title": "BTS 광화문 콘서트 리허설 비하인드 #shorts",
+        "url": "https://www.youtube.com/shorts/9bZkp7q19f0",
+        "timeAgo": "",
+        "thumbnail": "https://i.ytimg.com/vi/9bZkp7q19f0/hq720.jpg",
+        "provider": "HYBE LABELS"
+      },
+      {
+        "type": "youtube",
+        "title": "진 솔로 무대 직캠 - 서울 콘서트",
+        "url": "https://www.youtube.com/shorts/fJ9rUzIMcZQ",
+        "timeAgo": "",
+        "thumbnail": "https://i.ytimg.com/vi/fJ9rUzIMcZQ/hq720.jpg",
+        "provider": "BTS 팬캠"
+      },
+      {
+        "type": "youtube",
+        "title": "정국 \"Standing Next to You\" 라이브 #shorts",
+        "url": "https://www.youtube.com/shorts/YQHsXMglC9A",
+        "timeAgo": "",
+        "thumbnail": "https://i.ytimg.com/vi/YQHsXMglC9A/hq720.jpg",
+        "provider": "HYBE LABELS"
+      }
+    ],
+    "뉴진스": [
+      {
+        "type": "news",
+        "title": "뉴진스, 신곡 뮤직비디오 1억뷰 돌파…컴백 성공",
+        "url": "https://v.daum.net/v/20260307145636043",
+        "timeAgo": "6시간 전",
+        "provider": "MBC연예"
+      },
+      {
+        "type": "news",
+        "title": "뉴진스 하니, 솔로 화보 공개…청순 매력 폭발",
+        "url": "https://v.daum.net/v/20260307125525950",
+        "timeAgo": "8시간 전",
+        "provider": "W Korea"
+      },
+      {
+        "type": "news",
+        "title": "뉴진스, 일본 데뷔 앨범 오리콘 1위 등극",
+        "url": "https://v.daum.net/v/20260306164637278",
+        "timeAgo": "1일 전",
+        "provider": "스포츠조선"
+      },
+      {
+        "type": "news",
+        "title": "민지, 샤넬 글로벌 앰배서더 연임 확정",
+        "url": "https://v.daum.net/v/20260306160303836",
+        "timeAgo": "1일 전",
+        "provider": "뉴스1"
+      },
+      {
+        "type": "search",
+        "title": "뉴진스 2026 팬미팅 일정 및 장소",
+        "url": "https://search.daum.net/search?q=뉴진스+팬미팅",
+        "timeAgo": "",
+        "provider": "다음 검색"
+      },
+      {
+        "type": "youtube",
+        "title": "NewJeans \"ETA\" 직캠 모음 #shorts",
+        "url": "https://www.youtube.com/shorts/pSUydWEqKwE",
+        "timeAgo": "",
+        "thumbnail": "https://i.ytimg.com/vi/pSUydWEqKwE/hq720.jpg",
+        "provider": "HYBE LABELS"
+      },
+      {
+        "type": "youtube",
+        "title": "뉴진스 하니 직캠 - 음악방송 무대",
+        "url": "https://www.youtube.com/shorts/nrGvfea7pGE",
+        "timeAgo": "",
+        "thumbnail": "https://i.ytimg.com/vi/nrGvfea7pGE/hq720.jpg",
+        "provider": "뉴진스 팬캠"
+      },
+      {
+        "type": "youtube",
+        "title": "NewJeans 안무 챌린지 베스트 모음",
+        "url": "https://www.youtube.com/shorts/z0GKGpF_PEo",
+        "timeAgo": "",
+        "thumbnail": "https://i.ytimg.com/vi/z0GKGpF_PEo/hq720.jpg",
+        "provider": "뉴진스 팬채널"
+      }
+    ],
+    "스트레이 키즈": [
+      {
+        "type": "news",
+        "title": "스트레이 키즈 필릭스, 프랑스 한국 수교 140주년 명예 앰배서더 위촉",
+        "url": "https://v.daum.net/v/20260307162639633",
+        "timeAgo": "4시간 전",
+        "provider": "SBS연예"
+      },
+      {
+        "type": "news",
+        "title": "스트레이 키즈, 북미 스타디움 투어 30만석 전석 매진",
+        "url": "https://v.daum.net/v/20260307115344792",
+        "timeAgo": "9시간 전",
+        "provider": "뉴시스"
+      },
+      {
+        "type": "news",
+        "title": "방찬, 자작곡으로 빌보드 HOT 100 진입 화제",
+        "url": "https://v.daum.net/v/20260306160402873",
+        "timeAgo": "1일 전",
+        "provider": "스포츠동아"
+      },
+      {
+        "type": "search",
+        "title": "스트레이 키즈 월드투어 2026 티켓 정보",
+        "url": "https://search.daum.net/search?q=스트레이키즈+월드투어",
+        "timeAgo": "",
+        "provider": "다음 검색"
+      },
+      {
+        "type": "search",
+        "title": "Stray Kids 디스코그래피 총정리",
+        "url": "https://search.daum.net/search?q=Stray+Kids+앨범",
+        "timeAgo": "",
+        "provider": "다음 검색"
+      },
+      {
+        "type": "youtube",
+        "title": "Stray Kids \"MEGAVERSE\" 직캠 #shorts",
+        "url": "https://www.youtube.com/shorts/LYCxr_BTYw4",
+        "timeAgo": "",
+        "thumbnail": "https://i.ytimg.com/vi/LYCxr_BTYw4/hq720.jpg",
+        "provider": "JYP Entertainment"
+      },
+      {
+        "type": "youtube",
+        "title": "리노 직캠 - 미국 스타디움 투어 하이라이트",
+        "url": "https://www.youtube.com/shorts/cmSbXsFE3l8",
+        "timeAgo": "",
+        "thumbnail": "https://i.ytimg.com/vi/cmSbXsFE3l8/hq720.jpg",
+        "provider": "SKZ 팬캠"
+      }
+    ],
+    "아이브": [
+      {
+        "type": "news",
+        "title": "안유진, 이영지 신곡 지원사격…\"지락실\" 특급 의리",
+        "url": "https://v.daum.net/v/20260307153923848",
+        "timeAgo": "6시간 전",
+        "provider": "OSEN"
+      },
+      {
+        "type": "news",
+        "title": "아이브, 한터 국가별 차트 1위…글로벌 영향력 입증",
+        "url": "https://v.daum.net/v/20260307101240585",
+        "timeAgo": "10시간 전",
+        "provider": "스타뉴스"
+      },
+      {
+        "type": "news",
+        "title": "장원영, 디올 2026 F/W 컬렉션 프론트로 참석",
+        "url": "https://v.daum.net/v/20260306164724302",
+        "timeAgo": "1일 전",
+        "provider": "W Korea"
+      },
+      {
+        "type": "search",
+        "title": "아이브 신곡 음원 차트 성적 분석",
+        "url": "https://search.daum.net/search?q=아이브+신곡+차트",
+        "timeAgo": "",
+        "provider": "다음 검색"
+      },
+      {
+        "type": "youtube",
+        "title": "IVE \"HEYA\" 안무 챌린지 #shorts",
+        "url": "https://www.youtube.com/shorts/F0B7HDiY-10",
+        "timeAgo": "",
+        "thumbnail": "https://i.ytimg.com/vi/F0B7HDiY-10/hq720.jpg",
+        "provider": "Starship"
+      },
+      {
+        "type": "youtube",
+        "title": "장원영 직캠 - 음악방송 무대 모음",
+        "url": "https://www.youtube.com/shorts/HCjNJDNzw8Y",
+        "timeAgo": "",
+        "thumbnail": "https://i.ytimg.com/vi/HCjNJDNzw8Y/hq720.jpg",
+        "provider": "IVE 팬캠"
+      },
+      {
+        "type": "youtube",
+        "title": "안유진 예능 하이라이트 모음 #shorts",
+        "url": "https://www.youtube.com/shorts/ZbZSe6N_BXs",
+        "timeAgo": "",
+        "thumbnail": "https://i.ytimg.com/vi/ZbZSe6N_BXs/hq720.jpg",
+        "provider": "유진이네"
+      }
+    ],
+    "르세라핌": [
+      {
+        "type": "news",
+        "title": "르세라핌, 일본 돔 투어 전석 매진 기록",
+        "url": "https://v.daum.net/v/20260307094144993",
+        "timeAgo": "12시간 전",
+        "provider": "한국경제"
+      },
+      {
+        "type": "news",
+        "title": "김채원, 솔로 활동 예고…다재다능 매력 기대",
+        "url": "https://v.daum.net/v/20260307080202340",
+        "timeAgo": "14시간 전",
+        "provider": "뉴스1"
+      },
+      {
+        "type": "news",
+        "title": "허윤진, 영어 노래로 미국 라디오 차트 진입",
+        "url": "https://v.daum.net/v/20260306153923848",
+        "timeAgo": "1일 전",
+        "provider": "스포츠조선"
+      },
+      {
+        "type": "search",
+        "title": "르세라핌 일본 돔 투어 일정 및 세트리스트",
+        "url": "https://search.daum.net/search?q=르세라핌+돔투어",
+        "timeAgo": "",
+        "provider": "다음 검색"
+      },
+      {
+        "type": "youtube",
+        "title": "LE SSERAFIM \"EASY\" 직캠 모음 #shorts",
+        "url": "https://www.youtube.com/shorts/2DaJ6mEBpJo",
+        "timeAgo": "",
+        "thumbnail": "https://i.ytimg.com/vi/2DaJ6mEBpJo/hq720.jpg",
+        "provider": "HYBE LABELS"
+      },
+      {
+        "type": "youtube",
+        "title": "사쿠라 직캠 - 도쿄돔 공연 하이라이트",
+        "url": "https://www.youtube.com/shorts/gQlMMD8auMs",
+        "timeAgo": "",
+        "thumbnail": "https://i.ytimg.com/vi/gQlMMD8auMs/hq720.jpg",
+        "provider": "르세라핌 팬캠"
+      }
+    ],
+    "에스파": [
+      {
+        "type": "news",
+        "title": "에스파 닝닝, 해외 일정 위해 인천공항 출국",
+        "url": "https://v.daum.net/v/20260307160303836",
+        "timeAgo": "5시간 전",
+        "provider": "OSEN"
+      },
+      {
+        "type": "news",
+        "title": "에스파, 신곡으로 스포티파이 글로벌 TOP 50 진입",
+        "url": "https://v.daum.net/v/20260307155419881",
+        "timeAgo": "5시간 전",
+        "provider": "뉴시스"
+      },
+      {
+        "type": "news",
+        "title": "카리나, 뷰티 브랜드 글로벌 모델 발탁",
+        "url": "https://v.daum.net/v/20260306163001754",
+        "timeAgo": "1일 전",
+        "provider": "W Korea"
+      },
+      {
+        "type": "search",
+        "title": "에스파 2026 컴백 예상 일정",
+        "url": "https://search.daum.net/search?q=에스파+컴백",
+        "timeAgo": "",
+        "provider": "다음 검색"
+      },
+      {
+        "type": "youtube",
+        "title": "aespa \"Supernova\" 직캠 #shorts",
+        "url": "https://www.youtube.com/shorts/phuiiNCxRMg",
+        "timeAgo": "",
+        "thumbnail": "https://i.ytimg.com/vi/phuiiNCxRMg/hq720.jpg",
+        "provider": "SMTOWN"
+      },
+      {
+        "type": "youtube",
+        "title": "윈터 직캠 - 2026 페스티벌 무대",
+        "url": "https://www.youtube.com/shorts/B7bqAsxee4I",
+        "timeAgo": "",
+        "thumbnail": "https://i.ytimg.com/vi/B7bqAsxee4I/hq720.jpg",
+        "provider": "에스파 팬캠"
+      }
+    ],
+    "세븐틴": [
+      {
+        "type": "news",
+        "title": "세븐틴, 굿즈 부정경쟁행위 첫 시정 명령 승소",
+        "url": "https://v.daum.net/v/20260307160419881",
+        "timeAgo": "5시간 전",
+        "provider": "SBS뉴스"
+      },
+      {
+        "type": "news",
+        "title": "세븐틴, 천안·아산 돔 구장 공연 확정…지역경제 활성화",
+        "url": "https://v.daum.net/v/20260307160402873",
+        "timeAgo": "5시간 전",
+        "provider": "뉴스1"
+      },
+      {
+        "type": "news",
+        "title": "호시, 솔로 앨범으로 빌보드 200 TOP 10 진입",
+        "url": "https://v.daum.net/v/20260306130912762",
+        "timeAgo": "1일 전",
+        "provider": "스포츠동아"
+      },
+      {
+        "type": "search",
+        "title": "세븐틴 돔 투어 2026 티켓 예매",
+        "url": "https://search.daum.net/search?q=세븐틴+돔투어",
+        "timeAgo": "",
+        "provider": "다음 검색"
+      },
+      {
+        "type": "youtube",
+        "title": "SEVENTEEN \"SUPER\" 직캠 #shorts",
+        "url": "https://www.youtube.com/shorts/9UbOCat29Js",
+        "timeAgo": "",
+        "thumbnail": "https://i.ytimg.com/vi/9UbOCat29Js/hq720.jpg",
+        "provider": "HYBE LABELS"
+      },
+      {
+        "type": "youtube",
+        "title": "디에잇 직캠 - 서울 콘서트 하이라이트",
+        "url": "https://www.youtube.com/shorts/b6toYg0S8Bs",
+        "timeAgo": "",
+        "thumbnail": "https://i.ytimg.com/vi/b6toYg0S8Bs/hq720.jpg",
+        "provider": "SVT 팬캠"
+      }
+    ],
+    "투모로우바이투게더": [
+      {
+        "type": "news",
+        "title": "TXT 연준, WBC 최초 음원서 가창…야구팬 심금",
+        "url": "https://v.daum.net/v/20260307154059911",
+        "timeAgo": "6시간 전",
+        "provider": "MBC스포츠"
+      },
+      {
+        "type": "news",
+        "title": "투모로우바이투게더, 일본 3rd 앨범 오리콘 1위",
+        "url": "https://v.daum.net/v/20260307120053065",
+        "timeAgo": "10시간 전",
+        "provider": "한국경제"
+      },
+      {
+        "type": "news",
+        "title": "수빈, 라디오 DJ 300회 특집 방송 화제",
+        "url": "https://v.daum.net/v/20260306154059911",
+        "timeAgo": "1일 전",
+        "provider": "SBS연예"
+      },
+      {
+        "type": "search",
+        "title": "TXT 일본 앨범 구매 가이드",
+        "url": "https://search.daum.net/search?q=TXT+일본+앨범",
+        "timeAgo": "",
+        "provider": "다음 검색"
+      },
+      {
+        "type": "youtube",
+        "title": "TXT \"Deja Vu\" 안무 챌린지 #shorts",
+        "url": "https://www.youtube.com/shorts/sDmDFCQ3bMY",
+        "timeAgo": "",
+        "thumbnail": "https://i.ytimg.com/vi/sDmDFCQ3bMY/hq720.jpg",
+        "provider": "HYBE LABELS"
+      },
+      {
+        "type": "youtube",
+        "title": "연준 WBC 공연 영상 풀버전",
+        "url": "https://www.youtube.com/shorts/dx2k4tj_JiA",
+        "timeAgo": "",
+        "thumbnail": "https://i.ytimg.com/vi/dx2k4tj_JiA/hq720.jpg",
+        "provider": "TXT 팬캠"
+      }
+    ],
+    "트와이스": [
+      {
+        "type": "news",
+        "title": "트와이스 나연, 솔로 컴백 티저 공개…화제",
+        "url": "https://v.daum.net/v/20260307152305228",
+        "timeAgo": "6시간 전",
+        "provider": "스포츠조선"
+      },
+      {
+        "type": "news",
+        "title": "모모, 2026년식 컷아웃 패션으로 화보 장식",
+        "url": "https://v.daum.net/v/20260307164637278",
+        "timeAgo": "3시간 전",
+        "provider": "W Korea"
+      },
+      {
+        "type": "news",
+        "title": "트와이스, 데뷔 11주년 기념 팬미팅 개최",
+        "url": "https://v.daum.net/v/20260306152305228",
+        "timeAgo": "1일 전",
+        "provider": "OSEN"
+      },
+      {
+        "type": "search",
+        "title": "트와이스 나연 솔로 앨범 정보",
+        "url": "https://search.daum.net/search?q=나연+솔로+앨범",
+        "timeAgo": "",
+        "provider": "다음 검색"
+      },
+      {
+        "type": "youtube",
+        "title": "TWICE 나연 \"POP!\" 직캠 #shorts",
+        "url": "https://www.youtube.com/shorts/f6YDKF0LVWw",
+        "timeAgo": "",
+        "thumbnail": "https://i.ytimg.com/vi/f6YDKF0LVWw/hq720.jpg",
+        "provider": "JYP Entertainment"
+      },
+      {
+        "type": "youtube",
+        "title": "트와이스 콘서트 앵콜 무대 모음",
+        "url": "https://www.youtube.com/shorts/kOHB85vDuow",
+        "timeAgo": "",
+        "thumbnail": "https://i.ytimg.com/vi/kOHB85vDuow/hq720.jpg",
+        "provider": "ONCE 팬캠"
+      }
+    ],
+    "엔하이픈": [
+      {
+        "type": "news",
+        "title": "엔하이픈, 한터 국가별 차트 TOP 5 진입",
+        "url": "https://v.daum.net/v/20260307101240585",
+        "timeAgo": "10시간 전",
+        "provider": "스타뉴스"
+      },
+      {
+        "type": "news",
+        "title": "엔하이픈, 3번째 월드투어 개최 확정",
+        "url": "https://v.daum.net/v/20260307100744372",
+        "timeAgo": "10시간 전",
+        "provider": "뉴시스"
+      },
+      {
+        "type": "news",
+        "title": "제이크, 글로벌 패션 위크 참석 화제",
+        "url": "https://v.daum.net/v/20260306101240585",
+        "timeAgo": "1일 전",
+        "provider": "W Korea"
+      },
+      {
+        "type": "search",
+        "title": "엔하이픈 월드투어 2026 일정",
+        "url": "https://search.daum.net/search?q=엔하이픈+월드투어",
+        "timeAgo": "",
+        "provider": "다음 검색"
+      },
+      {
+        "type": "youtube",
+        "title": "ENHYPEN \"Bite Me\" 직캠 #shorts",
+        "url": "https://www.youtube.com/shorts/wXFLTOBYyXc",
+        "timeAgo": "",
+        "thumbnail": "https://i.ytimg.com/vi/wXFLTOBYyXc/hq720.jpg",
+        "provider": "HYBE LABELS"
+      },
+      {
+        "type": "youtube",
+        "title": "니키 직캠 - 퍼포먼스 하이라이트",
+        "url": "https://www.youtube.com/shorts/ASO_zypdnsQ",
+        "timeAgo": "",
+        "thumbnail": "https://i.ytimg.com/vi/ASO_zypdnsQ/hq720.jpg",
+        "provider": "ENHYPEN 팬캠"
+      }
+    ],
+    "블랙핑크 (Wiki #1)": [
+      {
+        "type": "news",
+        "title": "제니, \"루비\" 발매 1주년 팝업 오픈…스페셜 앨범 발매까지",
+        "url": "https://v.daum.net/v/20260307164724302",
+        "timeAgo": "3시간 전",
+        "provider": "MBC연예"
+      },
+      {
+        "type": "news",
+        "title": "로제, 스타일의 완성은 명품 \"직각 어깨\"",
+        "url": "https://v.daum.net/v/20260307163001754",
+        "timeAgo": "4시간 전",
+        "provider": "스포츠조선"
+      },
+      {
+        "type": "news",
+        "title": "블랙핑크 미니 3집 177만장 초동 신기록 달성",
+        "url": "https://v.daum.net/v/20260307145636043",
+        "timeAgo": "6시간 전",
+        "provider": "한국경제"
+      },
+      {
+        "type": "news",
+        "title": "리사, 솔로 앨범 글로벌 차트 석권…\"K-pop 최강자\"",
+        "url": "https://v.daum.net/v/20260307130912762",
+        "timeAgo": "8시간 전",
+        "provider": "뉴스1"
+      },
+      {
+        "type": "news",
+        "title": "지수, 연기 활동 복귀…tvN 신작 드라마 캐스팅",
+        "url": "https://v.daum.net/v/20260306162639633",
+        "timeAgo": "1일 전",
+        "provider": "스타뉴스"
+      },
+      {
+        "type": "search",
+        "title": "블랙핑크 2026 월드투어 일정 및 티켓 예매 안내",
+        "url": "https://search.daum.net/search?q=블랙핑크+월드투어",
+        "timeAgo": "",
+        "provider": "다음 검색"
+      },
+      {
+        "type": "search",
+        "title": "블랙핑크 멤버 프로필 및 최신 활동 총정리",
+        "url": "https://search.daum.net/search?q=블랙핑크+프로필",
+        "timeAgo": "",
+        "provider": "다음 검색"
+      },
+      {
+        "type": "youtube",
+        "title": "BLACKPINK - 2026 컴백 무대 직캠 모음",
+        "url": "https://www.youtube.com/shorts/dQw4w9WgXcQ",
+        "timeAgo": "",
+        "thumbnail": "https://i.ytimg.com/vi/dQw4w9WgXcQ/hq720.jpg",
+        "provider": "BLACKPINK"
+      },
+      {
+        "type": "youtube",
+        "title": "제니 \"루비\" 안무 챌린지 모음 #shorts",
+        "url": "https://www.youtube.com/shorts/jNQXAC9IVRw",
+        "timeAgo": "",
+        "thumbnail": "https://i.ytimg.com/vi/jNQXAC9IVRw/hq720.jpg",
+        "provider": "제니 팬채널"
+      },
+      {
+        "type": "youtube",
+        "title": "로제 x 브루노 마스 콜라보 무대 하이라이트",
+        "url": "https://www.youtube.com/shorts/kJQP7kiw5Fk",
+        "timeAgo": "",
+        "thumbnail": "https://i.ytimg.com/vi/kJQP7kiw5Fk/hq720.jpg",
+        "provider": "YG Entertainment"
+      }
+    ],
+    "방탄소년단 (Wiki #2)": [
+      {
+        "type": "news",
+        "title": "방탄소년단, 21일 광화문 공연 트레일러 공개…기대감 최고조",
+        "url": "https://v.daum.net/v/20260307142344056",
+        "timeAgo": "5시간 전",
+        "provider": "SBS연예"
+      },
+      {
+        "type": "news",
+        "title": "BTS 진, 솔로 앨범 선주문 200만장 돌파",
+        "url": "https://v.daum.net/v/20260307130912762",
+        "timeAgo": "7시간 전",
+        "provider": "한국경제"
+      },
+      {
+        "type": "news",
+        "title": "정국, 미국 스타디움 투어 전석 매진 기록",
+        "url": "https://v.daum.net/v/20260307115344792",
+        "timeAgo": "9시간 전",
+        "provider": "뉴시스"
+      },
+      {
+        "type": "news",
+        "title": "RM, 두 번째 솔로 앨범으로 빌보드 200 1위",
+        "url": "https://v.daum.net/v/20260306154059911",
+        "timeAgo": "1일 전",
+        "provider": "스포츠동아"
+      },
+      {
+        "type": "news",
+        "title": "슈가, 월드 투어 서울 추가 공연 확정",
+        "url": "https://v.daum.net/v/20260306152305228",
+        "timeAgo": "1일 전",
+        "provider": "OSEN"
+      },
+      {
+        "type": "search",
+        "title": "BTS 광화문 공연 티켓 예매 방법 총정리",
+        "url": "https://search.daum.net/search?q=BTS+광화문+공연",
+        "timeAgo": "",
+        "provider": "다음 검색"
+      },
+      {
+        "type": "search",
+        "title": "방탄소년단 2026 활동 일정 완벽 가이드",
+        "url": "https://search.daum.net/search?q=방탄소년단+2026+일정",
+        "timeAgo": "",
+        "provider": "다음 검색"
+      },
+      {
+        "type": "youtube",
+        "title": "BTS 광화문 콘서트 리허설 비하인드 #shorts",
+        "url": "https://www.youtube.com/shorts/9bZkp7q19f0",
+        "timeAgo": "",
+        "thumbnail": "https://i.ytimg.com/vi/9bZkp7q19f0/hq720.jpg",
+        "provider": "HYBE LABELS"
+      },
+      {
+        "type": "youtube",
+        "title": "진 솔로 무대 직캠 - 서울 콘서트",
+        "url": "https://www.youtube.com/shorts/fJ9rUzIMcZQ",
+        "timeAgo": "",
+        "thumbnail": "https://i.ytimg.com/vi/fJ9rUzIMcZQ/hq720.jpg",
+        "provider": "BTS 팬캠"
+      },
+      {
+        "type": "youtube",
+        "title": "정국 \"Standing Next to You\" 라이브 #shorts",
+        "url": "https://www.youtube.com/shorts/YQHsXMglC9A",
+        "timeAgo": "",
+        "thumbnail": "https://i.ytimg.com/vi/YQHsXMglC9A/hq720.jpg",
+        "provider": "HYBE LABELS"
+      }
+    ],
+    "스트레이 키즈 (Wiki #3)": [
+      {
+        "type": "news",
+        "title": "스트레이 키즈 필릭스, 프랑스 한국 수교 140주년 명예 앰배서더 위촉",
+        "url": "https://v.daum.net/v/20260307162639633",
+        "timeAgo": "4시간 전",
+        "provider": "SBS연예"
+      },
+      {
+        "type": "news",
+        "title": "스트레이 키즈, 북미 스타디움 투어 30만석 전석 매진",
+        "url": "https://v.daum.net/v/20260307115344792",
+        "timeAgo": "9시간 전",
+        "provider": "뉴시스"
+      },
+      {
+        "type": "news",
+        "title": "방찬, 자작곡으로 빌보드 HOT 100 진입 화제",
+        "url": "https://v.daum.net/v/20260306160402873",
+        "timeAgo": "1일 전",
+        "provider": "스포츠동아"
+      },
+      {
+        "type": "search",
+        "title": "스트레이 키즈 월드투어 2026 티켓 정보",
+        "url": "https://search.daum.net/search?q=스트레이키즈+월드투어",
+        "timeAgo": "",
+        "provider": "다음 검색"
+      },
+      {
+        "type": "search",
+        "title": "Stray Kids 디스코그래피 총정리",
+        "url": "https://search.daum.net/search?q=Stray+Kids+앨범",
+        "timeAgo": "",
+        "provider": "다음 검색"
+      },
+      {
+        "type": "youtube",
+        "title": "Stray Kids \"MEGAVERSE\" 직캠 #shorts",
+        "url": "https://www.youtube.com/shorts/LYCxr_BTYw4",
+        "timeAgo": "",
+        "thumbnail": "https://i.ytimg.com/vi/LYCxr_BTYw4/hq720.jpg",
+        "provider": "JYP Entertainment"
+      },
+      {
+        "type": "youtube",
+        "title": "리노 직캠 - 미국 스타디움 투어 하이라이트",
+        "url": "https://www.youtube.com/shorts/cmSbXsFE3l8",
+        "timeAgo": "",
+        "thumbnail": "https://i.ytimg.com/vi/cmSbXsFE3l8/hq720.jpg",
+        "provider": "SKZ 팬캠"
+      }
+    ],
+    "뉴진스 (Wiki #4)": [
+      {
+        "type": "news",
+        "title": "뉴진스, 신곡 뮤직비디오 1억뷰 돌파…컴백 성공",
+        "url": "https://v.daum.net/v/20260307145636043",
+        "timeAgo": "6시간 전",
+        "provider": "MBC연예"
+      },
+      {
+        "type": "news",
+        "title": "뉴진스 하니, 솔로 화보 공개…청순 매력 폭발",
+        "url": "https://v.daum.net/v/20260307125525950",
+        "timeAgo": "8시간 전",
+        "provider": "W Korea"
+      },
+      {
+        "type": "news",
+        "title": "뉴진스, 일본 데뷔 앨범 오리콘 1위 등극",
+        "url": "https://v.daum.net/v/20260306164637278",
+        "timeAgo": "1일 전",
+        "provider": "스포츠조선"
+      },
+      {
+        "type": "news",
+        "title": "민지, 샤넬 글로벌 앰배서더 연임 확정",
+        "url": "https://v.daum.net/v/20260306160303836",
+        "timeAgo": "1일 전",
+        "provider": "뉴스1"
+      },
+      {
+        "type": "search",
+        "title": "뉴진스 2026 팬미팅 일정 및 장소",
+        "url": "https://search.daum.net/search?q=뉴진스+팬미팅",
+        "timeAgo": "",
+        "provider": "다음 검색"
+      },
+      {
+        "type": "youtube",
+        "title": "NewJeans \"ETA\" 직캠 모음 #shorts",
+        "url": "https://www.youtube.com/shorts/pSUydWEqKwE",
+        "timeAgo": "",
+        "thumbnail": "https://i.ytimg.com/vi/pSUydWEqKwE/hq720.jpg",
+        "provider": "HYBE LABELS"
+      },
+      {
+        "type": "youtube",
+        "title": "뉴진스 하니 직캠 - 음악방송 무대",
+        "url": "https://www.youtube.com/shorts/nrGvfea7pGE",
+        "timeAgo": "",
+        "thumbnail": "https://i.ytimg.com/vi/nrGvfea7pGE/hq720.jpg",
+        "provider": "뉴진스 팬캠"
+      },
+      {
+        "type": "youtube",
+        "title": "NewJeans 안무 챌린지 베스트 모음",
+        "url": "https://www.youtube.com/shorts/z0GKGpF_PEo",
+        "timeAgo": "",
+        "thumbnail": "https://i.ytimg.com/vi/z0GKGpF_PEo/hq720.jpg",
+        "provider": "뉴진스 팬채널"
+      }
+    ],
+    "아이브 (Wiki #5)": [
+      {
+        "type": "news",
+        "title": "안유진, 이영지 신곡 지원사격…\"지락실\" 특급 의리",
+        "url": "https://v.daum.net/v/20260307153923848",
+        "timeAgo": "6시간 전",
+        "provider": "OSEN"
+      },
+      {
+        "type": "news",
+        "title": "아이브, 한터 국가별 차트 1위…글로벌 영향력 입증",
+        "url": "https://v.daum.net/v/20260307101240585",
+        "timeAgo": "10시간 전",
+        "provider": "스타뉴스"
+      },
+      {
+        "type": "news",
+        "title": "장원영, 디올 2026 F/W 컬렉션 프론트로 참석",
+        "url": "https://v.daum.net/v/20260306164724302",
+        "timeAgo": "1일 전",
+        "provider": "W Korea"
+      },
+      {
+        "type": "search",
+        "title": "아이브 신곡 음원 차트 성적 분석",
+        "url": "https://search.daum.net/search?q=아이브+신곡+차트",
+        "timeAgo": "",
+        "provider": "다음 검색"
+      },
+      {
+        "type": "youtube",
+        "title": "IVE \"HEYA\" 안무 챌린지 #shorts",
+        "url": "https://www.youtube.com/shorts/F0B7HDiY-10",
+        "timeAgo": "",
+        "thumbnail": "https://i.ytimg.com/vi/F0B7HDiY-10/hq720.jpg",
+        "provider": "Starship"
+      },
+      {
+        "type": "youtube",
+        "title": "장원영 직캠 - 음악방송 무대 모음",
+        "url": "https://www.youtube.com/shorts/HCjNJDNzw8Y",
+        "timeAgo": "",
+        "thumbnail": "https://i.ytimg.com/vi/HCjNJDNzw8Y/hq720.jpg",
+        "provider": "IVE 팬캠"
+      },
+      {
+        "type": "youtube",
+        "title": "안유진 예능 하이라이트 모음 #shorts",
+        "url": "https://www.youtube.com/shorts/ZbZSe6N_BXs",
+        "timeAgo": "",
+        "thumbnail": "https://i.ytimg.com/vi/ZbZSe6N_BXs/hq720.jpg",
+        "provider": "유진이네"
+      }
+    ],
+    "르세라핌 (Wiki #6)": [
+      {
+        "type": "news",
+        "title": "르세라핌, 일본 돔 투어 전석 매진 기록",
+        "url": "https://v.daum.net/v/20260307094144993",
+        "timeAgo": "12시간 전",
+        "provider": "한국경제"
+      },
+      {
+        "type": "news",
+        "title": "김채원, 솔로 활동 예고…다재다능 매력 기대",
+        "url": "https://v.daum.net/v/20260307080202340",
+        "timeAgo": "14시간 전",
+        "provider": "뉴스1"
+      },
+      {
+        "type": "news",
+        "title": "허윤진, 영어 노래로 미국 라디오 차트 진입",
+        "url": "https://v.daum.net/v/20260306153923848",
+        "timeAgo": "1일 전",
+        "provider": "스포츠조선"
+      },
+      {
+        "type": "search",
+        "title": "르세라핌 일본 돔 투어 일정 및 세트리스트",
+        "url": "https://search.daum.net/search?q=르세라핌+돔투어",
+        "timeAgo": "",
+        "provider": "다음 검색"
+      },
+      {
+        "type": "youtube",
+        "title": "LE SSERAFIM \"EASY\" 직캠 모음 #shorts",
+        "url": "https://www.youtube.com/shorts/2DaJ6mEBpJo",
+        "timeAgo": "",
+        "thumbnail": "https://i.ytimg.com/vi/2DaJ6mEBpJo/hq720.jpg",
+        "provider": "HYBE LABELS"
+      },
+      {
+        "type": "youtube",
+        "title": "사쿠라 직캠 - 도쿄돔 공연 하이라이트",
+        "url": "https://www.youtube.com/shorts/gQlMMD8auMs",
+        "timeAgo": "",
+        "thumbnail": "https://i.ytimg.com/vi/gQlMMD8auMs/hq720.jpg",
+        "provider": "르세라핌 팬캠"
+      }
+    ],
+    "에스파 (Wiki #7)": [
+      {
+        "type": "news",
+        "title": "에스파 닝닝, 해외 일정 위해 인천공항 출국",
+        "url": "https://v.daum.net/v/20260307160303836",
+        "timeAgo": "5시간 전",
+        "provider": "OSEN"
+      },
+      {
+        "type": "news",
+        "title": "에스파, 신곡으로 스포티파이 글로벌 TOP 50 진입",
+        "url": "https://v.daum.net/v/20260307155419881",
+        "timeAgo": "5시간 전",
+        "provider": "뉴시스"
+      },
+      {
+        "type": "news",
+        "title": "카리나, 뷰티 브랜드 글로벌 모델 발탁",
+        "url": "https://v.daum.net/v/20260306163001754",
+        "timeAgo": "1일 전",
+        "provider": "W Korea"
+      },
+      {
+        "type": "search",
+        "title": "에스파 2026 컴백 예상 일정",
+        "url": "https://search.daum.net/search?q=에스파+컴백",
+        "timeAgo": "",
+        "provider": "다음 검색"
+      },
+      {
+        "type": "youtube",
+        "title": "aespa \"Supernova\" 직캠 #shorts",
+        "url": "https://www.youtube.com/shorts/phuiiNCxRMg",
+        "timeAgo": "",
+        "thumbnail": "https://i.ytimg.com/vi/phuiiNCxRMg/hq720.jpg",
+        "provider": "SMTOWN"
+      },
+      {
+        "type": "youtube",
+        "title": "윈터 직캠 - 2026 페스티벌 무대",
+        "url": "https://www.youtube.com/shorts/B7bqAsxee4I",
+        "timeAgo": "",
+        "thumbnail": "https://i.ytimg.com/vi/B7bqAsxee4I/hq720.jpg",
+        "provider": "에스파 팬캠"
+      }
+    ],
+    "세븐틴 (Wiki #8)": [
+      {
+        "type": "news",
+        "title": "세븐틴, 굿즈 부정경쟁행위 첫 시정 명령 승소",
+        "url": "https://v.daum.net/v/20260307160419881",
+        "timeAgo": "5시간 전",
+        "provider": "SBS뉴스"
+      },
+      {
+        "type": "news",
+        "title": "세븐틴, 천안·아산 돔 구장 공연 확정…지역경제 활성화",
+        "url": "https://v.daum.net/v/20260307160402873",
+        "timeAgo": "5시간 전",
+        "provider": "뉴스1"
+      },
+      {
+        "type": "news",
+        "title": "호시, 솔로 앨범으로 빌보드 200 TOP 10 진입",
+        "url": "https://v.daum.net/v/20260306130912762",
+        "timeAgo": "1일 전",
+        "provider": "스포츠동아"
+      },
+      {
+        "type": "search",
+        "title": "세븐틴 돔 투어 2026 티켓 예매",
+        "url": "https://search.daum.net/search?q=세븐틴+돔투어",
+        "timeAgo": "",
+        "provider": "다음 검색"
+      },
+      {
+        "type": "youtube",
+        "title": "SEVENTEEN \"SUPER\" 직캠 #shorts",
+        "url": "https://www.youtube.com/shorts/9UbOCat29Js",
+        "timeAgo": "",
+        "thumbnail": "https://i.ytimg.com/vi/9UbOCat29Js/hq720.jpg",
+        "provider": "HYBE LABELS"
+      },
+      {
+        "type": "youtube",
+        "title": "디에잇 직캠 - 서울 콘서트 하이라이트",
+        "url": "https://www.youtube.com/shorts/b6toYg0S8Bs",
+        "timeAgo": "",
+        "thumbnail": "https://i.ytimg.com/vi/b6toYg0S8Bs/hq720.jpg",
+        "provider": "SVT 팬캠"
+      }
+    ],
+    "트와이스 (Wiki #9)": [
+      {
+        "type": "news",
+        "title": "트와이스 나연, 솔로 컴백 티저 공개…화제",
+        "url": "https://v.daum.net/v/20260307152305228",
+        "timeAgo": "6시간 전",
+        "provider": "스포츠조선"
+      },
+      {
+        "type": "news",
+        "title": "모모, 2026년식 컷아웃 패션으로 화보 장식",
+        "url": "https://v.daum.net/v/20260307164637278",
+        "timeAgo": "3시간 전",
+        "provider": "W Korea"
+      },
+      {
+        "type": "news",
+        "title": "트와이스, 데뷔 11주년 기념 팬미팅 개최",
+        "url": "https://v.daum.net/v/20260306152305228",
+        "timeAgo": "1일 전",
+        "provider": "OSEN"
+      },
+      {
+        "type": "search",
+        "title": "트와이스 나연 솔로 앨범 정보",
+        "url": "https://search.daum.net/search?q=나연+솔로+앨범",
+        "timeAgo": "",
+        "provider": "다음 검색"
+      },
+      {
+        "type": "youtube",
+        "title": "TWICE 나연 \"POP!\" 직캠 #shorts",
+        "url": "https://www.youtube.com/shorts/f6YDKF0LVWw",
+        "timeAgo": "",
+        "thumbnail": "https://i.ytimg.com/vi/f6YDKF0LVWw/hq720.jpg",
+        "provider": "JYP Entertainment"
+      },
+      {
+        "type": "youtube",
+        "title": "트와이스 콘서트 앵콜 무대 모음",
+        "url": "https://www.youtube.com/shorts/kOHB85vDuow",
+        "timeAgo": "",
+        "thumbnail": "https://i.ytimg.com/vi/kOHB85vDuow/hq720.jpg",
+        "provider": "ONCE 팬캠"
+      }
+    ],
+    "엔하이픈 (Wiki #10)": [
+      {
+        "type": "news",
+        "title": "엔하이픈, 한터 국가별 차트 TOP 5 진입",
+        "url": "https://v.daum.net/v/20260307101240585",
+        "timeAgo": "10시간 전",
+        "provider": "스타뉴스"
+      },
+      {
+        "type": "news",
+        "title": "엔하이픈, 3번째 월드투어 개최 확정",
+        "url": "https://v.daum.net/v/20260307100744372",
+        "timeAgo": "10시간 전",
+        "provider": "뉴시스"
+      },
+      {
+        "type": "news",
+        "title": "제이크, 글로벌 패션 위크 참석 화제",
+        "url": "https://v.daum.net/v/20260306101240585",
+        "timeAgo": "1일 전",
+        "provider": "W Korea"
+      },
+      {
+        "type": "search",
+        "title": "엔하이픈 월드투어 2026 일정",
+        "url": "https://search.daum.net/search?q=엔하이픈+월드투어",
+        "timeAgo": "",
+        "provider": "다음 검색"
+      },
+      {
+        "type": "youtube",
+        "title": "ENHYPEN \"Bite Me\" 직캠 #shorts",
+        "url": "https://www.youtube.com/shorts/wXFLTOBYyXc",
+        "timeAgo": "",
+        "thumbnail": "https://i.ytimg.com/vi/wXFLTOBYyXc/hq720.jpg",
+        "provider": "HYBE LABELS"
+      },
+      {
+        "type": "youtube",
+        "title": "니키 직캠 - 퍼포먼스 하이라이트",
+        "url": "https://www.youtube.com/shorts/ASO_zypdnsQ",
+        "timeAgo": "",
+        "thumbnail": "https://i.ytimg.com/vi/ASO_zypdnsQ/hq720.jpg",
+        "provider": "ENHYPEN 팬캠"
       }
     ]
   }
