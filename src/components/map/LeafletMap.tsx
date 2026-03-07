@@ -11,9 +11,9 @@ function getTimelineScore(
   country: CountryScore,
   hour: number
 ): { score: number; trendsActive: number; wikiActive: number; youtubeActive: number } {
-  // 3시간부터 적극적으로 표현 — 소스별 구간을 앞당김
-  // Trends: 0~6시 (3시에 이미 50%), Wiki: 6~14시, YouTube: 14~24시
-  const trendsActive = Math.min(1, Math.max(0, hour / 6));
+  // 시작부터 시각적 효과 → 베이스라인 0.3 + 시간에 따라 증가
+  // Trends: 0시에 0.3 → 6시에 1.0 / Wiki: 6시부터 / YouTube: 14시부터
+  const trendsActive = Math.min(1, 0.3 + 0.7 * Math.max(0, hour / 6));
   const wikiActive = Math.min(1, Math.max(0, (hour - 6) / 8));
   const youtubeActive = Math.min(1, Math.max(0, (hour - 14) / 10));
 
@@ -272,8 +272,8 @@ export default function LeafletMap() {
         })}
       </MapContainer>
 
-      {/* 범례 */}
-      <div className="absolute bottom-4 left-4 bg-[#120E1F]/90 backdrop-blur-sm border border-[#3B2667]/50 rounded-xl px-4 py-3 z-[1000]">
+      {/* 범례 — 모바일: 좌하단, 데스크톱: 좌하단 */}
+      <div className="absolute bottom-3 left-3 md:bottom-4 md:left-4 bg-[#120E1F]/90 backdrop-blur-sm border border-[#3B2667]/50 rounded-xl px-3 py-2 md:px-4 md:py-3 z-[999]">
         <div className="text-[10px] text-[#9B8DB8] mb-2 font-medium">
           인기도
         </div>

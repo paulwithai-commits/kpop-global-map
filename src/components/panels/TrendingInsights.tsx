@@ -57,10 +57,10 @@ export function TrendingInsights() {
       {/* 모바일: 우측 하단 플레이 버튼 옆에 트렌딩 버튼 */}
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="md:hidden absolute bottom-3 left-3 z-[1000] bg-[#120E1F]/95 backdrop-blur-md border border-[#3B2667] rounded-full px-3 py-2 flex items-center gap-1.5 active:border-[#9B5DE5]/50 transition-colors shadow-2xl"
+        className="md:hidden absolute bottom-[72px] left-3 z-[1000] bg-[#120E1F]/95 backdrop-blur-md border border-[#3B2667] rounded-full px-4 py-2.5 flex items-center gap-2 active:border-[#9B5DE5]/50 transition-colors shadow-2xl"
       >
-        <TrendingUp className="w-4 h-4 text-[#FF6AC1]" />
-        <span className="text-[10px] font-bold text-[#E8E0F0]">트렌딩</span>
+        <TrendingUp className="w-5 h-5 text-[#FF6AC1]" />
+        <span className="text-xs font-bold text-[#E8E0F0]">트렌딩 TOP</span>
       </button>
 
       {/* 데스크톱: 우상단 트리거 버튼 */}

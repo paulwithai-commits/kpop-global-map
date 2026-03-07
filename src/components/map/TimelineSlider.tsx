@@ -19,9 +19,19 @@ export function TimelineSlider() {
   const timelineHour = useAppStore((s) => s.timelineHour);
   const [isPlaying, setIsPlaying] = useState(false);
   const [isDragging, setIsDragging] = useState(false);
+  const hasAutoPlayed = useRef(false);
   const trackRef = useRef<HTMLDivElement>(null);
   const animRef = useRef<number | null>(null);
   const lastTimeRef = useRef<number>(0);
+
+  // 첫 진입 시 자동 플레이
+  useEffect(() => {
+    if (!hasAutoPlayed.current) {
+      hasAutoPlayed.current = true;
+      useAppStore.setState({ timelineHour: 0 });
+      setIsPlaying(true);
+    }
+  }, []);
 
   // 자동 재생 로직 (zustand 직접 접근으로 리렌더 최소화)
   useEffect(() => {

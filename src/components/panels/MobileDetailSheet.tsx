@@ -26,7 +26,7 @@ export function MobileDetailSheet() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="fixed inset-0 bg-black/40 z-40 md:hidden"
+            className="fixed inset-0 bg-black/40 z-[1100] md:hidden"
             onClick={() => setSelectedCountry(null)}
           />
 
@@ -43,7 +43,7 @@ export function MobileDetailSheet() {
             onDragEnd={(_, info) => {
               if (info.offset.y > 100) setSelectedCountry(null);
             }}
-            className="fixed bottom-0 left-0 right-0 z-50 md:hidden bg-[#120E1F] border-t border-[#3B2667] rounded-t-2xl max-h-[80vh] overflow-hidden flex flex-col"
+            className="fixed bottom-0 left-0 right-0 z-[1200] md:hidden bg-[#120E1F] border-t border-[#3B2667] rounded-t-2xl max-h-[80vh] overflow-hidden flex flex-col"
           >
             {/* Drag handle */}
             <div className="flex justify-center py-2 flex-shrink-0">
