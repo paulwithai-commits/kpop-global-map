@@ -57,10 +57,10 @@ export function TrendingInsights() {
       {/* 트리거 버튼 */}
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="absolute top-20 right-4 z-[1000] bg-[#120E1F]/90 backdrop-blur-sm border border-[#3B2667]/50 rounded-xl px-3 py-2 flex items-center gap-2 hover:border-[#9B5DE5]/50 transition-colors"
+        className="absolute top-2 right-2 md:top-20 md:right-4 z-[1000] bg-[#120E1F]/90 backdrop-blur-sm border border-[#3B2667]/50 rounded-xl px-2.5 py-1.5 md:px-3 md:py-2 flex items-center gap-1.5 md:gap-2 hover:border-[#9B5DE5]/50 transition-colors"
       >
-        <TrendingUp className="w-4 h-4 text-[#FF6AC1]" />
-        <span className="text-xs font-medium text-[#E8E0F0]">
+        <TrendingUp className="w-3.5 h-3.5 md:w-4 md:h-4 text-[#FF6AC1]" />
+        <span className="text-[10px] md:text-xs font-medium text-[#E8E0F0]">
           트렌딩 TOP 10
         </span>
       </button>
@@ -73,7 +73,7 @@ export function TrendingInsights() {
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: -10, scale: 0.95 }}
             transition={{ duration: 0.2 }}
-            className="absolute top-32 right-4 z-[1000] w-[320px] bg-[#120E1F]/95 backdrop-blur-md border border-[#3B2667] rounded-xl shadow-2xl overflow-hidden"
+            className="absolute top-10 left-2 right-2 md:top-32 md:right-4 md:left-auto z-[1000] md:w-[320px] bg-[#120E1F]/95 backdrop-blur-md border border-[#3B2667] rounded-xl shadow-2xl overflow-hidden"
           >
             {/* 헤더 */}
             <div className="flex items-center justify-between px-4 py-3 border-b border-[#3B2667]/50">
@@ -91,7 +91,7 @@ export function TrendingInsights() {
               </button>
             </div>
 
-            <div className="max-h-[60vh] overflow-y-auto">
+            <div className="max-h-[50vh] md:max-h-[60vh] overflow-y-auto">
               {/* Google Trends 섹션 */}
               <div className="px-4 pt-3 pb-1">
                 <div className="flex items-center gap-1.5 mb-2">

@@ -14,7 +14,7 @@ const platformColors: Record<string, { bg: string; text: string; label: string }
 };
 
 export function MobileDetailSheet() {
-  const { selectedCountry, setSelectedCountry } = useAppStore();
+  const { selectedCountry, setSelectedCountry, selectedKeyword, fetchNews, setSelectedKeyword } = useAppStore();
   const dragControls = useDragControls();
 
   return (
@@ -127,10 +127,22 @@ export function MobileDetailSheet() {
               <div className="space-y-2">
                 {selectedCountry.topArtists.map((artist, i) => {
                   const platform = platformColors[artist.platform];
+                  const isActive = selectedKeyword === artist.nameKo;
                   return (
                     <div
                       key={artist.id}
-                      className="flex items-center gap-2.5 p-2.5 rounded-lg bg-[#1A1432]/80 border border-[#3B2667]/30"
+                      onClick={() => {
+                        if (isActive) {
+                          setSelectedKeyword(null);
+                        } else {
+                          fetchNews(artist.nameKo);
+                        }
+                      }}
+                      className={`flex items-center gap-2.5 p-2.5 rounded-lg cursor-pointer transition-colors ${
+                        isActive
+                          ? "bg-[#9B5DE5]/20 border border-[#9B5DE5]/50 ring-1 ring-[#9B5DE5]/30"
+                          : "bg-[#1A1432]/80 border border-[#3B2667]/30 active:border-[#9B5DE5]/40"
+                      }`}
                     >
                       <div className="w-7 h-7 rounded-full bg-gradient-to-br from-[#9B5DE5] to-[#FF6AC1] flex items-center justify-center text-white font-bold text-xs">
                         {i + 1}
@@ -139,6 +151,9 @@ export function MobileDetailSheet() {
                         <div className="font-semibold text-[#E8E0F0] text-sm truncate">
                           {artist.nameKo}
                         </div>
+                        {isActive && (
+                          <div className="text-[9px] text-[#9B5DE5] mt-0.5">📰 뉴스 보기</div>
+                        )}
                       </div>
                       <span className="text-lg font-bold text-[#E8E0F0]">
                         {artist.score}

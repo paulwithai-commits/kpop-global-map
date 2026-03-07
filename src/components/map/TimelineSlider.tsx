@@ -119,11 +119,11 @@ export function TimelineSlider() {
   const isAtEnd = timelineHour >= 24;
 
   return (
-    <div className="absolute bottom-4 left-1/2 -translate-x-1/2 z-[1000] w-[90%] max-w-[560px]">
+    <div className="absolute bottom-2 md:bottom-4 left-1/2 -translate-x-1/2 z-[1000] w-[95%] md:w-[90%] max-w-[560px]">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
-        className="bg-[#120E1F]/95 backdrop-blur-md border border-[#3B2667] rounded-xl px-4 py-3 shadow-2xl"
+        className="bg-[#120E1F]/95 backdrop-blur-md border border-[#3B2667] rounded-xl px-3 py-2 md:px-4 md:py-3 shadow-2xl"
       >
         {/* 상단: 컨트롤 + 시간 + 현재 소스 */}
         <div className="flex items-center justify-between mb-2">
