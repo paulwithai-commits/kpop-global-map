@@ -8,6 +8,7 @@ import { MobileDetailSheet } from "@/components/panels/MobileDetailSheet";
 import { TrendingInsights } from "@/components/panels/TrendingInsights";
 import { NewsSlidePanel } from "@/components/panels/NewsSlidePanel";
 import { TimelineSlider } from "@/components/map/TimelineSlider";
+import { FloatingKeywords } from "@/components/map/FloatingKeywords";
 import { TopTicker } from "@/components/common/TopTicker";
 import { Loading } from "@/components/common/Loading";
 
@@ -38,6 +39,7 @@ export default function Home() {
       <Header />
       <div className="flex-1 flex overflow-hidden relative">
         <GlobalMap />
+        <FloatingKeywords />
         <TrendingInsights />
         <NewsSlidePanel />
         <TimelineSlider />

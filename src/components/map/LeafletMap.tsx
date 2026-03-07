@@ -11,17 +11,22 @@ function getTimelineScore(
   country: CountryScore,
   hour: number
 ): { score: number; trendsActive: number; wikiActive: number; youtubeActive: number } {
-  // 시작부터 시각적 효과 → 베이스라인 0.3 + 시간에 따라 증가
-  // Trends: 0시에 0.3 → 6시에 1.0 / Wiki: 6시부터 / YouTube: 14시부터
-  const trendsActive = Math.min(1, 0.3 + 0.7 * Math.max(0, hour / 6));
-  const wikiActive = Math.min(1, Math.max(0, (hour - 6) / 8));
-  const youtubeActive = Math.min(1, Math.max(0, (hour - 14) / 10));
+  // 시작부터 크게 시각화 — 베이스라인 높게 설정
+  // Trends: 0시에 0.5 → 6시에 1.0 (1초부터 눈에 띄게)
+  // Wiki: 5시부터 천천히 / YouTube: 12시부터 천천히
+  const trendsActive = Math.min(1, 0.5 + 0.5 * Math.min(1, hour / 6));
+  const wikiActive = Math.min(1, Math.max(0, (hour - 5) / 7));
+  const youtubeActive = Math.min(1, Math.max(0, (hour - 12) / 10));
 
-  // 가중 합산 (최종 score는 0.33*trends + 0.33*wiki + 0.34*youtube)
-  const score =
+  // 가중 합산 + 최소 점수 보장 (시작부터 버블 보이게)
+  const rawScore =
     country.trendsScore * 0.33 * trendsActive +
     country.wikiScore * 0.33 * wikiActive +
     country.youtubeScore * 0.34 * youtubeActive;
+
+  // 최소 점수: 원래 점수의 15% (0시에도 작은 버블 보임)
+  const minScore = country.score * 0.15;
+  const score = Math.max(minScore, rawScore);
 
   return { score: Math.round(score * 10) / 10, trendsActive, wikiActive, youtubeActive };
 }
@@ -32,22 +37,23 @@ function scoreToColor(score: number): string {
   // 보라(270°) → 마젠타(320°) → 핑크(340°) 그라데이션
   const t = Math.min(score / 100, 1);
   const hue = 270 + t * 70; // 270° → 340°
-  const sat = 40 + t * 50; // 40% → 90%
-  const lit = 20 + t * 45; // 20% → 65%
+  const sat = 50 + t * 40; // 50% → 90% (낮은 점수도 채도 높게)
+  const lit = 30 + t * 35; // 30% → 65% (낮은 점수도 더 밝게)
   return `hsl(${hue}, ${sat}%, ${lit}%)`;
 }
 
 function scoreToRadius(score: number): number {
-  // 이징 적용: 높은 점수일수록 더 큰 차이
+  if (score <= 0) return 0;
+  // 최소 반경 6 → 낮은 점수도 눈에 보임
   const t = Math.min(score / 100, 1);
   const eased = t * t * (3 - 2 * t); // smoothstep
-  return Math.max(4, eased * 26);
+  return Math.max(6, 6 + eased * 24);
 }
 
-// 발광 강도 (점수 높을수록 강하게)
+// 발광 강도 — 점수 10부터 발광 시작 (더 일찍)
 function scoreToGlow(score: number): number {
-  if (score < 30) return 0;
-  return Math.min(1, (score - 30) / 70);
+  if (score < 10) return 0;
+  return Math.min(1, (score - 10) / 60);
 }
 
 // 선택된 국가로 지도 이동
@@ -142,7 +148,7 @@ export default function LeafletMap() {
   return (
     <div className="flex-1 relative">
       <MapContainer
-        center={isMobile ? [30, 0] : [20, 20]}
+        center={isMobile ? [10, 110] : [15, 105]}
         zoom={isMobile ? 1 : 2}
         minZoom={isMobile ? 1 : 2}
         maxZoom={8}
