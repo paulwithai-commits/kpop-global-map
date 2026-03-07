@@ -28,11 +28,13 @@ export function TrendingInsights() {
     typeof window !== 'undefined' && window.innerWidth >= 768 // PC: 열림, 모바일: 닫힘
   );
 
-  // 국가 클릭 시 트렌딩 패널 + 뉴스 패널 함께 접기
+  // 국가 클릭 시 트렌딩 패널 접기 / 국가 닫으면 데스크톱에서 다시 열기
   useEffect(() => {
     if (selectedCountry) {
       setIsOpen(false);
       setSelectedKeyword(null);
+    } else if (typeof window !== 'undefined' && window.innerWidth >= 768) {
+      setIsOpen(true);
     }
   }, [selectedCountry, setSelectedKeyword]);
 
