@@ -272,8 +272,8 @@ export default function LeafletMap() {
         })}
       </MapContainer>
 
-      {/* 범례 — 모바일: 좌하단, 데스크톱: 좌하단 */}
-      <div className="absolute bottom-3 left-3 md:bottom-4 md:left-4 bg-[#120E1F]/90 backdrop-blur-sm border border-[#3B2667]/50 rounded-xl px-3 py-2 md:px-4 md:py-3 z-[999]">
+      {/* 범례 — 모바일 숨김, 데스크톱만 좌하단 */}
+      <div className="hidden md:block absolute bottom-4 left-4 bg-[#120E1F]/90 backdrop-blur-sm border border-[#3B2667]/50 rounded-xl px-4 py-3 z-[999]">
         <div className="text-[10px] text-[#9B8DB8] mb-2 font-medium">
           인기도
         </div>

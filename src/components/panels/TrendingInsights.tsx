@@ -24,15 +24,13 @@ const sourceConfig = {
 
 export function TrendingInsights() {
   const { data, selectedKeyword, selectedCountry, fetchNews, setSelectedKeyword } = useAppStore();
-  const [isOpen, setIsOpen] = useState(true); // 디폴트 펼침
+  const [isOpen, setIsOpen] = useState(false); // 첫 진입 시 지도만 보이게
 
   // 국가 클릭 시 트렌딩 패널 + 뉴스 패널 함께 접기
   useEffect(() => {
     if (selectedCountry) {
       setIsOpen(false);
-      setSelectedKeyword(null); // 뉴스 패널도 닫기
-    } else {
-      setIsOpen(true);
+      setSelectedKeyword(null);
     }
   }, [selectedCountry, setSelectedKeyword]);
 
@@ -57,7 +55,7 @@ export function TrendingInsights() {
       {/* 모바일: 우측 하단 플레이 버튼 옆에 트렌딩 버튼 */}
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="md:hidden absolute bottom-[72px] left-3 z-[1000] bg-[#120E1F]/95 backdrop-blur-md border border-[#3B2667] rounded-full px-4 py-2.5 flex items-center gap-2 active:border-[#9B5DE5]/50 transition-colors shadow-2xl"
+        className="md:hidden absolute bottom-3 left-3 z-[1000] bg-[#120E1F]/95 backdrop-blur-md border border-[#3B2667] rounded-full px-4 py-2.5 flex items-center gap-2 active:border-[#9B5DE5]/50 transition-colors shadow-2xl"
       >
         <TrendingUp className="w-5 h-5 text-[#FF6AC1]" />
         <span className="text-xs font-bold text-[#E8E0F0]">트렌딩 TOP</span>
