@@ -95,7 +95,6 @@ export function TimelineSlider() {
 
   const handlePlay = () => {
     if (timelineHour >= 23.9) {
-      // 끝까지 갔으면 처음부터 재시작
       useAppStore.setState({ timelineHour: 0 });
     }
     setIsPlaying((prev) => !prev);
@@ -111,7 +110,6 @@ export function TimelineSlider() {
   const currentMinute = Math.floor((timelineHour % 1) * 60);
   const timeStr = `${currentHour.toString().padStart(2, "0")}:${currentMinute.toString().padStart(2, "0")}`;
 
-  // 현재 활성 소스
   const activeSource =
     SOURCE_ZONES.find((z) => timelineHour >= z.start && timelineHour < z.end) ||
     SOURCE_ZONES[2];
@@ -119,147 +117,181 @@ export function TimelineSlider() {
   const isAtEnd = timelineHour >= 24;
 
   return (
-    <div className="absolute bottom-2 md:bottom-4 left-1/2 -translate-x-1/2 z-[1000] w-[95%] md:w-[90%] max-w-[560px]">
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        className="bg-[#120E1F]/95 backdrop-blur-md border border-[#3B2667] rounded-xl px-3 py-2 md:px-4 md:py-3 shadow-2xl"
-      >
-        {/* 상단: 컨트롤 + 시간 + 현재 소스 */}
-        <div className="flex items-center justify-between mb-2">
-          <div className="flex items-center gap-2">
-            <button
-              onClick={handlePlay}
-              className="w-7 h-7 rounded-full bg-[#9B5DE5]/20 hover:bg-[#9B5DE5]/40 flex items-center justify-center transition-colors"
-              title={isPlaying ? "일시정지" : isAtEnd ? "처음부터 재생" : "재생"}
-            >
-              {isPlaying ? (
-                <Pause className="w-3.5 h-3.5 text-[#FF6AC1]" />
-              ) : (
-                <Play className="w-3.5 h-3.5 text-[#FF6AC1] ml-0.5" />
-              )}
-            </button>
-            {!isAtEnd && (
-              <button
-                onClick={handleReset}
-                className="w-6 h-6 rounded-full hover:bg-[#3B2667]/50 flex items-center justify-center transition-colors"
-                title="전체 보기 (24:00)"
-              >
-                <RotateCcw className="w-3 h-3 text-[#9B8DB8]" />
-              </button>
-            )}
-            <span className="text-lg font-mono font-bold text-[#E8E0F0] tabular-nums w-[52px]">
-              {timeStr}
-            </span>
-          </div>
-          <div className="flex items-center gap-1.5">
-            {isAtEnd ? (
-              <span className="text-[10px] text-[#9B8DB8]">전체 데이터</span>
-            ) : (
-              <>
-                <div
-                  className="w-2 h-2 rounded-full animate-pulse"
-                  style={{ backgroundColor: activeSource.color }}
-                />
-                <span
-                  className="text-[10px] font-semibold"
-                  style={{ color: activeSource.color }}
-                >
-                  {activeSource.label}
-                </span>
-                <span className="text-[10px] text-[#9B8DB8]">반영 중</span>
-              </>
-            )}
-          </div>
-        </div>
-
-        {/* 슬라이더 트랙 */}
-        <div
-          ref={trackRef}
-          className="relative h-6 cursor-pointer touch-none select-none"
-          onPointerDown={handlePointerDown}
-          onPointerMove={handlePointerMove}
-          onPointerUp={handlePointerUp}
-          onPointerCancel={handlePointerUp}
+    <>
+      {/* ===== 모바일: 우측 하단 컴팩트 버튼 ===== */}
+      <div className="md:hidden absolute bottom-3 right-3 z-[1000] flex items-center gap-2">
+        <motion.div
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={{ opacity: 1, scale: 1 }}
+          className="flex items-center gap-1.5 bg-[#120E1F]/95 backdrop-blur-md border border-[#3B2667] rounded-full px-2.5 py-1.5 shadow-2xl"
         >
-          {/* 소스 구간 배경 */}
-          <div className="absolute top-2 left-0 right-0 h-2 rounded-full overflow-hidden flex">
-            {SOURCE_ZONES.map((zone) => (
-              <div
-                key={zone.label}
-                className="h-full"
-                style={{
-                  width: `${((zone.end - zone.start) / 24) * 100}%`,
-                  backgroundColor: zone.color,
-                  opacity: 0.15,
-                }}
-              />
-            ))}
-          </div>
-
-          {/* 진행 바 */}
-          <div
-            className="absolute top-2 left-0 h-2 rounded-l-full overflow-hidden"
-            style={{
-              width: `${progress}%`,
-              borderRadius: progress >= 100 ? "9999px" : undefined,
-            }}
+          <button
+            onClick={handlePlay}
+            className="w-8 h-8 rounded-full bg-[#9B5DE5]/30 flex items-center justify-center"
           >
-            <div className="h-full flex w-full">
-              {SOURCE_ZONES.map((zone) => {
-                const zoneStartPct = (zone.start / 24) * 100;
-                const zoneEndPct = (zone.end / 24) * 100;
-                const visibleStart = Math.max(0, zoneStartPct);
-                const visibleEnd = Math.min(progress, zoneEndPct);
-                if (visibleEnd <= visibleStart) return null;
-                return (
-                  <div
-                    key={zone.label}
-                    className="h-full flex-shrink-0"
-                    style={{
-                      width: `${((visibleEnd - visibleStart) / progress) * 100}%`,
-                      backgroundColor: zone.color,
-                      opacity: 0.85,
-                    }}
-                  />
-                );
-              })}
-            </div>
-          </div>
-
-          {/* 드래그 핸들 */}
-          <div
-            className="absolute top-0 -translate-x-1/2 pointer-events-none"
-            style={{ left: `${Math.min(progress, 100)}%` }}
-          >
+            {isPlaying ? (
+              <Pause className="w-4 h-4 text-[#FF6AC1]" />
+            ) : (
+              <Play className="w-4 h-4 text-[#FF6AC1] ml-0.5" />
+            )}
+          </button>
+          <span className="text-sm font-mono font-bold text-[#E8E0F0] tabular-nums min-w-[42px]">
+            {timeStr}
+          </span>
+          {!isAtEnd && (
+            <button
+              onClick={handleReset}
+              className="w-6 h-6 rounded-full flex items-center justify-center"
+            >
+              <RotateCcw className="w-3 h-3 text-[#9B8DB8]" />
+            </button>
+          )}
+          {!isAtEnd && (
             <div
-              className={`w-4 h-4 mt-0.5 rounded-full border-2 border-white shadow-lg transition-transform ${isDragging ? "scale-125" : ""}`}
-              style={{ backgroundColor: isAtEnd ? "#FF6AC1" : activeSource.color }}
+              className="w-2 h-2 rounded-full animate-pulse"
+              style={{ backgroundColor: activeSource.color }}
             />
-          </div>
-        </div>
+          )}
+        </motion.div>
+      </div>
 
-        {/* 하단: 시간 눈금 + 소스 라벨 */}
-        <div className="flex justify-between mt-0.5 px-0.5">
-          {["00:00", "06:00", "14:00", "24:00"].map((t) => (
-            <span key={t} className="text-[8px] text-[#9B8DB8]/60 tabular-nums">
-              {t}
-            </span>
-          ))}
-        </div>
-        <div className="flex mt-0.5">
-          {SOURCE_ZONES.map((zone) => (
-            <div key={zone.label} className="flex-1 text-center">
-              <span
-                className="text-[8px] font-medium"
-                style={{ color: zone.color, opacity: 0.5 }}
+      {/* ===== 데스크톱: 하단 중앙 풀 슬라이더 ===== */}
+      <div className="hidden md:block absolute bottom-4 left-1/2 -translate-x-1/2 z-[1000] w-[90%] max-w-[560px]">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          className="bg-[#120E1F]/95 backdrop-blur-md border border-[#3B2667] rounded-xl px-4 py-3 shadow-2xl"
+        >
+          {/* 상단: 컨트롤 + 시간 + 현재 소스 */}
+          <div className="flex items-center justify-between mb-2">
+            <div className="flex items-center gap-2">
+              <button
+                onClick={handlePlay}
+                className="w-7 h-7 rounded-full bg-[#9B5DE5]/20 hover:bg-[#9B5DE5]/40 flex items-center justify-center transition-colors"
               >
-                {zone.label}
+                {isPlaying ? (
+                  <Pause className="w-3.5 h-3.5 text-[#FF6AC1]" />
+                ) : (
+                  <Play className="w-3.5 h-3.5 text-[#FF6AC1] ml-0.5" />
+                )}
+              </button>
+              {!isAtEnd && (
+                <button
+                  onClick={handleReset}
+                  className="w-6 h-6 rounded-full hover:bg-[#3B2667]/50 flex items-center justify-center transition-colors"
+                >
+                  <RotateCcw className="w-3 h-3 text-[#9B8DB8]" />
+                </button>
+              )}
+              <span className="text-lg font-mono font-bold text-[#E8E0F0] tabular-nums w-[52px]">
+                {timeStr}
               </span>
             </div>
-          ))}
-        </div>
-      </motion.div>
-    </div>
+            <div className="flex items-center gap-1.5">
+              {isAtEnd ? (
+                <span className="text-[10px] text-[#9B8DB8]">전체 데이터</span>
+              ) : (
+                <>
+                  <div
+                    className="w-2 h-2 rounded-full animate-pulse"
+                    style={{ backgroundColor: activeSource.color }}
+                  />
+                  <span
+                    className="text-[10px] font-semibold"
+                    style={{ color: activeSource.color }}
+                  >
+                    {activeSource.label}
+                  </span>
+                  <span className="text-[10px] text-[#9B8DB8]">반영 중</span>
+                </>
+              )}
+            </div>
+          </div>
+
+          {/* 슬라이더 트랙 */}
+          <div
+            ref={trackRef}
+            className="relative h-6 cursor-pointer touch-none select-none"
+            onPointerDown={handlePointerDown}
+            onPointerMove={handlePointerMove}
+            onPointerUp={handlePointerUp}
+            onPointerCancel={handlePointerUp}
+          >
+            <div className="absolute top-2 left-0 right-0 h-2 rounded-full overflow-hidden flex">
+              {SOURCE_ZONES.map((zone) => (
+                <div
+                  key={zone.label}
+                  className="h-full"
+                  style={{
+                    width: `${((zone.end - zone.start) / 24) * 100}%`,
+                    backgroundColor: zone.color,
+                    opacity: 0.15,
+                  }}
+                />
+              ))}
+            </div>
+
+            <div
+              className="absolute top-2 left-0 h-2 rounded-l-full overflow-hidden"
+              style={{
+                width: `${progress}%`,
+                borderRadius: progress >= 100 ? "9999px" : undefined,
+              }}
+            >
+              <div className="h-full flex w-full">
+                {SOURCE_ZONES.map((zone) => {
+                  const zoneStartPct = (zone.start / 24) * 100;
+                  const zoneEndPct = (zone.end / 24) * 100;
+                  const visibleStart = Math.max(0, zoneStartPct);
+                  const visibleEnd = Math.min(progress, zoneEndPct);
+                  if (visibleEnd <= visibleStart) return null;
+                  return (
+                    <div
+                      key={zone.label}
+                      className="h-full flex-shrink-0"
+                      style={{
+                        width: `${((visibleEnd - visibleStart) / progress) * 100}%`,
+                        backgroundColor: zone.color,
+                        opacity: 0.85,
+                      }}
+                    />
+                  );
+                })}
+              </div>
+            </div>
+
+            <div
+              className="absolute top-0 -translate-x-1/2 pointer-events-none"
+              style={{ left: `${Math.min(progress, 100)}%` }}
+            >
+              <div
+                className={`w-4 h-4 mt-0.5 rounded-full border-2 border-white shadow-lg transition-transform ${isDragging ? "scale-125" : ""}`}
+                style={{ backgroundColor: isAtEnd ? "#FF6AC1" : activeSource.color }}
+              />
+            </div>
+          </div>
+
+          <div className="flex justify-between mt-0.5 px-0.5">
+            {["00:00", "06:00", "14:00", "24:00"].map((t) => (
+              <span key={t} className="text-[8px] text-[#9B8DB8]/60 tabular-nums">
+                {t}
+              </span>
+            ))}
+          </div>
+          <div className="flex mt-0.5">
+            {SOURCE_ZONES.map((zone) => (
+              <div key={zone.label} className="flex-1 text-center">
+                <span
+                  className="text-[8px] font-medium"
+                  style={{ color: zone.color, opacity: 0.5 }}
+                >
+                  {zone.label}
+                </span>
+              </div>
+            ))}
+          </div>
+        </motion.div>
+      </div>
+    </>
   );
 }

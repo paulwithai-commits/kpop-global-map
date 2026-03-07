@@ -54,18 +54,59 @@ export function TrendingInsights() {
 
   return (
     <>
-      {/* 트리거 버튼 */}
+      {/* 모바일: 우측 하단 플레이 버튼 옆에 트렌딩 버튼 */}
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="absolute top-2 right-2 md:top-20 md:right-4 z-[1000] bg-[#120E1F]/90 backdrop-blur-sm border border-[#3B2667]/50 rounded-xl px-2.5 py-1.5 md:px-3 md:py-2 flex items-center gap-1.5 md:gap-2 hover:border-[#9B5DE5]/50 transition-colors"
+        className="md:hidden absolute bottom-3 left-3 z-[1000] bg-[#120E1F]/95 backdrop-blur-md border border-[#3B2667] rounded-full px-3 py-2 flex items-center gap-1.5 active:border-[#9B5DE5]/50 transition-colors shadow-2xl"
       >
-        <TrendingUp className="w-3.5 h-3.5 md:w-4 md:h-4 text-[#FF6AC1]" />
-        <span className="text-[10px] md:text-xs font-medium text-[#E8E0F0]">
+        <TrendingUp className="w-4 h-4 text-[#FF6AC1]" />
+        <span className="text-[10px] font-bold text-[#E8E0F0]">트렌딩</span>
+      </button>
+
+      {/* 데스크톱: 우상단 트리거 버튼 */}
+      <button
+        onClick={() => setIsOpen(!isOpen)}
+        className="hidden md:flex absolute top-20 right-4 z-[1000] bg-[#120E1F]/90 backdrop-blur-sm border border-[#3B2667]/50 rounded-xl px-3 py-2 items-center gap-2 hover:border-[#9B5DE5]/50 transition-colors"
+      >
+        <TrendingUp className="w-4 h-4 text-[#FF6AC1]" />
+        <span className="text-xs font-medium text-[#E8E0F0]">
           트렌딩 TOP 10
         </span>
       </button>
 
-      {/* 패널 */}
+      {/* 모바일 패널: 바텀시트 */}
+      <AnimatePresence>
+        {isOpen && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            className="md:hidden fixed inset-0 z-[1500]"
+          >
+            <div className="absolute inset-0 bg-black/50" onClick={() => setIsOpen(false)} />
+            <motion.div
+              initial={{ y: "100%" }}
+              animate={{ y: 0 }}
+              exit={{ y: "100%" }}
+              transition={{ type: "spring", damping: 30, stiffness: 300 }}
+              className="absolute bottom-0 left-0 right-0 max-h-[75vh] bg-[#120E1F] border-t border-[#3B2667] rounded-t-2xl overflow-hidden flex flex-col"
+            >
+              <div className="flex justify-center py-2 flex-shrink-0">
+                <div className="w-10 h-1 rounded-full bg-[#3B2667]" />
+              </div>
+              <MobileTrendingContent
+                trendsInsights={trendsInsights}
+                wikiInsights={wikiInsights}
+                selectedKeyword={selectedKeyword}
+                onKeywordClick={handleKeywordClick}
+                onClose={() => setIsOpen(false)}
+              />
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+
+      {/* 데스크톱 패널 */}
       <AnimatePresence>
         {isOpen && (
           <motion.div
@@ -73,7 +114,7 @@ export function TrendingInsights() {
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: -10, scale: 0.95 }}
             transition={{ duration: 0.2 }}
-            className="absolute top-10 left-2 right-2 md:top-32 md:right-4 md:left-auto z-[1000] md:w-[320px] bg-[#120E1F]/95 backdrop-blur-md border border-[#3B2667] rounded-xl shadow-2xl overflow-hidden"
+            className="hidden md:block absolute top-32 right-4 z-[1000] w-[320px] bg-[#120E1F]/95 backdrop-blur-md border border-[#3B2667] rounded-xl shadow-2xl overflow-hidden"
           >
             {/* 헤더 */}
             <div className="flex items-center justify-between px-4 py-3 border-b border-[#3B2667]/50">
@@ -183,6 +224,96 @@ export function TrendingInsights() {
           </motion.div>
         )}
       </AnimatePresence>
+    </>
+  );
+}
+
+/** 모바일 바텀시트용 트렌딩 콘텐츠 */
+function MobileTrendingContent({
+  trendsInsights,
+  wikiInsights,
+  selectedKeyword,
+  onKeywordClick,
+  onClose,
+}: {
+  trendsInsights: { keyword: string; topCountries: string[]; score: number; source: string }[];
+  wikiInsights: { keyword: string; topCountries: string[]; score: number; source: string }[];
+  selectedKeyword: string | null;
+  onKeywordClick: (keyword: string) => void;
+  onClose: () => void;
+}) {
+  return (
+    <>
+      <div className="flex items-center justify-between px-4 py-2 border-b border-[#3B2667]/50 flex-shrink-0">
+        <div className="flex items-center gap-2">
+          <TrendingUp className="w-4 h-4 text-[#FF6AC1]" />
+          <span className="text-sm font-bold text-[#E8E0F0]">오늘의 트렌딩</span>
+        </div>
+        <button onClick={onClose} className="p-1 rounded-lg">
+          <X className="w-4 h-4 text-[#9B8DB8]" />
+        </button>
+      </div>
+      <div className="overflow-y-auto flex-1 px-4 py-3">
+        {/* Google Trends */}
+        <div className="flex items-center gap-1.5 mb-2">
+          <TrendingUp className="w-3 h-3 text-orange-400" />
+          <span className="text-[10px] font-semibold text-orange-400 uppercase tracking-wider">
+            Google Trends
+          </span>
+        </div>
+        <div className="space-y-1.5 mb-4">
+          {trendsInsights.map((insight, idx) => (
+            <div
+              key={insight.keyword}
+              onClick={() => onKeywordClick(insight.keyword)}
+              className={`flex items-center gap-2 px-2.5 py-2 rounded-lg cursor-pointer transition-colors ${
+                selectedKeyword === insight.keyword
+                  ? "bg-orange-500/20 border border-orange-500/50"
+                  : "bg-orange-500/5 border border-orange-500/10 active:border-orange-500/30"
+              }`}
+            >
+              <span className="text-xs font-bold text-orange-400 w-4">{idx + 1}</span>
+              <div className="flex-1 min-w-0">
+                <div className="text-xs font-semibold text-[#E8E0F0] truncate">{insight.keyword}</div>
+              </div>
+              {selectedKeyword === insight.keyword && (
+                <span className="w-1.5 h-1.5 rounded-full bg-orange-400 animate-pulse" />
+              )}
+            </div>
+          ))}
+        </div>
+
+        {/* Wikipedia */}
+        <div className="flex items-center gap-1.5 mb-2">
+          <BookOpen className="w-3 h-3 text-blue-400" />
+          <span className="text-[10px] font-semibold text-blue-400 uppercase tracking-wider">
+            Wikipedia 조회수
+          </span>
+        </div>
+        <div className="space-y-1.5">
+          {wikiInsights.map((insight, idx) => (
+            <div
+              key={insight.keyword}
+              onClick={() => onKeywordClick(insight.keyword)}
+              className={`flex items-center gap-2 px-2.5 py-2 rounded-lg cursor-pointer transition-colors ${
+                selectedKeyword === insight.keyword
+                  ? "bg-blue-500/20 border border-blue-500/50"
+                  : "bg-blue-500/5 border border-blue-500/10 active:border-blue-500/30"
+              }`}
+            >
+              <span className="text-xs font-bold text-blue-400 w-4">{idx + 1}</span>
+              <div className="flex-1 min-w-0">
+                <div className="text-xs font-semibold text-[#E8E0F0] truncate">{insight.keyword}</div>
+              </div>
+              {selectedKeyword === insight.keyword ? (
+                <span className="w-1.5 h-1.5 rounded-full bg-blue-400 animate-pulse" />
+              ) : (
+                <span className="text-[10px] text-blue-400 font-medium">{insight.score.toLocaleString()}</span>
+              )}
+            </div>
+          ))}
+        </div>
+      </div>
     </>
   );
 }

@@ -98,12 +98,25 @@ function GlowFilter() {
   return null;
 }
 
+// 모바일 감지 (SSR 안전)
+function useIsMobile() {
+  const [isMobile, setIsMobile] = useState(false);
+  useEffect(() => {
+    setIsMobile(window.innerWidth < 768);
+    const handler = () => setIsMobile(window.innerWidth < 768);
+    window.addEventListener("resize", handler);
+    return () => window.removeEventListener("resize", handler);
+  }, []);
+  return isMobile;
+}
+
 export default function LeafletMap() {
   const { filteredCountries, setSelectedCountry, selectedCountry, timelineHour } =
     useAppStore();
   const countries = filteredCountries();
   const [hoveredCode, setHoveredCode] = useState<string | null>(null);
   const prevScoresRef = useRef<Record<string, number>>({});
+  const isMobile = useIsMobile();
 
   const sortedCountries = useMemo(
     () => [...countries].sort((a, b) => a.score - b.score),
@@ -129,9 +142,9 @@ export default function LeafletMap() {
   return (
     <div className="flex-1 relative">
       <MapContainer
-        center={[20, 20]}
-        zoom={2}
-        minZoom={2}
+        center={isMobile ? [30, 0] : [20, 20]}
+        zoom={isMobile ? 1 : 2}
+        minZoom={isMobile ? 1 : 2}
         maxZoom={8}
         style={{ width: "100%", height: "100%", background: "#0F0B1A" }}
         zoomControl={false}
