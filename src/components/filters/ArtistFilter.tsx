@@ -2,34 +2,9 @@
 
 import { useAppStore } from "@/store/useAppStore";
 import { Star } from "lucide-react";
-import { useRef, useCallback } from "react";
 
 export function ArtistFilter() {
   const { data, selectedArtist, setSelectedArtist, favoriteArtists, toggleFavoriteArtist } = useAppStore();
-  const lastTapRef = useRef<{ id: string; time: number } | null>(null);
-
-  // 더블탭 감지: 300ms 이내 같은 아티스트 탭 → 즐겨찾기 토글
-  const handleTap = useCallback((artistId: string) => {
-    const now = Date.now();
-    const last = lastTapRef.current;
-
-    if (last && last.id === artistId && now - last.time < 300) {
-      // 더블탭 → 즐겨찾기 토글
-      toggleFavoriteArtist(artistId);
-      lastTapRef.current = null;
-      return;
-    }
-
-    // 싱글탭 → 선택/해제
-    lastTapRef.current = { id: artistId, time: now };
-    setTimeout(() => {
-      // 300ms 후에도 더블탭이 안 왔으면 싱글탭 처리
-      if (lastTapRef.current?.id === artistId && lastTapRef.current?.time === now) {
-        setSelectedArtist(selectedArtist === artistId ? null : artistId);
-        lastTapRef.current = null;
-      }
-    }, 300);
-  }, [selectedArtist, setSelectedArtist, toggleFavoriteArtist]);
 
   if (!data) return null;
 
@@ -56,10 +31,9 @@ export function ArtistFilter() {
         const isFav = favoriteArtists.includes(artist.id);
         const isSelected = selectedArtist === artist.id;
         return (
-          <button
+          <div
             key={artist.id}
-            onClick={() => handleTap(artist.id)}
-            className={`flex-shrink-0 flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-medium transition-all ${
+            className={`flex-shrink-0 flex items-center rounded-full text-xs font-medium transition-all ${
               isSelected
                 ? "text-white shadow-lg"
                 : isFav
@@ -72,15 +46,31 @@ export function ArtistFilter() {
                 : undefined
             }
           >
-            <Star
-              className={`w-3 h-3 transition-colors ${
-                isFav
-                  ? "text-amber-400 fill-amber-400"
-                  : "text-[#6B5B8D]"
-              }`}
-            />
-            {artist.nameKo}
-          </button>
+            {/* ★ 영역: 즐겨찾기 토글 */}
+            <button
+              onClick={(e) => {
+                e.stopPropagation();
+                toggleFavoriteArtist(artist.id);
+              }}
+              className="pl-2.5 pr-0.5 py-1.5 rounded-l-full"
+              aria-label={isFav ? "즐겨찾기 해제" : "즐겨찾기 추가"}
+            >
+              <Star
+                className={`w-3 h-3 transition-colors ${
+                  isFav
+                    ? "text-amber-400 fill-amber-400"
+                    : "text-[#6B5B8D]"
+                }`}
+              />
+            </button>
+            {/* 텍스트 영역: 아티스트 선택/해제 */}
+            <button
+              onClick={() => setSelectedArtist(isSelected ? null : artist.id)}
+              className="pr-3 pl-1 py-1.5 rounded-r-full"
+            >
+              {artist.nameKo}
+            </button>
+          </div>
         );
       })}
     </div>
