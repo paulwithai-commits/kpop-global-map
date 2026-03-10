@@ -1,5 +1,17 @@
 import { create } from "zustand";
+import { persist } from "zustand/middleware";
 import type { CountryScore, GlobalData, NewsArticle, ContentItem } from "@/types/data";
+
+// 리텐션 관련 타입
+interface PredictionData {
+  artist: string;
+  date: string; // YYYY-MM-DD
+}
+
+interface VisitStreak {
+  count: number;
+  lastDate: string; // YYYY-MM-DD
+}
 
 interface AppState {
   data: GlobalData | null;
@@ -16,6 +28,13 @@ interface AppState {
   isNewsLoading: boolean;
   newsError: string | null;
 
+  // 리텐션 상태 (localStorage 영속)
+  favoriteArtists: string[];
+  lastPrediction: PredictionData | null;
+  visitStreak: VisitStreak;
+  lastVisitState: { country?: string; artist?: string };
+  showPrediction: boolean; // 예측 카드 표시 여부
+
   setData: (data: GlobalData) => void;
   setSelectedCountry: (country: CountryScore | null) => void;
   setSelectedArtist: (artistId: string | null) => void;
@@ -27,11 +46,21 @@ interface AppState {
   setSelectedKeyword: (keyword: string | null) => void;
   fetchNews: (keyword: string) => Promise<void>;
 
+  // 리텐션 액션
+  toggleFavoriteArtist: (artistId: string) => void;
+  setPrediction: (artist: string) => void;
+  setShowPrediction: (show: boolean) => void;
+  updateVisitStreak: () => void;
+
   // 필터링된 국가 데이터
   filteredCountries: () => CountryScore[];
 }
 
-export const useAppStore = create<AppState>((set, get) => ({
+function getToday(): string {
+  return new Date().toISOString().slice(0, 10);
+}
+
+export const useAppStore = create<AppState>()(persist((set, get) => ({
   data: null,
   selectedCountry: null,
   selectedArtist: null,
@@ -45,6 +74,13 @@ export const useAppStore = create<AppState>((set, get) => ({
   contentItems: [],
   isNewsLoading: false,
   newsError: null,
+
+  // 리텐션 상태 초기값
+  favoriteArtists: [],
+  lastPrediction: null,
+  visitStreak: { count: 0, lastDate: "" },
+  lastVisitState: {},
+  showPrediction: false,
 
   setData: (data) => set({ data, isLoading: false }),
   setSelectedCountry: (country) => set({ selectedCountry: country }),
@@ -116,6 +152,41 @@ export const useAppStore = create<AppState>((set, get) => ({
     }
   },
 
+  // 리텐션 액션
+  toggleFavoriteArtist: (artistId) =>
+    set((state) => ({
+      favoriteArtists: state.favoriteArtists.includes(artistId)
+        ? state.favoriteArtists.filter((id) => id !== artistId)
+        : [...state.favoriteArtists, artistId],
+    })),
+
+  setPrediction: (artist) =>
+    set({
+      lastPrediction: { artist, date: getToday() },
+      showPrediction: false,
+    }),
+
+  setShowPrediction: (show) => set({ showPrediction: show }),
+
+  updateVisitStreak: () =>
+    set((state) => {
+      const today = getToday();
+      const { lastDate, count } = state.visitStreak;
+
+      if (lastDate === today) return {}; // 이미 오늘 방문
+
+      const yesterday = new Date();
+      yesterday.setDate(yesterday.getDate() - 1);
+      const yesterdayStr = yesterday.toISOString().slice(0, 10);
+
+      if (lastDate === yesterdayStr) {
+        // 연속 방문
+        return { visitStreak: { count: count + 1, lastDate: today } };
+      }
+      // 스트릭 리셋
+      return { visitStreak: { count: 1, lastDate: today } };
+    }),
+
   filteredCountries: () => {
     const { data, selectedArtist } = get();
     if (!data) return [];
@@ -131,6 +202,14 @@ export const useAppStore = create<AppState>((set, get) => ({
       })
       .filter((c) => c.score > 0);
   },
+}), {
+  name: "kpop-pulse-storage",
+  partialize: (state) => ({
+    favoriteArtists: state.favoriteArtists,
+    lastPrediction: state.lastPrediction,
+    visitStreak: state.visitStreak,
+    lastVisitState: state.lastVisitState,
+  }),
 }));
 
 /** 백그라운드에서 추가 콘텐츠(YouTube, 통합검색) 로딩 */

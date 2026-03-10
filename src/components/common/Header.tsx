@@ -1,6 +1,8 @@
 "use client";
 
 import { ArtistFilter } from "@/components/filters/ArtistFilter";
+import { VisitStreak } from "@/components/engagement/VisitStreak";
+import { ShareButton } from "@/components/engagement/ShareButton";
 import { useAppStore } from "@/store/useAppStore";
 
 export function Header() {
@@ -26,17 +28,21 @@ export function Header() {
           </div>
         </div>
 
-        {/* 날짜/업데이트 정보 */}
-        {data && (
-          <div className="text-right">
-            <div className="text-xs text-[#9B8DB8]">
-              {data.date} 기준
+        {/* 우측: 방문 스트릭 + 공유 + 날짜 */}
+        <div className="flex items-center gap-2">
+          <VisitStreak />
+          <ShareButton />
+          {data && (
+            <div className="text-right">
+              <div className="text-xs text-[#9B8DB8]">
+                {data.date} 기준
+              </div>
+              <div className="text-[10px] text-[#9B8DB8]/60">
+                {data.totalCountries}개국 데이터
+              </div>
             </div>
-            <div className="text-[10px] text-[#9B8DB8]/60">
-              {data.totalCountries}개국 데이터
-            </div>
-          </div>
-        )}
+          )}
+        </div>
       </div>
 
       {/* 아티스트 필터 */}

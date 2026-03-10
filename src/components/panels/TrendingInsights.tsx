@@ -3,7 +3,7 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { useAppStore } from "@/store/useAppStore";
 import { TrendingUp, Globe, BookOpen, X } from "lucide-react";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useMemo } from "react";
 
 const sourceConfig = {
   google_trends: {
@@ -24,6 +24,14 @@ const sourceConfig = {
 
 export function TrendingInsights() {
   const { data, selectedKeyword, selectedCountry, fetchNews, setSelectedKeyword } = useAppStore();
+
+  // 국가별 평균 change 계산 (트렌딩 항목의 topCountries 기반)
+  const countryChangeMap = useMemo(() => {
+    if (!data) return {};
+    const map: Record<string, number> = {};
+    data.countries.forEach((c) => { map[c.nameKo] = c.change; });
+    return map;
+  }, [data]);
   const [isOpen, setIsOpen] = useState(
     typeof window !== 'undefined' && window.innerWidth >= 768 // PC: 열림, 모바일: 닫힘
   );
@@ -144,7 +152,11 @@ export function TrendingInsights() {
                   </span>
                 </div>
                 <div className="space-y-1.5">
-                  {trendsInsights.map((insight, idx) => (
+                  {trendsInsights.map((insight, idx) => {
+                    const avgChange = insight.topCountries.length > 0
+                      ? insight.topCountries.reduce((sum, c) => sum + (countryChangeMap[c] || 0), 0) / insight.topCountries.length
+                      : 0;
+                    return (
                     <motion.div
                       key={insight.keyword}
                       initial={{ opacity: 0, x: -10 }}
@@ -161,8 +173,13 @@ export function TrendingInsights() {
                         {idx + 1}
                       </span>
                       <div className="flex-1 min-w-0">
-                        <div className="text-xs font-semibold text-[#E8E0F0] truncate">
+                        <div className="text-xs font-semibold text-[#E8E0F0] truncate flex items-center gap-1">
                           {insight.keyword}
+                          {Math.abs(avgChange) >= 2 && (
+                            <span className={`text-[9px] font-bold ${avgChange > 0 ? "text-green-400" : "text-red-400"}`}>
+                              {avgChange > 0 ? "↑" : "↓"}{Math.abs(Math.round(avgChange))}
+                            </span>
+                          )}
                         </div>
                         <div className="text-[9px] text-[#9B8DB8] flex items-center gap-1">
                           <Globe className="w-2.5 h-2.5" />
@@ -173,7 +190,8 @@ export function TrendingInsights() {
                         <span className="w-1.5 h-1.5 rounded-full bg-orange-400 animate-pulse flex-shrink-0" />
                       )}
                     </motion.div>
-                  ))}
+                    );
+                  })}
                 </div>
               </div>
 
@@ -186,7 +204,11 @@ export function TrendingInsights() {
                   </span>
                 </div>
                 <div className="space-y-1.5">
-                  {wikiInsights.map((insight, idx) => (
+                  {wikiInsights.map((insight, idx) => {
+                    const avgChange = insight.topCountries.length > 0
+                      ? insight.topCountries.reduce((sum, c) => sum + (countryChangeMap[c] || 0), 0) / insight.topCountries.length
+                      : 0;
+                    return (
                     <motion.div
                       key={insight.keyword}
                       initial={{ opacity: 0, x: -10 }}
@@ -203,8 +225,13 @@ export function TrendingInsights() {
                         {idx + 1}
                       </span>
                       <div className="flex-1 min-w-0">
-                        <div className="text-xs font-semibold text-[#E8E0F0] truncate">
+                        <div className="text-xs font-semibold text-[#E8E0F0] truncate flex items-center gap-1">
                           {insight.keyword}
+                          {Math.abs(avgChange) >= 2 && (
+                            <span className={`text-[9px] font-bold ${avgChange > 0 ? "text-green-400" : "text-red-400"}`}>
+                              {avgChange > 0 ? "↑" : "↓"}{Math.abs(Math.round(avgChange))}
+                            </span>
+                          )}
                         </div>
                         <div className="text-[9px] text-[#9B8DB8] flex items-center gap-1">
                           <Globe className="w-2.5 h-2.5" />
@@ -219,7 +246,8 @@ export function TrendingInsights() {
                         </span>
                       )}
                     </motion.div>
-                  ))}
+                    );
+                  })}
                 </div>
               </div>
             </div>

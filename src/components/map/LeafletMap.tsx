@@ -1,7 +1,8 @@
 "use client";
 
 import { useMemo, useState, useRef, useEffect } from "react";
-import { MapContainer, TileLayer, CircleMarker, Tooltip, useMap } from "react-leaflet";
+import { MapContainer, TileLayer, CircleMarker, Tooltip, Marker, useMap } from "react-leaflet";
+import L from "leaflet";
 import "leaflet/dist/leaflet.css";
 import { useAppStore } from "@/store/useAppStore";
 import type { CountryScore } from "@/types/data";
@@ -274,6 +275,33 @@ export default function LeafletMap() {
                 </div>
               </Tooltip>
             </CircleMarker>
+          );
+        })}
+
+        {/* 어제 대비 변화 ↑↓ 마커 (타임라인 비활성 시 + |change| >= 3) */}
+        {!isTimeline && sortedCountries.map((country) => {
+          if (Math.abs(country.change) < 3) return null;
+          const radius = scoreToRadius(country.score);
+          const isUp = country.change > 0;
+          const icon = L.divIcon({
+            className: "",
+            html: `<span style="
+              font-size:11px;
+              font-weight:800;
+              color:${isUp ? "#4ade80" : "#f87171"};
+              text-shadow:0 0 4px rgba(0,0,0,0.8);
+              white-space:nowrap;
+            ">${isUp ? "↑" : "↓"}${Math.abs(Math.round(country.change))}</span>`,
+            iconSize: [30, 16],
+            iconAnchor: [-radius * 0.6, 8],
+          });
+          return (
+            <Marker
+              key={`change-${country.code}`}
+              position={[country.lat, country.lng]}
+              icon={icon}
+              interactive={false}
+            />
           );
         })}
       </MapContainer>
