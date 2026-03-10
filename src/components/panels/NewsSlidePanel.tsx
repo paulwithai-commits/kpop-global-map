@@ -20,7 +20,7 @@ const TABS: { key: TabType; label: string; icon: React.ReactNode }[] = [
   { key: "all", label: "전체", icon: null },
   { key: "news", label: "뉴스", icon: <Newspaper className="w-3 h-3" /> },
   { key: "search", label: "검색", icon: <Search className="w-3 h-3" /> },
-  { key: "youtube", label: "Shorts", icon: <Play className="w-3 h-3" /> },
+  { key: "youtube", label: "YouTube", icon: <Play className="w-3 h-3" /> },
 ];
 
 export function NewsSlidePanel() {
@@ -169,7 +169,7 @@ const TYPE_STYLES = {
   },
   youtube: {
     badge: "bg-red-500/20 text-red-400",
-    label: "Shorts",
+    label: "YouTube",
     icon: <Play className="w-3 h-3" />,
   },
 };
