@@ -179,7 +179,9 @@ function ContentCard({ item }: { item: ContentItem }) {
 
   return (
     <a
-      href={item.url}
+      href={item.type === "news"
+        ? `https://translate.google.com/translate?sl=ko&tl=en&u=${encodeURIComponent(item.url)}`
+        : item.url}
       target="_blank"
       rel="noopener noreferrer"
       className="block p-3 rounded-lg bg-[#1A1432]/80 border border-[#3B2667]/30 hover:border-[#9B5DE5]/50 transition-all group"
