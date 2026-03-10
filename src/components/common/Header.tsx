@@ -1,5 +1,7 @@
 "use client";
 
+import Link from "next/link";
+import { Globe, MapPin } from "lucide-react";
 import { ArtistFilter } from "@/components/filters/ArtistFilter";
 import { VisitStreak } from "@/components/engagement/VisitStreak";
 import { ShareButton } from "@/components/engagement/ShareButton";
@@ -25,6 +27,20 @@ export function Header() {
                 글로벌 K-pop 인기 라이브 맵
               </p>
             </div>
+          </div>
+          {/* 글로벌 ↔ 일본 전환 */}
+          <div className="flex items-center gap-1 bg-[#1A1432] rounded-full p-0.5">
+            <span className="flex items-center gap-1 px-2.5 py-1 rounded-full text-[10px] bg-gradient-to-r from-[#9B5DE5] to-[#FF6AC1] text-white font-medium">
+              <Globe className="w-3 h-3" />
+              Global
+            </span>
+            <Link
+              href="/japan"
+              className="flex items-center gap-1 px-2.5 py-1 rounded-full text-[10px] text-[#9B8DB8] hover:bg-[#3B2667]/50 transition-colors"
+            >
+              <MapPin className="w-3 h-3" />
+              Japan
+            </Link>
           </div>
         </div>
 
