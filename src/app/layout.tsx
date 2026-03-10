@@ -13,11 +13,11 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "K-pop World Pulse | 글로벌 K-pop 인기 라이브 맵",
+  title: "K-pop World Trend | 글로벌 K-pop 인기 라이브 맵",
   description:
     "전 세계에서 K-pop이 얼마나 인기 있는지, 세계지도 위에서 한눈에 확인하세요. Google Trends, YouTube, Wikipedia 데이터 기반.",
   openGraph: {
-    title: "K-pop World Pulse",
+    title: "K-pop World Trend",
     description: "전 세계 K-pop 인기를 실시간 세계지도로 확인하세요",
     type: "website",
   },

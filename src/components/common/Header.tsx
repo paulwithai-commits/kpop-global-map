@@ -19,7 +19,7 @@ export function Header() {
             </div>
             <div>
               <h1 className="text-lg font-bold text-[#E8E0F0] leading-tight">
-                K-pop World Pulse
+                K-pop World Trend
               </h1>
               <p className="text-[10px] text-[#9B8DB8] leading-tight">
                 글로벌 K-pop 인기 라이브 맵
