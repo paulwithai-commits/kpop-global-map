@@ -7,13 +7,15 @@ import "leaflet/dist/leaflet.css";
 import { useJapanStore } from "@/store/useJapanStore";
 import type { PrefectureScore } from "@/types/japan-data";
 
-// 점수 → 색상 (보라~핑크 그라데이션)
+// 점수 → 색상 (보라~핑크 그라데이션, 고대비)
 function scoreToColor(score: number): string {
-  if (score <= 0) return "#1A1432";
+  if (score <= 0) return "#0F0B1A";
   const t = Math.min(score / 100, 1);
-  const hue = 270 + t * 70;
-  const sat = 50 + t * 40;
-  const lit = 25 + t * 40;
+  // 제곱 커브: 저점수는 오래 어둡고, 고점수에서 급격히 밝아짐
+  const t2 = t * t;
+  const hue = 280 + t2 * 60;  // 280(보라) → 340(핑크)
+  const sat = 25 + t * 65;    // 25 → 90
+  const lit = 8 + t * 60;     // 8(거의 검정) → 68(밝은 핑크)
   return `hsl(${hue}, ${sat}%, ${lit}%)`;
 }
 
@@ -68,7 +70,7 @@ function StyleUpdater({ geoRef }: { geoRef: React.RefObject<L.GeoJSON | null> })
 
       return {
         fillColor: scoreToColor(score),
-        fillOpacity: score > 0 ? 0.6 + (score / 100) * 0.35 : 0.15,
+        fillOpacity: score > 0 ? 0.3 + (score / 100) * 0.65 : 0.08,
         color: isSelected ? "#00D4FF" : "#3B2667",
         weight: isSelected ? 3 : 0.8,
         opacity: 1,

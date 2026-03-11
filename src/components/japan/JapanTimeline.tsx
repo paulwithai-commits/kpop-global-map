@@ -18,6 +18,7 @@ export function JapanTimeline() {
   }, []);
 
   const startPlayback = useCallback(() => {
+    if (intervalRef.current) clearInterval(intervalRef.current);
     setIsPlaying(true);
     setTimelineHour(0);
     intervalRef.current = setInterval(() => {
@@ -30,6 +31,13 @@ export function JapanTimeline() {
       });
     }, 200);
   }, [setTimelineHour, stopPlayback]);
+
+  // 접속 시 자동 재생
+  useEffect(() => {
+    const timer = setTimeout(startPlayback, 800);
+    return () => clearTimeout(timer);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   useEffect(() => {
     return () => {
