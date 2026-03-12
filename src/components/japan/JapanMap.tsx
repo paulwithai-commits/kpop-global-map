@@ -150,8 +150,8 @@ export default function JapanMap() {
             .bindTooltip(
               `<div style="background:#1A1432;border:1px solid #3B2667;border-radius:8px;padding:8px 12px;color:#E8E0F0;font-size:12px;">
               <div style="display:flex;align-items:center;gap:6px;margin-bottom:4px;">
-                <b>${prefName}</b>
-                ${pref ? `<span style="color:#9B8DB8">${pref.nameKo}</span>` : ""}
+                <b>${pref?.nameKo ?? prefName}</b>
+                <span style="color:#9B8DB8">${prefName}</span>
                 ${changeStr}
               </div>
               <div style="font-size:20px;font-weight:900;color:#FF6AC1;">${score.toFixed(1)}</div>

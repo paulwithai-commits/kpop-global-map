@@ -27,9 +27,9 @@ export function JapanTimeline() {
           stopPlayback();
           return 24;
         }
-        return Math.round((prev + 0.5) * 10) / 10;
+        return prev + 1;
       });
-    }, 200);
+    }, 180);
   }, [setTimelineHour, stopPlayback]);
 
   // 접속 시 자동 재생

@@ -53,9 +53,9 @@ export function JapanMobileSheet() {
       <div className="px-4 pb-3 flex items-center justify-between">
         <div>
           <h2 className="text-base font-bold text-[#E8E0F0]">
-            {selectedPrefecture.nameJa}{" "}
+            {selectedPrefecture.nameKo}{" "}
             <span className="text-sm text-[#9B8DB8] font-normal">
-              {selectedPrefecture.nameKo}
+              {selectedPrefecture.nameJa}
             </span>
           </h2>
           <div className="flex items-center gap-2 mt-1">

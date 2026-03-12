@@ -43,10 +43,10 @@ export function PrefectureDetail() {
         <div className="flex items-center justify-between mb-2">
           <div>
             <h2 className="text-lg font-bold text-[#E8E0F0]">
-              {selectedPrefecture.nameJa}
+              {selectedPrefecture.nameKo}
             </h2>
             <span className="text-sm text-[#9B8DB8]">
-              {selectedPrefecture.nameKo} · {selectedPrefecture.name}
+              {selectedPrefecture.nameJa} · {selectedPrefecture.name}
             </span>
           </div>
           <button

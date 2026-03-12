@@ -23,7 +23,7 @@ export function JapanTopTicker() {
               {(idx % 10) + 1}
             </span>
             <span className="font-medium text-[#E8E0F0]">
-              {pref.nameJa}
+              {pref.nameKo}
             </span>
             <span className="text-[#FF6AC1] font-bold">
               {pref.trendsScore}
